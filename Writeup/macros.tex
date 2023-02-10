@@ -1,0 +1,45 @@
+%!TEX root=zvrk.tex
+\usepackage[capitalize]{cleveref}
+\usepackage{CJKutf8}
+\usepackage{newunicodechar}
+
+\newcommand{\mean}[1]{\ensuremath{\left< #1 \right>}}
+\newcommand{\Dnu}{\ensuremath{\Delta\nu}}
+\newcommand{\numax}{\ensuremath{{\nu_\text{max}}}}
+\newcommand{\amlt}{\ensuremath{{\alpha_\text{MLT}}}}
+
+\newcommand\mesa{{\textsc{mesa}}}
+\newcommand\gyre{{\textsc{gyre}}}
+
+% Joel's Chinese name
+
+\newcommand{\chinesename}{{\begin{CJK}{UTF8}{gbsn}(王加冕)\end{CJK}}}
+
+% ʻokina for "Hawaiʻi"
+
+\DeclareRobustCommand{\okina}{%
+  \raisebox{\dimexpr\fontcharht\font`A-\height}{%
+    \scalebox{0.8}{`}%
+  }%
+}
+\newunicodechar{ʻ}{\okina}
+
+\newcommand{\remark}[1]{{\footnotesize\textcolor{red}{#1}}}
+\newcommand{\annotate}[2]{\begin{tikzpicture}
+    \node[anchor=south west,inner sep=0,align=center] (image) at (0,0) {
+    #1
+    };
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+    #2
+    \end{scope}
+\end{tikzpicture}}
+\def\bibitem{\vskip\bibskip\footnotesize\savebibitem}
+
+\graphicspath{{./},{./figures/}}
+
+% turn off tracking of changes for n < N0
+\renewcommand{\edit}[2]{{\ifnum#1<100000%
+#2%
+\else%
+\textbf{#2}%
+\fi}}

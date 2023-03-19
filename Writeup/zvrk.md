@@ -17,29 +17,52 @@ biblio-style: aasjournal
 \title{A Fast-Rotating Red Giant Observed by TESS}
 \input{preamble}
 \begin{abstract}
-We report the discovery of an extremely fast-rotating red giant ($P_\text{rot} = $) observed with TESS in its Southern Continuous Viewing Zone. The rotation rate of this red giant is independently verified by the use of p-mode asteroseismology, strong perodicity in ASAS-SN photometry, and multiple measurements of spectroscopic rotational broadening. Modulations in the amplitude of the photometric rotational signal indicate the rapid evolution of spot morphology, suggesting enhanced magnetic activity, and therefore radial differential rotation. We further develop and deploy new asteroseismic techniques to characterise this rotational shear in its convective envelope. Such a high rotation rate is also categorically incompatible with even the most physically permissive models of angular-momentum transport in single-star evolution. Moreover, spectroscopy also indicates an unsually high surface lithium abundance. Taken together, all of these suggest an ingestion scenario for the formation of this rotational configuration, various models of which we examine in detail. Such ingestion events represent an alternative mechanism by which the envelopes of post-main-sequence stars may spin up, as seen in the \textit{Kepler} sample, in conjunction with various hypotheses for outward angular momentum transport.
+We report the discovery of a rapidly-rotating red giant ($P_\text{rot} \sim 98\ \mathrm{d}$) observed with TESS in its Southern Continuous Viewing Zone. The rotation rate of this red giant is independently verified by the use of p-mode asteroseismology, strong perodicity in TESS and ASAS-SN photometry, and multiple measurements of spectroscopic rotational broadening. Modulations in the amplitude of the photometric rotational signal indicate the rapid evolution of spot morphology, suggesting enhanced magnetic activity, and therefore radial differential rotation. We further develop and deploy new asteroseismic techniques to characterise this rotational shear in its convective envelope. Such a high rotation rate is also categorically incompatible with even the most physically permissive models of angular-momentum transport in single-star evolution. Moreover, spectroscopy also indicates an unsually high surface lithium abundance. Taken together, all of these suggest an ingestion scenario for the formation of this rotational configuration, various models of which we examine in detail. Such ingestion events represent an alternative mechanism by which the envelopes of post-main-sequence stars may spin up, as seen in the \textit{Kepler} sample, in conjunction with various existing hypotheses for outward angular momentum transport.
 \keywords{Asteroseismology (73), Red giant stars (1372), Stellar oscillations (1617)}
 \end{abstract}
 
 # Introduction
 
-\remark{insert small talk here}
+Over the course of their first ascent up the red giant branch (RGB), the surface rotation of red giant stars is thought to slow down significantly, as result of angular momentum conservation. That a non-negligible fraction of the Kepler sample of red giants exhibit nontrivial photometric variability, attributable to surface features rotating into and out of view, indicates instead that these so-called rapidly-rotating red giants (RRRGs) must have passed through evolutionary scenarios quite unlike to the standard picture of single-star evolution. While some RRRGs have been found to be in binary systems (including with compact objects like black holes and neutron stars), the vast majority (85\%) do not possess detectable orbital companions.
+
+We report the concurrent detection of rotational signals in TIC 350842552, a RRRG, using asteroseismology (from the NASA TESS mission), photometry (from TESS and the ground-based ASAS-SN network), and with spectroscopy (various ground-based spectrographs).
 
 # Observational Characterisation
 
+Target was initially flagged as atypical in an ongoing search for unusual oscillation signatures corresponding to chemical peculiarities, in particular high lithium abundance.
+
 ## TESS Asteroseismology
 
+ Unlike other comparably evolved RGB solar-like oscillators whose p-modes exhibit a fairly well-defined morphological sequence,
+
 - $\epsilon_p$: @mosser_universal_2011, @yu_luminous_2020
+
+\begin{figure*}
+\centering
+\annotate{\includegraphics[width=.475\textwidth]{figures/echelle_id.pdf}}{\node[white] at (.15, .9){\textbf{(a)}};}
+\annotate{\includegraphics[width=.475\textwidth]{figures/model.png}}{\node[white] at (.15, .9){\textbf{(b)}};}
+\annotate{\includegraphics[width=.95\textwidth]{figures/samples.png}}{\node at (.95, .9){\textbf{(c)}};}
+\caption{Asteroseismic characterisation of Zvrk.}
+\end{figure*}
+
+## TESS Photometry
+
+The PDC-SAP lightcurves from which the 
 
 ## ASAS-SN Photometry
 
 ## Archival Spectroscopy
 
-- APOKASC: RV $\teff = 4478.47\ \mathrm{K}$, RV $\feh = -0.425\ \mathrm{dex}$, BUT ALSO $\teff = 4318.047 \pm 6.119856\ \mathrm{K}$, $\feh = -0.20632 \pm 0.00679635$ (clearly unphysically small errors).
+GALAH:
+APOGEE: $\teff = 4318.047 \pm 80\ \mathrm{K}$, $\mathrm{[M/H]} = -0.21 \pm 0.08$.
+
+Unfortunately, only one APOGEE visit, so unable to constrain companion from RVs
 
 # Stellar Modelling
 
 ## Stellar Properties and Structure
+
+From MESA models, $\mathrm{Ro} \sim 20$?? $\tau_\text{conv} \sim 5\ \mathrm{d}$. Order of magnitude higher than the Sun, maybe?
 
 ## Rotational Inversions
 
@@ -48,8 +71,6 @@ We report the discovery of an extremely fast-rotating red giant ($P_\text{rot} =
 # Conclusion
 
 \begin{acknowledgements}
-
-% recite now the magic spell, lest thou bring the wrath of the grant gods upon thy head
 
 This paper includes data collected by the TESS mission. Funding for the TESS mission is provided by the NASA's Science Mission Directorate.
 

@@ -25,21 +25,25 @@ We report the discovery of a rapidly-rotating red giant ($P_\text{rot} \sim 98\ 
 
 Over the course of their first ascent up the red giant branch (RGB), the surface rotation of red giant stars is thought to slow down significantly, as result of angular momentum conservation. That a non-negligible fraction of the Kepler sample of red giants exhibit nontrivial photometric variability, attributable to surface features rotating into and out of view, indicates instead that these so-called rapidly-rotating red giants (RRRGs) must have passed through evolutionary scenarios quite unlike to the standard picture of single-star evolution. While some RRRGs have been found to be in binary systems (including with compact objects like black holes and neutron stars), the vast majority (85\%) do not possess detectable orbital companions.
 
-We report the concurrent detection of rotational signals in TIC 350842552, a RRRG, using asteroseismology (from the NASA TESS mission), photometry (from TESS and the ground-based ASAS-SN network), and with spectroscopy (various ground-based spectrographs).
+We report the concurrent detection of rotational signals in TIC 350842552 (which we will refer to as "Zvrk" in the remainder of this work, for brevity), a RRRG, using asteroseismology (from the NASA TESS mission), photometry (from TESS and the ground-based ASAS-SN network), and with spectroscopy (various ground-based spectrographs).
 
 # Observational Characterisation
 
-Target was initially flagged as atypical in an ongoing search for unusual oscillation signatures corresponding to chemical peculiarities, in particular high lithium abundance.
+Zvrk was initially flagged for asteroseismic analysis as part of an ongoing search for unusual oscillation signatures corresponding to chemical peculiarities, in particular high lithium abundance. For this purpose, an overlapping sample of stars with both GALAH abundances, and TESS coverage in the Southern continuous viewing zone (CVZ), was constructed, and targets in this list were subjected to preliminary asteroseismic analysis, to constrain the global p-mode asteroseismic parameters $\Dnu$, $\numax$, and $\epsilon_p$. This was done using the 2D autocorrelation function procedure of @keaton?, applied to the publicly available presearch data conditioning simple aperture photometry (PDCSAP) lightcurves.
 
-## TESS Asteroseismology
+Morphologically, the double ridges on this frequency echelle diagram are evocative of those of other p-mode oscillators, as previously observed en masse with *Kepler* and TESS, and suggest identification as being the modes of even degree $\ell$, which are known to form double ridges of this form. The remainder of the oscillation power would, under this putative identification, be attributed to oscillations of dipole modes, which are known in other red giants to be disrupted by mode mixing with an interior g-mode cavity to produce gravitoacoustic mixed modes.
 
- Unlike other comparably evolved RGB solar-like oscillators whose p-modes exhibit a fairly well-defined morphological sequence,
+However, such an identification would be in significant tension with known properties of these red giants. In particular:
 
-- $\epsilon_p$: @mosser_universal_2011, @yu_luminous_2020
+- This would imply a p-mode phase offset of $\epsilon_p \sim 0.2$. This is in very significant tension with the value of $0.7$ implied by the Kepler sample [e.g. @mosser_universal_2011, @yu_luminous_2020].
+- At $\Dnu = 1.22\ \mathrm{\mu Hz}$, the period spacing associated with the interior g-mode cavity would be far too small to cause significant departures in the observed dipole modes from the simple p-mode asymptotic relation. 
+
+## Detailed Asteroseismology
+
 
 \begin{figure*}
 \centering
-\annotate{\includegraphics[width=.475\textwidth]{figures/echelle_id.pdf}}{\node[white] at (.15, .9){\textbf{(a)}};}
+\annotate{\includegraphics[width=.475\textwidth]{figures/echelle_id_2.pdf}}{\node[white] at (.15, .9){\textbf{(a)}};}
 \annotate{\includegraphics[width=.475\textwidth]{figures/model.png}}{\node[white] at (.15, .9){\textbf{(b)}};}
 \annotate{\includegraphics[width=.95\textwidth]{figures/samples.png}}{\node at (.95, .9){\textbf{(c)}};}
 \caption{Asteroseismic characterisation of Zvrk.}

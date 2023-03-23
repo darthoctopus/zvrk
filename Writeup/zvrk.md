@@ -64,6 +64,10 @@ APOGEE: $\teff = 4318.047 \pm 80\ \mathrm{K}$, $\mathrm{[M/H]} = -0.21 \pm 0.08$
 
 Unfortunately, only one APOGEE visit, so unable to constrain companion from RVs
 
+[C/N]= -0.083321
+
+
+
 Gaia DR3 Renormalised Unit Weight Error (RUWE) of 1.056, close to unity, indicates that an unresolved companion, sufficient to result in photocentre jitter, is unlikely to be present.
 
 # Stellar Modelling
@@ -84,9 +88,8 @@ This paper includes data collected by the TESS mission. Funding for the TESS mis
 
 This work has made use of data from the European Space Agency (ESA) mission {\it Gaia} (\url{https://www.cosmos.esa.int/gaia}), processed by the {\it Gaia} Data Processing and Analysis Consortium (DPAC, \url{https://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the {\it Gaia} Multilateral Agreement.
 
-JO, MH, and MS-F acknowledge support from NASA through the NASA Hubble Fellowship grant HST-HF2-51517.001 awarded by STScI. STScI is operated by the Association of Universities for Research in Astronomy, Incorporated, under NASA contract NAS5-26555. APS acknowledges partial support by the Thomas Jefferson
-Chair Endowment for Discovery and Space Exploration and
-partial support through the Ohio Eminent Scholar Endowment.
+JO, MH, and MS-F acknowledge support from NASA through the NASA Hubble Fellowship grant HST-HF2-51517.001 awarded by STScI. STScI is operated by the Association of Universities for Research in Astronomy, Incorporated, under NASA contract NAS5-26555.
+APS acknowledges partial support by the Thomas Jefferson Chair Endowment for Discovery and Space Exploration, and partial support through the Ohio Eminent Scholar Endowment.
 
 \software{NumPy \citep{numpy}, SciPy stack \citep{scipy}, AstroPy \citep{astropy:2013,astropy:2018}, \texttt{dynesty} \citep{dynesty}, Pandas \citep{pandas}, \mesa\ \citep{mesa_paper_1,mesa_paper_2,mesa_paper_3,mesa_paper_4,mesa_paper_5}, \gyre\ \citep{townsend_gyre_2013}.}
 \end{acknowledgements}

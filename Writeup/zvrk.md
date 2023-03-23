@@ -66,7 +66,12 @@ Unfortunately, only one APOGEE visit, so unable to constrain companion from RVs
 
 [C/N]= -0.083321
 
-
+\begin{figure}
+\centering
+\annotate{\includegraphics[width=.475\textwidth]{figures/CN.png}}{\node[fill=white,fill opacity=.5, text opacity=1] at (.25, .9){\textbf{(a)}}; \node[red] at (.5, .5) {\Huge PLACEHOLDER};}
+\annotate{\includegraphics[width=.475\textwidth]{figures/C13.png}}{\node[fill=white,fill opacity=.5, text opacity=1] at (.25, .9){\textbf{(b)}};\node[red] at (.5, .5) {\Huge PLACEHOLDER};}
+\caption{Spectroscopic abundance characterisation of Zvrk.}
+\end{figure}
 
 Gaia DR3 Renormalised Unit Weight Error (RUWE) of 1.056, close to unity, indicates that an unresolved companion, sufficient to result in photocentre jitter, is unlikely to be present.
 

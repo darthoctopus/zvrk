@@ -23,11 +23,11 @@ We report the discovery of a rapidly-rotating red giant ($P_\text{rot} \sim 98\ 
 
 # Introduction
 
-Single-star evolution predicts the development of radial differential rotation during a star's first ascent up the red giant branch, in the sense of there being a faster-rotating radiative core than convective envelope. While seismic rotational measurements with evolved stars indicate that subgiant convective envelopes rotate faster than strict angular momentum conservation would suggest, envelope rotation rates nonetheless are predicted to decrease as red giants expand, making them challenging to measure for more evolved red giants at higher luminosity. Indeed, many existing techniques for seismic rotation measurements in these evolved stars, which operationalise the phenomenology of the gravitoacoustic mixed modes exhibited by red giants, assume a priori that the rotation of the stellar envelope may be ignored. In the regime of (relatively) strong coupling between the interior g-mode cavity to the exterior p-mode cavity, this simplifying assumption has enabled the measurement en masse of core rotation rates in red giants of intermediate luminosity in the Kepler sample, at the expense of sacrificing information about the surface rotation of these stars.
+Single-star evolution predicts the development of radial differential rotation during a star's first ascent up the red giant branch, in the sense of there being a faster-rotating radiative core than convective envelope. While seismic rotational measurements with evolved stars indicate that subgiant convective envelopes rotate faster than strict angular momentum conservation would suggest, envelope rotation rates nonetheless are predicted to decrease as red giants expand, making them challenging to measure for more evolved red giants at higher luminosity. Indeed, many existing techniques for seismic rotation measurements in these evolved stars, which operationalise the phenomenology of the gravitoacoustic mixed modes exhibited by red giants, assume a priori that the rotation of the stellar envelope may be ignored. In the regime of (relatively) strong coupling between the interior g-mode cavity to the exterior p-mode cavity, this simplifying assumption has enabled the measurement of core rotation rates in red giants of intermediate luminosity in the Kepler sample en masse, at the expense of sacrificing information about the surface rotation of these stars.
 
-However, seismology aside, a small fraction of the Kepler red giant sample exhibit nontrivial photometric variability, attributable to surface features rotating into and out of view. Such high rotation rates are not generally compatible with standard descriptions of angular momentum transport constructed to describe less evolved stars, and indicate that these rapidly-rotating red giants (RRRGs) may have passed through evolutionary scenarios quite unlike to the standard picture of single-star evolution. While some RRRGs have been found to be in binary systems (including with compact objects like black holes and neutron stars), the vast majority (85\%) do not possess detectable orbital companions. The above-described methodological shortcomings have so far rendered these stars inaccessible to further asteroseismic characterisation in the regime of strongly mixed gravitoacoustic modes. However, the coupling between the interior g-mode and exterior p-mode cavities of first-ascent red giants decreases with evolution, so a priori, p-mode or p-dominated mixed mode asteroseismology may permit a better understanding of the rotational properties of higher-luminosity RRRGs, which are in any case mostly convective by spatial extent. On the other hand, traditional numerical methods for mixed-mode asteroseismology, and in particular those which relate mode frequencies to interior structure, are computationally very expensive to apply to highly luminous red giants.
+However, seismology aside, a small fraction of the Kepler red giant sample exhibit nontrivial photometric variability, attributable to surface features rotating into and out of view. Such high rotation rates are not generally compatible with standard descriptions of angular momentum transport constructed to describe less evolved stars, and indicate that these rapidly-rotating red giants (RRRGs) may have passed through evolutionary scenarios quite unlike to the standard picture of single-star evolution. While some RRRGs have been found to be in binary systems (including with compact objects like black holes and neutron stars), the vast majority (85\%) do not possess detectable orbital companions. The above-described methodological shortcomings have so far rendered these stars inaccessible to further asteroseismic characterisation in the regime of strongly mixed gravitoacoustic modes. However, the coupling between the interior g-mode and exterior p-mode cavities of first-ascent red giants decreases with evolution [e.g. @farnir_eggmimosa_2021;@jiang_evolution_2022;@ong_rotation_2], so a priori, p-mode or p-dominated mixed mode asteroseismology may permit a better understanding of the rotational properties of higher-luminosity RRRGs, which are in any case mostly convective by spatial extent. On the other hand, traditional numerical methods for mixed-mode asteroseismology, and in particular those which relate mode frequencies to interior structure, are computationally very expensive to apply to highly luminous red giants.
 
-We report the concurrent detection of rotational signals in TIC 350842552 (which we will refer to as "Zvrk" in the remainder of this work, for brevity), a RRRG, using asteroseismology (from the NASA TESS mission), photometry (from TESS and the ground-based ASAS-SN network), and with spectroscopy (various ground-based spectrographs). In particular, we bring to bear new analytic developments in the interpretation of p-mode oscillations in this red giant, which we find to be amenable to very similar analysis to that prosecuted for the Sun.
+We report the concurrent detection of rotational signals in TIC\ 350842552 (which we will refer to as "Zvrk" in the remainder of this work, for brevity), a RRRG, from asteroseismology (from the NASA TESS mission), direct photometry (both from TESS, and independently with the ground-based ASAS-SN network), and with spectroscopy (various ground-based spectrographs). In particular, we bring to bear new analytic developments in the interpretation of p-mode oscillations in this red giant, which we find to be amenable to very similar analysis to that prosecuted for the Sun.
 
 # Observational Characterisation
 
@@ -37,7 +37,7 @@ Morphologically, the double ridges on this frequency echelle diagram are evocati
 
 However, such an identification would be in significant tension with known properties of these red giants. In particular:
 
-- This would imply a p-mode phase offset of $\epsilon_p \sim 0.2$. This is in very significant tension with the value of $0.7$ implied by the Kepler sample [e.g. @mosser_universal_2011, @yu_luminous_2020].
+- This would imply a p-mode phase offset of $\epsilon_p \sim 0.2$. This is in very significant tension with the value of $0.7$ implied by the Kepler sample [e.g. @mosser_universal_2011;@yu_luminous_2020].
 - At $\Dnu = 1.22\ \mathrm{\mu Hz}$, the period spacing associated with the interior g-mode cavity would be far too small to cause significant departures in the observed dipole modes from the simple p-mode asymptotic relation. 
 
 ## Detailed Asteroseismology
@@ -65,13 +65,15 @@ APOGEE: $\teff = 4318.047 \pm 80\ \mathrm{K}$, $\mathrm{[M/H]} = -0.21 \pm 0.08$
 
 Unfortunately, only one APOGEE visit, so unable to constrain companion from RVs
 
-[C/N]= -0.083321
+$[\mathrm{C/N}]= -0.083321 \pm 0.06$
+
+$\left[\mathrm{^{12}C/^{13}C}\right]$ = $9.6 \pm 0.9$
 
 \begin{figure}
 \centering
 \annotate{\includegraphics[width=.475\textwidth]{figures/CN.png}}{\node[fill=white,fill opacity=.5, text opacity=1] at (.25, .9){\textbf{(a)}}; \node[red] at (.5, .5) {\Huge PLACEHOLDER};}
 \annotate{\includegraphics[width=.475\textwidth]{figures/C13.png}}{\node[fill=white,fill opacity=.5, text opacity=1] at (.25, .9){\textbf{(b)}};\node[red] at (.5, .5) {\Huge PLACEHOLDER};}
-\caption{Spectroscopic abundance characterisation of Zvrk.}
+\caption{Spectroscopic abundance characterisation of Zvrk. \textbf{(a)} $[\mathrm{C/N}]$ relative to observational sample with a metallicity cut. A well-defined observational sequence of red giants can be seen. At the notional value of $\log g$ implied by $\numax$ and $\teff$, Zvrk lies above this red-giant sequence. \textbf{(b)} $[\mathrm{^{12}C/^{13}C}]$ for the sample of \cite{hayes_bacchus_2022}.}
 \end{figure}
 
 Gaia DR3 Renormalised Unit Weight Error (RUWE) of 1.056, close to unity, indicates that an unresolved companion, sufficient to result in photocentre jitter, is unlikely to be present.
@@ -84,7 +86,7 @@ Direct method: $M = (1.28 \pm 0.28) M_\odot$, $R = (25.0 \pm 1.8) R_\odot$. The 
 
 Constraint | Value | Reference
 ----:+:-----:+:---:
-$T_\text{eff}$ / K | $4318 \pm 80$ | APOGEE
+$\teff$ / K | $4318 \pm 80$ | APOGEE
 $\mathrm{[M/H]}$ | $-0.21 \pm 0.08$ | APOGEE
 $L / L_\odot$ | $174 \pm 10$ | Gaia DR2
 $\Dnu/\mu\mathrm{Hz}$ | $1.21 \pm 0.01$ | This work

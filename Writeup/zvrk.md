@@ -33,7 +33,7 @@ We report the concurrent detection of rotational signals in TIC\ 350842552 (whic
 
 Zvrk was initially flagged for asteroseismic analysis as part of an ongoing search for unusual oscillation signatures corresponding to chemical peculiarities, in particular high lithium abundance. For this purpose, an overlapping sample of stars with both GALAH abundances, and TESS coverage in the Southern continuous viewing zone (CVZ), was constructed, and targets in this list were subjected to preliminary asteroseismic analysis, to constrain the global p-mode asteroseismic parameters $\Dnu$, $\numax$, and $\epsilon_p$. This was done using the 2D autocorrelation function procedure of @keaton?, applied to the publicly available presearch data conditioning simple aperture photometry (PDCSAP) lightcurves.
 
-Morphologically, the double ridges on this frequency echelle diagram are evocative of those of other p-mode oscillators, as previously observed en masse with *Kepler* and TESS, and suggest identification as being the modes of even degree $\ell$, which are known to form double ridges of this form. The remainder of the oscillation power would, under this putative identification, be attributed to oscillations of dipole modes, which are known in other red giants to be disrupted by mode mixing with an interior g-mode cavity to produce gravitoacoustic mixed modes.
+Morphologically, the double ridges on this frequency echelle diagram are evocative of those of other p-mode oscillators, as previously observed en masse with *Kepler* and TESS, and suggest identification as being modes of low, even degree, $\ell = 0, 2$, which are known to form double ridges of this kind. The remainder of the oscillation power would, under this putative identification, be attributed to oscillations of dipole modes, which are known in other red giants to be disrupted by mode mixing with an interior g-mode cavity to produce a complex forest of gravitoacoustic mixed modes.
 
 However, such an identification would be in significant tension with known properties of these red giants. In particular:
 
@@ -42,12 +42,14 @@ However, such an identification would be in significant tension with known prope
 
 ## Detailed Asteroseismology
 
+We show in \cref{fig:asteroseismology}
+
 \begin{figure*}
 \centering
-\annotate{\includegraphics[width=.475\textwidth]{figures/echelle_id_2.pdf}}{\node[white] at (.15, .9){\textbf{(a)}};}
-\annotate{\includegraphics[width=.475\textwidth]{figures/model.png}}{\node[white] at (.15, .9){\textbf{(b)}};}
-\annotate{\includegraphics[width=.95\textwidth]{figures/samples.png}}{\node at (.95, .9){\textbf{(c)}};}
-\caption{Asteroseismic characterisation of Zvrk.}
+\annotate{\includegraphics[width=.475\textwidth]{echelle_id_2.pdf}}{\node[white] at (.15, .9){\textbf{(a)}};}
+\annotate{\includegraphics[width=.475\textwidth]{model.png}}{\node[white] at (.15, .9){\textbf{(b)}};}
+\annotate{\includegraphics[width=.95\textwidth]{samples.png}}{\node at (.95, .9){\textbf{(c)}};}
+\caption{Asteroseismic characterisation of Zvrk.\label{fig:asteroseismology}}
 \end{figure*}
 
 ## ASAS-SN Photometry
@@ -71,8 +73,8 @@ $\left[\mathrm{^{12}C/^{13}C}\right]$ = $9.6 \pm 0.9$
 
 \begin{figure}
 \centering
-\annotate{\includegraphics[width=.475\textwidth]{figures/CN.png}}{\node[fill=white,fill opacity=.5, text opacity=1] at (.25, .9){\textbf{(a)}}; \node[red] at (.5, .5) {\Huge PLACEHOLDER};}
-\annotate{\includegraphics[width=.475\textwidth]{figures/C13.png}}{\node[fill=white,fill opacity=.5, text opacity=1] at (.25, .9){\textbf{(b)}};\node[red] at (.5, .5) {\Huge PLACEHOLDER};}
+\annotate{\includegraphics[width=.475\textwidth]{CN.png}}{\node[fill=white,fill opacity=.5, text opacity=1] at (.25, .9){\textbf{(a)}}; \node[red] at (.5, .5) {\Huge PLACEHOLDER};}
+\annotate{\includegraphics[width=.475\textwidth]{C13.png}}{\node[fill=white,fill opacity=.5, text opacity=1] at (.25, .9){\textbf{(b)}};\node[red] at (.5, .5) {\Huge PLACEHOLDER};}
 \caption{Spectroscopic abundance characterisation of Zvrk. \textbf{(a)} $[\mathrm{C/N}]$ relative to observational sample with a metallicity cut. A well-defined observational sequence of red giants can be seen. At the notional value of $\log g$ implied by $\numax$ and $\teff$, Zvrk lies above this red-giant sequence. \textbf{(b)} $[\mathrm{^{12}C/^{13}C}]$ for the sample of \cite{hayes_bacchus_2022}.}
 \end{figure}
 
@@ -102,11 +104,18 @@ $Y_0$ | $0.25 \pm 0.05$ | —
 $Z_0$ | $0.010 \pm 0.005$ | —
 Age/Gyr | $3.2 \pm 0.5$ | —
 $\mathrm{Ro}_\mathrm{CZ}$ | $0.26 \pm 0.03$ | $\mathrm{Ro}_\odot = 1.38$
-Table: Global properties returned from stellar modelling.\label{tab:t1}
+Table: Global properties returned from stellar modelling.\label{tab:t2}
 
 From optimisation, best-fitting mass of 1.25 $M_\odot$. Slightly overluminous if modelled without the luminosity constraint.
 
 ## Rotational Inversions
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=.475\textwidth]{shear.pdf}
+    \caption{Approximate characterisation of rotational shear in the JWKB approximation.}
+    \label{fig:jwkb}
+\end{figure}
 
 ## Magnetic activity
 
@@ -114,9 +123,7 @@ Magnetic activity is known to be generated by rotational shear, which can be cha
 
 LEOPARD: $f_\text{spot} = 0.02$, $X_\text{spot} = 0.8$ This yields a spot coverage fraction consistent with the observed $2\%$ photometric variability amplitude.
 
-# Discussion
-
-## Formation History
+# Discussion: Possible Formation Histories
 
 We identify three different classes of explanations for how Zvrk's rotational and chemical configuration came to be, which would roughly yield both a high rotation rate, and the observed enhanced lithium abundance:
 

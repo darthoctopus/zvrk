@@ -31,14 +31,14 @@ We report the concurrent detection of rotational signals in TIC\ 350842552 (whic
 
 # Observational Characterisation
 
-Zvrk was initially flagged for asteroseismic analysis as part of an ongoing search for unusual oscillation signatures corresponding to chemical peculiarities, in particular high lithium abundance. For this purpose, an overlapping sample of stars with both GALAH abundances, and TESS coverage in the Southern continuous viewing zone (CVZ), was constructed, and targets in this list were subjected to preliminary asteroseismic analysis, to constrain the global p-mode asteroseismic parameters $\Dnu$, $\numax$, and $\epsilon_p$. This was done using the 2D autocorrelation function procedure of @keaton?, applied to the publicly available presearch data conditioning simple aperture photometry (PDCSAP) lightcurves.
+Zvrk was initially flagged for asteroseismic analysis as part of an ongoing large-scale search for unusual oscillation signatures corresponding to chemical peculiarities, in particular high lithium abundance. For this purpose, an overlapping sample of stars with both GALAH abundances, and TESS coverage in the Southern continuous viewing zone (CVZ), was constructed (Montet et al., in prep). Targets in this list were subjected to preliminary asteroseismic analysis, to constrain the global p-mode asteroseismic parameters $\Dnu$, $\numax$, and $\epsilon_p$. This was done using the 2D autocorrelation function procedure of @keaton?, applied to the publicly available presearch data conditioning simple aperture photometry (PDCSAP) lightcurves.
 
 Morphologically, the double ridges on this frequency echelle diagram are evocative of those of other p-mode oscillators, as previously observed en masse with *Kepler* and TESS, and suggest identification as being modes of low, even degree, $\ell = 0, 2$, which are known to form double ridges of this kind. The remainder of the oscillation power would, under this putative identification, be attributed to oscillations of dipole modes, which are known in other red giants to be disrupted by mode mixing with an interior g-mode cavity to produce a complex forest of gravitoacoustic mixed modes.
 
 However, such an identification would be in significant tension with known properties of these red giants. In particular:
 
-- This would imply a p-mode phase offset of $\epsilon_p \sim 0.2$. This is in very significant tension with the value of $0.7$ implied by the Kepler sample [e.g. @mosser_universal_2011;@yu_luminous_2020].
-- At $\Dnu = 1.22\ \mathrm{\mu Hz}$, the period spacing associated with the interior g-mode cavity would be far too small to cause significant departures in the observed dipole modes from the simple p-mode asymptotic relation. 
+- This identification would imply a p-mode phase offset of $\epsilon_p \sim 0.2$. However, the value of $\epsilon_p$ in first-ascent red giants follows an extremely tight and robust relation with \Dnu, both in theoretical studies of stellar models [e.g. @white_calculating_2011;@ong_structural_2019], as well as in existing large-scale characterisation of the Kepler sample [e.g. @mosser_universal_2011;@yu_luminous_2020]. Thus, such a value of $\epsilon_p$ would be in very significant tension with the value of $0.7$ implied by the Kepler sample for red giants close to our nominal value of $\Dnu = 1.22\ \mathrm{\mu Hz}$.
+- Both stellar modelling and observational measurements of gravitoacoustic mixed modes in the Kepler sample also indicate that $\Delta\Pi_1$, the dipole-mode period spacing associated with the interior g-mode cavity, also follows a tight relation with \Dnu. At this value of \Dnu, $\Delta\Pi_1$ would also be far too small, and the mixed-mode coupling strength be too weak, to cause significant departures in the frequencies of the observed dipole modes from those of simple p-modes. 
 
 ## Detailed Asteroseismology
 
@@ -62,14 +62,16 @@ The PDC-SAP lightcurves from which the
 
 ## Spectroscopy
 
+Not present in the RRRG catalogue of @patton_spectroscopic_2023, which identifies rapid rotators based primarily on their being anomalously cool relative to the APOGEE DR16 catalogue.
+
 GALAH:
-APOGEE: $\teff = 4318.047 \pm 80\ \mathrm{K}$, $\mathrm{[M/H]} = -0.21 \pm 0.08$.
+APOGEE: $\teff = 4320 \pm 80\ \mathrm{K}$, $\mathrm{[M/H]} = -0.21 \pm 0.08$ dex.
 
 Unfortunately, only one APOGEE visit, so unable to constrain companion from RVs
 
-$[\mathrm{C/N}]= -0.083321 \pm 0.06$
+$[\mathrm{C/N}]= -0.08 \pm 0.06$ from nominal APOGEE DR17
 
-$\left[\mathrm{^{12}C/^{13}C}\right]$ = $9.6 \pm 0.9$
+$\left[\mathrm{^{12}C/^{13}C}\right]$ = $9.6 \pm 0.9$ from @hayes_bacchus_2022
 
 \begin{figure}
 \centering
@@ -88,7 +90,7 @@ Direct method: $M = (1.28 \pm 0.28) M_\odot$, $R = (25.0 \pm 1.8) R_\odot$. The 
 
 Constraint | Value | Reference
 ----:+:-----:+:---:
-$\teff$ / K | $4318 \pm 80$ | APOGEE
+$\teff$ / K | $4320 \pm 80$ | APOGEE
 $\mathrm{[M/H]}$ | $-0.21 \pm 0.08$ | APOGEE
 $L / L_\odot$ | $174 \pm 10$ | Gaia DR2
 $\Dnu/\mu\mathrm{Hz}$ | $1.21 \pm 0.01$ | This work
@@ -97,8 +99,8 @@ Table: Global properties adopted in stellar modelling.\label{tab:t1}
 
 Property | Inferred Value | Remarks
 ----:+:-----:+:---:
-$M/M_\odot$ | $1.23 \pm 0.05$ | —
-$R/R_\odot$ | $23.8 \pm 0.04$ | —
+$M/M_\odot$ | $1.20 \pm 0.05$ | —
+$R/R_\odot$ | $23.6 \pm 0.5$ | —
 $\amlt$ | $1.8 \pm 0.05$ | —
 $Y_0$ | $0.25 \pm 0.05$ | —
 $Z_0$ | $0.010 \pm 0.005$ | —

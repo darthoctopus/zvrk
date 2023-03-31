@@ -33,12 +33,13 @@ We report the concurrent detection of rotational signals in TIC\ 350842552 (whic
 
 Zvrk was initially flagged for asteroseismic analysis as part of an ongoing large-scale search for unusual oscillation signatures corresponding to chemical peculiarities, in particular high lithium abundance. For this purpose, an overlapping sample of stars with both GALAH abundances, and TESS coverage in the Southern continuous viewing zone (CVZ), was constructed (Montet et al., in prep). Targets in this list were subjected to preliminary asteroseismic analysis, to constrain the global p-mode asteroseismic parameters $\Dnu$, $\numax$, and $\epsilon_p$. This was done using the 2D autocorrelation function procedure of @keaton?, applied to the publicly available presearch data conditioning simple aperture photometry (PDCSAP) lightcurves.
 
-Morphologically, the double ridges on this frequency echelle diagram are evocative of those of other p-mode oscillators, as previously observed en masse with *Kepler* and TESS, and suggest identification as being modes of low, even degree, $\ell = 0, 2$, which are known to form double ridges of this kind. The remainder of the oscillation power would, under this putative identification, be attributed to oscillations of dipole modes, which are known in other red giants to be disrupted by mode mixing with an interior g-mode cavity to produce a complex forest of gravitoacoustic mixed modes.
+Morphologically, the double ridges on this frequency echelle diagram are evocative of those of other p-mode oscillators, as previously observed en masse with *Kepler* and TESS, and suggest identification as being modes of low, even degree, $\ell = 0, 2$, which are known to form double ridges of this kind. The remainder of the oscillation power would, under this putative identification, be attributed to oscillations of dipole modes, which are known in other red giants to be disrupted by mode mixing with an interior g-mode cavity to produce a complex forest of gravitoacoustic mixed modes. Visually, this morphology strongly resembles that seen in red clump stars, where the coupling between the interior g-mode and exterior p-mode cavities is strong.
 
-However, such an identification would be in significant tension with known properties of these red giants. In particular:
+However, such an identification would be in significant tension with known properties of stochastically-excited red giant oscillations. In particular:
 
+- Red clump stars are known to yield much higher values of both \Dnu\ and \numax\ than we have measured from Zvrk. Conversely, its \Dnu\ and \numax\ are too high, and thus it is not evolved enough, to be an asymptotic giant branch star. The measured values of these quantities instead strongly favour classification of Zvrk as a first-ascent red giant.
 - This identification would imply a p-mode phase offset of $\epsilon_p \sim 0.2$. However, the value of $\epsilon_p$ in first-ascent red giants follows an extremely tight and robust relation with \Dnu, both in theoretical studies of stellar models [e.g. @white_calculating_2011;@ong_structural_2019], as well as in existing large-scale characterisation of the Kepler sample [e.g. @mosser_universal_2011;@yu_luminous_2020]. Thus, such a value of $\epsilon_p$ would be in very significant tension with the value of $0.7$ implied by the Kepler sample for red giants close to our nominal value of $\Dnu = 1.22\ \mathrm{\mu Hz}$.
-- Both stellar modelling and observational measurements of gravitoacoustic mixed modes in the Kepler sample also indicate that $\Delta\Pi_1$, the dipole-mode period spacing associated with the interior g-mode cavity, also follows a tight relation with \Dnu. At this value of \Dnu, $\Delta\Pi_1$ would also be far too small, and the mixed-mode coupling strength be too weak, to cause significant departures in the frequencies of the observed dipole modes from those of simple p-modes. 
+- Both stellar modelling and observational measurements of gravitoacoustic mixed modes in the Kepler sample also indicate that $\Delta\Pi_1$, the dipole-mode period spacing associated with the interior g-mode cavity, also follows a tight relation with \Dnu for first-ascent red giants. At this value of \Dnu, $\Delta\Pi_1$ would also be far too small, and the mixed-mode coupling strength be too weak, to cause significant departures in the frequencies of the observed dipole modes from those of simple p-modes. 
 
 ## Detailed Asteroseismology
 
@@ -81,6 +82,8 @@ $\left[\mathrm{^{12}C/^{13}C}\right]$ = $9.6 \pm 0.9$ from @hayes_bacchus_2022
 \end{figure}
 
 Gaia DR3 Renormalised Unit Weight Error (RUWE) of 1.056, close to unity, indicates that an unresolved companion, sufficient to result in photocentre jitter, is unlikely to be present.
+
+No WISE infrared excess.
 
 # Analysis and Interpretation
 
@@ -136,6 +139,8 @@ We identify three different classes of explanations for how Zvrk's rotational an
 # Conclusion
 
 \begin{acknowledgements}
+
+We thank S. Basu, T. Bedding, and S. Hekker for constructive feedback on preliminary versions of this work.
 
 % magic incantation
 

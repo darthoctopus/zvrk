@@ -61,6 +61,8 @@ ASAS-SN V and g --- need a good description of Ben's custom aperture stuff
 
 The PDC-SAP lightcurves from which the 
 
+For comparison, $T_{crit} = 0.064\ \mathrm{d}$ --- subcritical rotation rate
+
 ## Spectroscopy
 
 Not present in the RRRG catalogue of @patton_spectroscopic_2023, which identifies rapid rotators based primarily on their being anomalously cool relative to the APOGEE DR16 catalogue.

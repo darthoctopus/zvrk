@@ -14,10 +14,10 @@ biblio-style: aasjournal
 ---
 
 \shorttitle{Gasing Pangkah}
-\title{TESS Observes a Rapidly-Rotating Red Giant}
+\title{TESS Observes a Rapidly-Rotating Red Giant. I: Asteroseismology and Preliminary Characterisation}
 \input{preamble}
 \begin{abstract}
-We report the discovery of a rapidly-rotating red giant ($P_\text{rot} \sim 98\ \mathrm{d}$) observed with TESS in its Southern Continuous Viewing Zone. The rotation rate of this red giant is independently verified by the use of p-mode asteroseismology, strong perodicity in TESS and ASAS-SN photometry, and multiple measurements of spectroscopic rotational broadening. A two-component fit to APOGEE spectra indicates a spot coverage fraction consistent with the amplitude of the photometric rotational signal; modulations in this amplitude over time suggest the rapid evolution of this spot morphology, and therefore enhanced magnetic activity. We further develop and deploy new asteroseismic techniques to characterise radial differential rotation in its convective envelope. In particular we find that the interior portions of the convective envelope rotate more slowly than the near-surface layers. This feature, in combination with such a high surface rotation rate, is categorically incompatible with even the most physically permissive models of angular-momentum transport in single-star evolution. Moreover, spectroscopic abundance estimates also indicate an unusually high surface lithium abundance. Taken together, all of these suggest an ingestion scenario for the formation of this rotational configuration, various models of which we examine in detail. Such ingestion events represent an alternative mechanism by which the envelopes of post-main-sequence stars may spin up, as seen in the \textit{Kepler} sample, in conjunction with various existing hypotheses for outward angular momentum transport.
+We report the discovery of a rapidly-rotating red giant ($P_\text{rot} \sim 98\ \mathrm{d}$) observed with TESS in its Southern Continuous Viewing Zone. The rotation rate of this red giant is independently verified by the use of p-mode asteroseismology, strong perodicity in TESS and ASAS-SN photometry, and multiple measurements of spectroscopic rotational broadening. A two-component fit to APOGEE spectra indicates a spot coverage fraction consistent with the amplitude of the photometric rotational signal; modulations in this amplitude over time suggest the rapid evolution of this spot morphology, and therefore enhanced magnetic activity. We further develop and deploy new asteroseismic techniques to characterise radial differential rotation in its convective envelope. In particular we find that the interior portions of the convective envelope rotate more slowly than the near-surface layers. This feature, in combination with such a high surface rotation rate, is categorically incompatible with even the most physically permissive models of angular-momentum transport in single-star evolution. Spectroscopic abundance estimates also indicate an unusually high surface lithium abundance, among other anomalies. Taken together, all of these suggest an ingestion scenario for the formation of this rotational configuration, various models of which we examine in detail. Such ingestion events represent an alternative mechanism by which the envelopes of post-main-sequence stars may spin up, as seen in the \textit{Kepler} sample, in conjunction with various existing hypotheses for outward angular momentum transport.
 \keywords{Asteroseismology (73), Red giant stars (1372), Stellar oscillations (1617)}
 \end{abstract}
 
@@ -108,7 +108,7 @@ $[\mathrm{C/N}]= -0.08 \pm 0.017 \text{(stat)} \pm 0.057 \text{(sys)}$ from nomi
 
 $\left[\mathrm{^{12}C/^{13}C}\right]$ = $9.6 \pm 0.88$ from @hayes_bacchus_2022 --- JAMIE'S VALUE NOT IN TABLE
 
-![APOGEE DR17 $[\mathrm{C/N}]$ of Zvrk relative to observational sample, with a metallicity cut of 0.1 dex around the nominal value for Zvrk, and restricting attention to only first-ascent red giant stars as identified by Hon et al (CITATION NEEDED). A well-defined observational sequence of red giants can be seen. Zvrk can be seen to lie above this red-giant sequence, given its seismic mass and relative abundances.\label{fig:cn}](CN.pdf)
+![APOGEE DR17 $[\mathrm{C/N}]$ of Zvrk relative to observational sample, with a metallicity cut of 0.1 dex around the nominal value for Zvrk, and restricting attention to only first-ascent red giant stars as identified by Hon et al \remarkJO{(CITATION NEEDED)}. A well-defined observational sequence of red giants can be seen. Zvrk can be seen to lie above this red-giant sequence, given its seismic mass and relative abundances.\label{fig:cn}](CN.pdf)
 
 <!--\begin{figure}
 \centering
@@ -133,21 +133,21 @@ $\teff$ / K | $4320 \pm 80$ | APOGEE
 $\mathrm{[M/H]}$ | $-0.21 \pm 0.08$ | APOGEE
 $L / L_\odot$ | $174 \pm 10$ | Gaia DR2
 $\Dnu/\mu\mathrm{Hz}$ | $1.21 \pm 0.01$ | This work
-$\numax/\mu\mathrm{Hz}$ | $7.3 \pm 0.5$ | This work
+$\numax/\mu\mathrm{Hz}$ | $7.5 \pm 0.3$ | This work
 Table: Global properties adopted in stellar modelling.\label{tab:t1}
 
-Property | Inferred Value | Solar-calibrated
+Quantity | Inferred Value | Remarks
 ---:+:---:+:---:
-$M/M_\odot$ | $1.20 \pm 0.05$ | —
-$R/R_\odot$ | $23.6 \pm 0.5$ | —
-$\amlt$ | $1.8 \pm 0.05$ | $\alpha_\odot = 1.824$
-$Y_0$ | $0.25 \pm 0.05$ | $Y_\odot = 0.268$
-$Z_0$ | $0.010 \pm 0.005$ | $Z_\odot = 0.018$
-Age/Gyr | $3.2 \pm 0.5$ | —
-$\mathrm{Ro}_\mathrm{CZ}$ | $0.26 \pm 0.03$ | $\mathrm{Ro}_\odot = 1.38$
+$M/M_\odot$ | $1.14^{+0.05}_{-0.03}$ | —
+$R/R_\odot$ | $23.5^{+0.4}_{-0.2}$ | —
+$\amlt$ | $1.89^{+0.12}_{-0.08}$ | $\alpha_\odot = 1.824$
+$Y_0$ | $0.273^{+0.03}_{-0.02}$ | $Y_\odot = 0.268$
+$Z_0$ | $0.010 \pm 0.001$ | $Z_\odot = 0.018$
+Age/Gyr | $5.4^{+1.0}_{-0.8}$ | —
+$\mathrm{Ro}_\mathrm{CZ}$ | $0.28$ (point estimate) | $\mathrm{Ro}_\odot = 1.38$
 Table: Global properties returned from stellar modelling. \label{tab:t2}
 
-From optimisation, best-fitting mass of 1.16 $M_\odot$. Slightly overluminous if modelled without the luminosity constraint.
+From optimisation, best-fitting mass of 1.18 $M_\odot$. Slightly overluminous.
 
 ## Rotational Inversions
 
@@ -178,7 +178,7 @@ We identify three different classes of explanations for how Zvrk's rotational an
 
 \begin{acknowledgements}
 
-We thank S. Basu, T. Bedding, and S. Hekker for constructive feedback on preliminary versions of this work.
+We thank S. Basu, T. Bedding, and S. Hekker for constructive feedback on preliminary versions of this work, and C. Hayes for clarifying remarks about systematic errors.
 
 % magic incantation
 
@@ -186,7 +186,7 @@ This paper includes data collected by the TESS mission. Funding for the TESS mis
 
 This work has made use of data from the European Space Agency (ESA) mission {\it Gaia} (\url{https://www.cosmos.esa.int/gaia}), processed by the {\it Gaia} Data Processing and Analysis Consortium (DPAC, \url{https://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the {\it Gaia} Multilateral Agreement.
 
-JMJO, MTYH, and MS-F acknowledge support from NASA through the NASA Hubble Fellowship grants HST-HF2-51517.001, HST-HF2-51459.001, and HST-HF2-51493.001-A, awarded by STScI. STScI is operated by the Association of Universities for Research in Astronomy, Incorporated, under NASA contract NAS5-26555.
+JMJO, MTYH, and MS-F acknowledge support from NASA through the NASA Hubble Fellowship grants HST-HF2-51517.001, HST-HF2-51459.001, and HST-HF2-51493.001-A, respectively, awarded by STScI. STScI is operated by the Association of Universities for Research in Astronomy, Incorporated, under NASA contract NAS5-26555.
 APS acknowledges partial support by the Thomas Jefferson Chair Endowment for Discovery and Space Exploration, and partial support through the Ohio Eminent Scholar Endowment.
 
 \software{NumPy \citep{numpy}, SciPy stack \citep{scipy}, AstroPy \citep{astropy:2013,astropy:2018}, \texttt{dynesty} \citep{dynesty}, Pandas \citep{pandas}, \mesa\ \citep{mesa_paper_1,mesa_paper_2,mesa_paper_3,mesa_paper_4,mesa_paper_5}, \gyre\ \citep{townsend_gyre_2013}.}

@@ -60,7 +60,7 @@ Since g-mode mixing is not a concern, we may directly repurpose existing techniq
 \end{equation}
 directly to the power spectrum. This model can be seen to contain an asteroseismic component, which is a sum of Lorentzians parameterised by the nonrotating frequencies $\nu_i$, the mode heights $H_i$, the inverse mode lifetimes $\Gamma_i$, the rotational multiplet splittings $\delta\nu_i$, as well as the inclination $\iota$ of the rotational axis (through the visibility ratios $r$ of each multiplet component). In addition to this, we choose to describe our background model with a combination of a single Harvey profile and a white-noise term. 
 
-We seek to infer posterior distributions of all of these parameters in a Bayesian sense, which necessitates the imposition of prior distributions. We place flat priors on each $\nu_i$ in windows $0.3\ \mu$Hz wide, centered on each of the manually identified values shown in \cref{fig:asteroseismology}a; a flat prior on $\mu = \cos \iota$ for isotropy; flat priors on the logarithms of the mode lifetimes, heights, and all parameters of our noise model; and flat priors on the widths of the rotational splittings. For our main analysis in this section we moreover pool the rotational splittings of the dipole and quadrupole modes separately, assigning one or the other to each mode depending on its degree $\ell_i$.
+We seek to infer posterior distributions of all of these parameters in a Bayesian sense, which necessitates the imposition of prior distributions. We place flat priors on each $\nu_i$ in windows $0.2\ \mu$Hz wide, centered on each of the manually identified values shown in \cref{fig:asteroseismology}a; a flat prior on $\mu = \cos \iota$ for isotropy; flat priors on the logarithms of the mode lifetimes, heights, and all parameters of our noise model; and flat priors on the widths of the rotational splittings. For our main analysis in this section we moreover pool the rotational splittings of the dipole and quadrupole modes separately, assigning one or the other to each nonradial mode depending on its degree $\ell_i$.
 
 Using this parameterisation, these priors, and the standard $\chi^2$-2-degree-of-freedom likelihood function, we use the nested-sampling Markov-Chain Monte-Carlo (MCMC) algorithm, as implemented in the `dynesty` python package, to infer the posterior distribution implied by the TESS data. In \cref{fig:asteroseismology}b, we show 100 draws from the posterior distribution overplotted over the underlying power spectrum, with different contributions to \cref{eq:model} indicated with different colours of curves. The average of these samples are shown with an RGB echelle power diagram in \cref{fig:asteroseismology}c, for easier graphical comparison with our mode identification.
 
@@ -153,7 +153,7 @@ From optimisation, best-fitting mass of 1.18 $M_\odot$. Slightly overluminous.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=.475\textwidth]{shear.pdf}
+    \includegraphics[width=.45\textwidth]{shear.pdf}
     \caption{Approximate characterisation of rotational shear in the JWKB approximation.}
     \label{fig:jwkb}
 \end{figure}

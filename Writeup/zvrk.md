@@ -13,8 +13,8 @@ bibliography: biblio.bib
 biblio-style: aasjournal
 ---
 
-\shorttitle{Gasing Pangkah}
-\title{TESS Observes a Rapidly-Rotating Red Giant. I: Asteroseismology and Preliminary Characterisation}
+\shorttitle{Gasing Pangkah I}
+\title{Gasing Pangkah I: Asteroseismology and Preliminary Characterisation \\ of a Rapidly-Rotating Red Giant in the TESS SCVZ}
 \input{preamble}
 \begin{abstract}
 We report the discovery of a rapidly-rotating red giant ($P_\text{rot} \sim 98\ \mathrm{d}$) observed with TESS in its Southern Continuous Viewing Zone. The rotation rate of this red giant is independently verified by the use of p-mode asteroseismology, strong perodicity in TESS and ASAS-SN photometry, and multiple measurements of spectroscopic rotational broadening. A two-component fit to APOGEE spectra indicates a spot coverage fraction consistent with the amplitude of the photometric rotational signal; modulations in this amplitude over time suggest the rapid evolution of this spot morphology, and therefore enhanced magnetic activity. We further develop and deploy new asteroseismic techniques to characterise radial differential rotation in its convective envelope. In particular we find that the interior portions of the convective envelope rotate more slowly than the near-surface layers. This feature, in combination with such a high surface rotation rate, is categorically incompatible with even the most physically permissive models of angular-momentum transport in single-star evolution. Spectroscopic abundance estimates also indicate an unusually high surface lithium abundance, among other anomalies. Taken together, all of these suggest an ingestion scenario for the formation of this rotational configuration, various models of which we examine in detail. Such ingestion events represent an alternative mechanism by which the envelopes of post-main-sequence stars may spin up, as seen in the \textit{Kepler} sample, in conjunction with various existing hypotheses for outward angular momentum transport.
@@ -151,12 +151,13 @@ From optimisation, best-fitting mass of 1.18 $M_\odot$. Slightly overluminous.
 
 ## Rotational Inversions
 
-\begin{figure}[htbp]
+\begin{figure*}[htbp]
     \centering
-    \includegraphics[width=.45\textwidth]{shear.pdf}
-    \caption{Approximate characterisation of rotational shear in the JWKB approximation.}
-    \label{fig:jwkb}
-\end{figure}
+    \annotate{\includegraphics[width=3in]{shear.pdf}}{\node at (.9,.2){\textbf{(a)}};}
+    \annotate{\includegraphics[width=3in]{raw_kernel.pdf}}{\node at (.9,.15){\textbf{(b)}};}
+    \caption{Asteroseismic characterisation of rotational shear. \textbf{(a)} Posterior distributions for differences between the pooled quadrupole and dipole rotational splitting. The upper panel shows the posterior distribution of the differences in estimated rotation rates, which are in turn the rotational splittings divided by effective sensitivity constants $\left<\beta_\ell\right> \sim 1$. The lower panel shows the posterior distribution of the acoustic radii of the centres of sensitivity associated with the underlying rotational kernels of each degree, considered separately. The two quantities are statistically independent. \textbf{(b)} Differential sensitivity kernels associated with distributions in (a). Associated with each pooled rotational splitting $\delta\nu_\ell$ is an effective rotational kernel $K_\ell$, which is a weighted average of the rotational kernels associated with each mode of that degree. Faint curves show samples from the posterior distribution, while the solid coloured curves show the posterior median effective kernel for each degree. The inner turning points at $\numax$ of the best fitting stellar model from our optimisation procedure are shown with the vertical dashed lines, while the centres of sensitivity for the median kernels are indicated with the vertical dotted lines. The ordering of their positions can be seen to reversed compared to the theoretical inner turning points.}
+    \label{fig:shear}
+\end{figure*}
 
 ## Magnetic activity
 
@@ -178,7 +179,7 @@ We identify three different classes of explanations for how Zvrk's rotational an
 
 \begin{acknowledgements}
 
-We thank S. Basu, T. Bedding, and S. Hekker for constructive feedback on preliminary versions of this work, and C. Hayes for clarifying remarks about systematic errors.
+We thank S. Basu, T. Bedding, and S. Hekker for constructive feedback on preliminary versions of this work, and C. Hayes and J. Hinkle for productive discussions.
 
 % magic incantation
 

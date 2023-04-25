@@ -35,14 +35,16 @@ We thus report the contemporaneous detection and characterisation of rotational 
 
 Zvrk was initially flagged for asteroseismic analysis as part of an ongoing large-scale search for unusual oscillation signatures corresponding to chemical peculiarities, in particular high lithium abundance. For this purpose, an overlapping sample of stars with both GALAH lithium abundance estimates, and TESS coverage in the Southern continuous viewing zone (CVZ), was constructed (Montet et al., in prep). Targets in this list were subjected to preliminary asteroseismic analysis, to constrain the global p-mode asteroseismic parameters $\Dnu$ and $\numax$. This was done using the 2D autocorrelation function procedure of @keaton?, applied to the SPOC light curves. For Zvrk in particular, this procedure yielded $\Dnu = (1.23 \pm 0.01)\ \mathrm{\mu Hz}; \numax = (7.5 \pm 0.3)\ \mathrm{\mu Hz}$.
 
+Among this sample, Zvrk stood out both because (unusually for a red giant) 2-minute short cadence light curves were available, allowing our analysis to be performed with respect to the publicly available presearch data conditioning simple aperture photometry (PDCSAP) lightcurves instead; and also because its power spectrum exhibited unusual features, which defeated preliminary attempts at p-mode identification. To illustrate the latter, we show in \cref{fig:echelle-bare} the echelle power diagram obtained using the 2DACF value of $\Dnu =  1.23\ \mu$Hz.
+
 ![Échelle power diagram of Zvrk from PDCSAP lightcurves, using a nominal value of $\Dnu = 1.23\ \mu$Hz. The white dashed rectangle shows a double-ridge feature which, naively applying the asymptotic relation \cref{eq:asymptotic}, one would expect to identify as being radial and quadrupole modes. Under this identification, the remaining peaks must be identified as dipole mixed modes, as they do not appear to obey the same asymptotic relation. \label{fig:echelle-bare}](echelle_bare.png)
 
-Among this sample, Zvrk stood out both because (unusually for a red giant) 2-minute short cadence light curves were available, allowing our analysis to be performed with respect to the publicly available presearch data conditioning simple aperture photometry (PDCSAP) lightcurves instead; and also because its power spectrum exhibited unusual features, which defeated preliminary attempts at p-mode identification. To illustrate this, we show in \cref{fig:echelle-bare} the echelle power diagram obtained using the 2DACF value of $\Dnu =  1.23\ \mu$Hz.
+## Detailed Asteroseismology
 
-Morphologically, the double ridges on this frequency echelle diagram are evocative of those of other p-mode oscillators, as previously observed en masse with *Kepler* and TESS, and suggest identification as being modes of low, even degree ($\ell = 0, 2$), which are known in p-mode oscillators to form double ridges of this kind as a result of the p-mode asymptotic eigenvalue equation
+To proceed with further asteroseismic analysis, identifications for the integer indices $n_p, \ell, m$ must be assigned to such mode frequencies as are derived from the observed power spectrum. Morphologically, the double ridges on its frequency echelle diagram, \cref{fig:echelle-bare}, are evocative of those of other p-mode oscillators, as previously observed en masse with *Kepler* and TESS, and suggest identification as being modes of low, even degree ($\ell = 0, 2$), which are known in p-mode oscillators to form double ridges of this kind as a result of the p-mode asymptotic eigenvalue equation
 \begin{equation}
 \nu_{n_p\ell} \sim \Dnu\left(n_p + {\ell \over 2} + \epsilon_p\right) + {\ell(\ell+1)}{\delta\nu_{02}\over 6} + \mathcal{O}(1/\nu),\label{eq:asymptotic}
-\end{equation} in the absence of rotation. The remainder of the oscillation power would, under this putative identification, be attributed to oscillations of dipole modes, which are known in other red giants to be disrupted by mode mixing with an interior g-mode cavity, producing a complex forest of gravitoacoustic mixed modes. Visually, this morphology strongly resembles that seen in core-helium-burning stars, where the coupling between the interior g-mode and exterior p-mode cavities is known to be strong. Indeed, this is the mode identification also arrived at by the use of existing "data-driven" automated methods, trained on the Kepler sample of oscillating red giants.
+\end{equation} in the absence of rotation. Here $\Delta\nu$ and $\delta\nu_{02}$ are the large and small frequency separations from the standard phenomenological description of p-mode asteroseismology, and $\epsilon_p$ is a slowly-varying phase function. The remainder of the oscillation power would, under this putative identification, be attributed to oscillations of dipole modes, which are known in other red giants to be disrupted by mode mixing with an interior g-mode cavity, producing a complex forest of gravitoacoustic mixed modes. Visually, this morphology strongly resembles that seen in core-helium-burning stars, where the coupling between the interior g-mode and exterior p-mode cavities is known to be strong. Indeed, this is the mode identification also arrived at by the use of existing "data-driven" automated methods, trained on the Kepler sample of oscillating red giants [e.g. PBJam: @pbjam].
 
 However, such an identification would be in significant tension with other known properties of stochastically-excited red giant oscillations. In particular:
 
@@ -50,21 +52,19 @@ However, such an identification would be in significant tension with other known
 - This identification would imply a p-mode phase offset of $\epsilon_p \sim 0.2$. However, the value of $\epsilon_p$ in first-ascent red giants follows an extremely tight and robust relation with \Dnu, both in theoretical studies of stellar models [e.g. @white_calculating_2011;@ong_structural_2019], as well as in existing large-scale characterisation of the Kepler sample [e.g. @mosser_universal_2011;@yu_luminous_2020]. Thus, such a value of $\epsilon_p$ would be in very significant tension with the value of $0.7$ implied by the Kepler sample for red giants close to our nominal value of $\Dnu = 1.23\ \mathrm{\mu Hz}$.
 - Both single-star stellar modelling [e.g. @deheuvels_seismic_2022] and observational measurements [e.g. @mosser_mixed_2014] of gravitoacoustic mixed modes in the Kepler sample also indicate that $\Delta\Pi_1$, the dipole-mode period spacing associated with the interior g-mode cavity, lies in a narrow band of allowed values with \Dnu\ for first-ascent red giants. At this value of \Dnu, $\Delta\Pi_1$ would also be far too small, and the mixed-mode coupling strength be too weak, to cause significant departures in the frequencies of the observed dipole modes from those of simple p-modes.
 
-## Detailed Asteroseismology
-
 We show in \cref{fig:asteroseismology}a a proposed mode identification taking into account all of the above constraints from the Kepler field. By necessity, our radial modes are anchored by $\epsilon_p$ measurements from the Kepler field.  To illustrate this, we show the average value of this quantity for all stars within $0.5\ \mu$Hz of $\Dnu$ to Zvrk in the catalogue of @yu_luminous_2020, and their standard deviation, using the white dashed line and red shaded interval, respectively.
 
 In the presence of rotation, each mode at degree $\ell$ and radial order $n_p$ splits into a $(2\ell+1)$-tuplet of peaks in the power spectrum, with the distribution of observed power between peaks being determined by the inclination of the stellar rotational axis [@gizon_inclination_2003]. Rather than being modes of even degree, we instead identify the double ridge as being rotationally-split doublets of dipole ($\ell = 1$)  modes, viewed close to equator-on. In such an equator-on configuration, a mode of degree $\ell$ yields an $(\ell+1)$-tuplet; our identification of the quadrupole modes must then be constrained by having to explain the remaining peaks using rotationally-split triplets. While our putative identification of the quadrupole modes is unfortunate from the perspective of fitting the rotational splittings (as the quadrupole-mode triplets straddle both the dipole and radial modes), this identification of the quadrupole modes is required for general consistency with the values of $r_{02}$ typically returned from stellar models with comparable $\Dnu$ [e.g. @white_calculating_2011]. Moreover, in keeping with the star's evolved state, all of these modes are proposed to be essentially decoupled from the interior g-mode cavity.
 
-Since g-mode mixing is not a concern, we may directly repurpose existing techniques for the derivation of p-mode frequencies from power spectra --- peakbagging --- to this star. For this purpose, we fit an ansatz model in the form
+Since g-mode mixing is not an observational concern, we may directly repurpose existing techniques for the derivation of p-mode frequencies from power spectra --- peakbagging --- to this star. For this purpose, we fit an ansatz model in the form
 \begin{equation}
-    f(\nu) = \sum_i \sum_{m=-{\ell_i}}^{\ell_i}{H_i r(m, \ell_i, \iota) \over 1 + (\nu_i + m \delta\nu_i - \nu)^2/\Gamma_i^2} + \mathrm{BG}(\nu)\label{eq:model}
+    f(\nu) = \sum_i \sum_{m=-{\ell_i}}^{\ell_i}{H_i r(m, \ell_i, i_\star) \over 1 + (\nu_i + m \delta\nu_i - \nu)^2/\Gamma_i^2} + \mathrm{BG}(\nu)\label{eq:model}
 \end{equation}
-directly to the power spectrum. The asteroseismic component of this power spectral model can be seen to be a sum of Lorentzians parameterised by the nonrotating frequencies $\nu_i$, the mode heights $H_i$, the inverse mode lifetimes $\Gamma_i$, the rotational multiplet splittings $\delta\nu_i$, as well as the inclination $\iota$ of the rotational axis (through the visibility ratios $r$ of each multiplet component). In addition to this, we choose to describe our background model with a combination of a single Harvey profile and a white-noise term. 
+directly to the power spectrum. The asteroseismic component of this power spectral model can be seen to be a sum of Lorentzians parameterised by the nonrotating frequencies $\nu_i$, the mode heights $H_i$, the inverse mode lifetimes $\Gamma_i$, the rotational multiplet splittings $\delta\nu_i$, as well as the inclination $i_\star$ of the rotational axis (through the visibility ratios $r$ of each multiplet component). In addition to this, we choose to describe our background model with a combination of a single Harvey profile and a white-noise term. 
 
-We seek to infer posterior distributions of all of these parameters in a Bayesian sense, which necessitates the imposition of prior distributions. We place flat priors on each $\nu_i$ in windows $0.2\ \mu$Hz wide, centered on each of the manually identified values shown in \cref{fig:asteroseismology}a; a flat prior on $\mu = \cos \iota$ for isotropy; flat priors on the logarithms of the mode lifetimes, heights, and all parameters of our noise model; and flat priors on the widths of the rotational splittings. For our main analysis in this section we moreover pool the rotational splittings of the dipole and quadrupole modes separately, assigning one or the other to each nonradial mode depending on its degree $\ell_i$.
+We seek to infer posterior distributions of all of these parameters in a Bayesian sense, which necessitates the imposition of prior distributions. We place flat priors on each $\nu_i$ in windows $0.2\ \mu$Hz wide, centered on each of the manually identified values shown in \cref{fig:asteroseismology}a; a flat prior on $\mu = \cos i_\star$ for isotropy; flat priors on the logarithms of the mode lifetimes, heights, and all parameters of our noise model; and flat priors on the widths of the rotational splittings. For our main analysis in this section we moreover pool the rotational splittings of the dipole and quadrupole modes separately, assigning one or the other to each nonradial mode depending on its degree $\ell_i$. Moreover, we performed this exercise with and without pooling of the linewidths $\Gamma$. However, we found that, when linewidths were fitted on a per-mode basis, 
 
-Using this parameterisation, these priors, and the standard $\chi^2$-2-degree-of-freedom likelihood function, we use the nested-sampling Markov-Chain Monte-Carlo (MCMC) algorithm, as implemented in the `dynesty` python package, to infer the posterior distribution implied by the TESS data. In \cref{fig:asteroseismology}b, we show 100 draws from the posterior distribution overplotted over the underlying power spectrum, with different contributions to \cref{eq:model} indicated with different colours of curves. The average of these samples are shown with an RGB echelle power diagram in \cref{fig:asteroseismology}c, for easier graphical comparison with our mode identification.
+Using this parameterisation, these priors, and the standard $\chi^2$-2-degree-of-freedom likelihood function, we use the nested-sampling Markov-Chain Monte-Carlo (MCMC) algorithm, as implemented in the `dynesty` python package, to infer the posterior distribution implied by the TESS data. In \cref{fig:asteroseismology}b, we show 100 draws from the posterior distribution overplotted over the underlying power spectrum, with different contributions to \cref{eq:model} indicated with different colours of curves. The averages of these samples are shown with an RGB echelle power diagram in \cref{fig:asteroseismology}c, for easier graphical comparison with our mode identification.
 
 \begin{figure*}
 \centering
@@ -74,6 +74,15 @@ Using this parameterisation, these priors, and the standard $\chi^2$-2-degree-of
 \caption{Asteroseismic characterisation of Zvrk. \textbf{(a)}: \'Echelle power diagram showing putative mode identification, manually constructed from naive peakfinding. The red shaded region indicates the allowable region for radial modes as implied by $\epsilon_p$ measurements from the Kepler field. \textbf{(b)}: Samples from the joint posterior distribution for all parameters describing our model of the power spectrum (semitransparent curves, \cref{eq:model}; different colors show portions of the power spectrum attributed to modes of different degrees), overplotted against the raw power spectrum (filled circles joined with lines), and compared with a smoothed power spectrum (black line, corresponding to a Gaussian kernel of equal width to the resolution of the power spectrum, $xx\ \mu$Hz). \textbf{(c)}: RGB colour-channel \'echelle power diagram showing same samples from posterior distribution. The different colour channels show power attributed to modes of different degree: red for $\ell = 0$, green for $\ell = 1$, and blue for $\ell = 2$. Our original manual (not fitted) mode identification is overplotted for comparison.\label{fig:asteroseismology}}
 \end{figure*}
 
+\begin{figure*}[tb]
+    \centering
+    \includegraphics[width=\textwidth]{shared.png}
+    \caption{Posterior distributions for pooled mode properties returned from peakbagging procedure.}
+    \label{fig:shared}
+\end{figure*}
+
+The model power spectra shown in \cref{fig:asteroseismology} can be seen to exhibit quite large rotational splitting consistently with our initial mode identification. We examine this more quantitatively in \cref{fig:shared}, where we show the joint posterior distributions for all pooled seismic quantities, as well as the parameters of our combined red- and white-noise background model.
+
 \begin{figure*}
 \centering
 \annotate{\includegraphics[width=.95\textwidth]{tess-lc.pdf}}{\node at (.95, .9){\textbf{(a)}};}
@@ -81,19 +90,17 @@ Using this parameterisation, these priors, and the standard $\chi^2$-2-degree-of
 \caption{Photometric characterisation of Zvrk.\label{fig:photometry}}
 \end{figure*}
 
-## TESS Aperture Photometry
+## TESS and ASAS-SN Photometry
 
-\label{sec:tess}
+\label{sec:photometry}
 
-The short-cadence PDC-SAP lightcurves from which our asteroseismic analysis above is derived have been aggressively detrended to eliminate long-term temporal variability.
+In addition to asteroseismology, we should in principle also be able to derive estimates of an overall surface rotation rate from photometry, assuming that Zvrk exhibits spot-modulation rotational variability of a similar kind to that previously observed in Kepler red giants. However, the short-cadence PDC-SAP lightcurves from which our asteroseismic analysis above is derived have been aggressively detrended to eliminate long-term temporal variability. As a result of this detrending, rotational periods spanning multiple 27-day sectors may not be reliably determined.
+
+Therefore, rather than rely on this existing data product, we instead construct our own custom aperture-photometry light curves, correcting for TESS instrumental systematics by way of a rudimentary 
+
+To confirm that these variations are not introduced by other latent, unaccounted TESS instrumental systematics, or artificially introduced by this choice of detrending procdeure, we also examine Zvrk through independent ground-based photometry. Since Zvrk is fairly bright ($M_V = 10.24$), this photometry had to be performed with custom apertures \remark{need a good description of Ben's custom aperture stuff}. ASAS-SN V and g
 
 For comparison, $T_\text{crit} = 0.064\ \mathrm{d}$ --- subcritical rotation rate
-
-## ASAS-SN Photometry
-
-\label{sec:asas-sn}
-
-To confirm that these variations are not introduced by other latent, unaccounted TESS instrumental systematics, we also examine Zvrk through ground-based photometry. ASAS-SN V and g --- need a good description of Ben's custom aperture stuff
 
 ## Spectroscopy
 
@@ -174,7 +181,7 @@ Roughly speaking, the solar Rossby number is known to fluctuate between 1/2 and 
 We identify three different classes of explanations for how Zvrk's rotational and chemical configuration came to be, which would roughly yield both a high rotation rate, and the observed enhanced lithium abundance:
 
 (I)  Mass transfer from a hitherto undetected stellar companion would yield enhanced lithium at Zvrk's surface. In this scenario, its high rate of rotation could be attributed to either direct deposition of angular momentum from the accreted material, or tidal spin-up as a result of binary interactions.
-(II)  Alternatively, both the enhanced lithium abundance and high rate of rotation could be attributed to Zvrk having engulfed a formerly orbiting companion, with both matter and angular momentum being directly deposited into its envelope, and being redistributed over the course of several mixing timescales.
+(II)  Alternatively, both the enhanced lithium abundance and high rate of rotation could be attributed to Zvrk having engulfed a formerly orbiting companion [e.g. @stephan_eating_2020;@oconnor_giant_2023], with both matter and angular momentum being directly deposited into its envelope, and being redistributed over the course of several mixing timescales.
 (III)  Finally, for the sake of argument, Zvrk could represent significant departures from the existing theory of single-star evolution. To match the chemical enhancements and fast rotation rate, its evolution would necessitate an efficiency of chemical mixing and angular momentum transport far in excess of that currently assumed of red giants.
 
 # Conclusion

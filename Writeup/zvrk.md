@@ -108,7 +108,6 @@ Not present in the RRRG catalogue of @patton_spectroscopic_2023, which identifie
 
 To these, we apply the so-called "direct method", inverting the usual scaling relations [including a structural correction factor via the $f_{\Dnu}$ prescription of @sharma_stellar_2016] to obtain that $M = (1.181 \pm 0.15) M_\odot$, $R = (23.7 \pm 1.1) R_\odot$.
 
-GALAH:
 APOGEE: $\teff = 4320 \pm 80\ \mathrm{K}$, $\mathrm{[M/H]} = -0.21 \pm 0.08$ dex.
 
 Unfortunately, only one APOGEE visit, so unable to constrain companion from RVs
@@ -129,6 +128,8 @@ $\left[\mathrm{^{12}C/^{13}C}\right]$ = $9.6 \pm 0.88$ from @hayes_bacchus_2022 
 Gaia DR3 Renormalised Unit Weight Error (RUWE) of 1.056, close to unity, indicates that an unresolved companion, sufficient to result in photocentre jitter, is unlikely to be present.
 
 No WISE infrared excess.
+
+A(Li) = 3.36 dex
 
 # Analysis and Interpretation
 
@@ -176,6 +177,8 @@ Roughly speaking, the solar Rossby number is known to fluctuate between 1/2 and 
 
 ![Candidate flare identified in short-cadence PDCSAP data.](marginal.pdf)
 
+GALEX photon events reported from this pointing
+
 # Discussion: Possible Formation Histories
 
 We identify three different classes of explanations for how Zvrk's rotational and chemical configuration came to be, which would roughly yield both a high rotation rate, and the observed enhanced lithium abundance:
@@ -183,6 +186,8 @@ We identify three different classes of explanations for how Zvrk's rotational an
 (I)  Mass transfer from a hitherto undetected stellar companion would yield enhanced lithium at Zvrk's surface. In this scenario, its high rate of rotation could be attributed to either direct deposition of angular momentum from the accreted material, or tidal spin-up as a result of binary interactions.
 (II)  Alternatively, both the enhanced lithium abundance and high rate of rotation could be attributed to Zvrk having engulfed a formerly orbiting companion [e.g. @stephan_eating_2020;@oconnor_giant_2023], with both matter and angular momentum being directly deposited into its envelope, and being redistributed over the course of several mixing timescales.
 (III)  Finally, for the sake of argument, Zvrk could represent significant departures from the existing theory of single-star evolution. To match the chemical enhancements and fast rotation rate, its evolution would necessitate an efficiency of chemical mixing and angular momentum transport far in excess of that currently assumed of red giants.
+
+Given present angular momentum content, lower limit of 11 MJup for eccentric orbit and 16 MJup for circular orbit. Absolute upper limit of 80 MJup if accreted at MS radius. Even this highly massive engulfment mass would yield an enhancement in lithium of at most 2.24 dex, which is still more than an order of magnitude less than that observed here.
 
 # Conclusion
 

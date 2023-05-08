@@ -179,7 +179,9 @@ Roughly speaking, the solar Rossby number is known to fluctuate between 1/2 and 
 
 GALEX photon events reported from this pointing
 
-# Discussion: Possible Formation Histories
+# Discussion
+
+## Interpretation and Possible Formation Histories
 
 We identify three different classes of explanations for how Zvrk's rotational and chemical configuration came to be, which would roughly yield both a high rotation rate, and the observed enhanced lithium abundance:
 
@@ -188,6 +190,8 @@ We identify three different classes of explanations for how Zvrk's rotational an
 (III)  Finally, for the sake of argument, Zvrk could represent significant departures from the existing theory of single-star evolution. To match the chemical enhancements and fast rotation rate, its evolution would necessitate an efficiency of chemical mixing and angular momentum transport far in excess of that currently assumed of red giants.
 
 Given present angular momentum content, lower limit of 11 MJup for eccentric orbit and 16 MJup for circular orbit. Absolute upper limit of 80 MJup if accreted at MS radius. Even this highly massive engulfment mass would yield an enhancement in lithium of at most 2.24 dex, which is still more than an order of magnitude less than that observed here.
+
+## 
 
 # Conclusion
 

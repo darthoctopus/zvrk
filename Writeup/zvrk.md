@@ -155,6 +155,8 @@ From optimisation, best-fitting mass of 1.18 $M_\odot$. Slightly overluminous.
 
 ## Rotational Inversions
 
+$\pi/\gamma$-mode isolation prescription of @ong_semianalytic_2020. For each degree, every draw from the posterior distribution relates the pooled rotational splittings to the underlying per-mode rotational splittings as a weighted average. Such a weighted average is in turn related to the radial dependence of the rotational frequency $\Omega$ through an effective averaging kernel, which is constructed out of the per-mode averaging kernels through a weighted average with the same coefficients. Thus, every draw from the posterior distribution yields a draw from a distribution over averaging kernels for dipole and quadrupole modes considered separately.
+
 \begin{figure*}[htbp]
     \centering
     \annotate{\includegraphics[width=3in]{shear.pdf}}{\node at (.9,.2){\textbf{(a)}};}
@@ -214,6 +216,8 @@ JMJO, MTYH, and MS-F acknowledge support from NASA through the NASA Hubble Fello
 APS acknowledges partial support by the Thomas Jefferson Chair Endowment for Discovery and Space Exploration, and partial support through the Ohio Eminent Scholar Endowment.
 
 \software{NumPy \citep{numpy}, SciPy stack \citep{scipy}, AstroPy \citep{astropy:2013,astropy:2018}, \texttt{dynesty} \citep{dynesty}, Pandas \citep{pandas}, \mesa\ \citep{mesa_paper_1,mesa_paper_2,mesa_paper_3,mesa_paper_4,mesa_paper_5}, \gyre\ \citep{townsend_gyre_2013}.}
+
+\facilities{TESS, ASAS-SN, APOGEE, GALAH, WISE, GALEX}
 \end{acknowledgements}
 
 \appendix

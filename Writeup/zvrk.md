@@ -87,6 +87,8 @@ The fitted model power spectra shown in \cref{fig:asteroseismology} can be seen 
 \centering
 \annotate{\includegraphics[width=.95\textwidth]{tess-lc.pdf}}{\node at (.95, .9){\textbf{(a)}};}
 \annotate{\includegraphics[width=.95\textwidth]{asas-sn-lc.pdf}}{\node at (.95, .9){\textbf{(b)}};}
+\annotate{\includegraphics[width=.63\textwidth]{wavelet.pdf}}{\node[color=white] at (.95, .9){\textbf{(c)}};}
+\annotate{\includegraphics[width=.27\textwidth]{ls-all.pdf}}{\node at (.85, .9){\textbf{(d)}};}
 \caption{Photometric characterisation of Zvrk.\label{fig:photometry}}
 \end{figure*}
 

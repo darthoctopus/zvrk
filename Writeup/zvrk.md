@@ -182,8 +182,8 @@ $\pi$-mode isolation prescription of @ong_semianalytic_2020. For each degree, ev
 
 \begin{figure*}[htbp]
     \centering
-    \annotate{\includegraphics[width=.8\textwidth]{RLS_corner.pdf}}{\node[below,left] at (1, .85){\includegraphics[width=.35\textwidth]{RLS.pdf}};
-    \node at (.1, .95){\textbf{(a)}}; \node at (.95, .95){\textbf{(b)}};}
+    \annotate{\includegraphics[width=.85\textwidth]{RLS_corner.pdf}}{\node[below,left] at (1, .85){\includegraphics[width=.45\textwidth]{RLS.pdf}};
+    \node at (.1, .97){\textbf{(a)}}; \node at (.95, .97){\textbf{(b)}};}
     \caption{Regularised constraints on rotational shear.}
     \label{fig:rls}
 \end{figure*}

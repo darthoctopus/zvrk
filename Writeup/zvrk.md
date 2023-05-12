@@ -87,7 +87,13 @@ The fitted model power spectra shown in \cref{fig:asteroseismology} can be seen 
 \centering
 \annotate{\includegraphics[width=.95\textwidth]{tess-lc.pdf}}{\node at (.95, .9){\textbf{(a)}};}
 \annotate{\includegraphics[width=.95\textwidth]{ls-all.pdf}}{\node at (.95, .9){\textbf{(b)}};}
-\annotate{\includegraphics[width=.95\textwidth]{wavelet.pdf}}{\node[color=white] at (.95, .9){\textbf{(c)}};}
+\annotate{\includegraphics[width=.95\textwidth]{wavelet.pdf}}{
+\node at (.95, 1){\textbf{(c)}};
+\draw[blue, <->, inner sep=1](.0615, 1) -- (.525, 1) node[midway, label=below:{\tiny ASAS-SN V}]{};
+\draw[red, <->, inner sep=1](.507, 1.05) -- (.613, 1.05) node[midway, label=below:{\tiny TESS Cycle 1}]{};
+\draw[red, <->, inner sep=1](.71, 1.05) -- (.816, 1.05) node[midway, label=below:{\tiny TESS Cycle 3}]{};
+\draw[ForestGreen, <->, inner sep=1](.42, 1.1) -- (.988, 1.1) node[midway, label=below:{\tiny ASAS-SN g}]{};
+}
 \caption{Photometric characterisation of Zvrk. \textbf{(a)} Stitched TESS aperture photometry (blue), shown over data from ASAS-SN in V-band (orange) and g-band (gray). The date of the APOGEE visit is shown with the vertical dashed line. \textbf{(b)} Lomb-Scargle power spectral densities from different TESS CVZ cycles and ASAS-SN bandpasses, normalised to give unity at their maximum values. A combined power spectral density incorporating all data sets (having applied offsets shown in panel a) is also shown with the red curve. From the most prominent peak of this combined power spectrum we infer a characteristic period of 98 days. \textbf{(c)} Color-separated frequency-time power diagram, with the intensity at each pixel showing the Lomb-Scargle-wavelet-transform power associated with a given time and oscillation period. Different colour channels correspond to different instruments, with TESS shown in red, ASAS-SN g in green, and ASAS-SN V in blue. A nominal oscillation period of 98 days, from our global Lomb-Scargle analysis, is marked out with the horizontal dashed line. \label{fig:photometry}}
 \end{figure*}
 

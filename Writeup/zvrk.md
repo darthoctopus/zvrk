@@ -168,6 +168,19 @@ From optimisation, best-fitting mass of 1.18 $M_\odot$. Slightly overluminous.
 
 ## Radial Differential Rotation
 
+$\pi$-mode isolation prescription of @ong_semianalytic_2020. 
+
+```{=latex}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=.435\textwidth]{r_n6_l1.pdf}
+    \includegraphics[width=.435\textwidth]{t_n6_l1.pdf}
+    \includegraphics[width=.435\textwidth]{t_n6_l2.pdf}
+    \caption{Caption here}
+    \label{fig:kernels}
+\end{figure}
+```
+
 \cref{fig:shear}
 
 \begin{figure*}[htbp]
@@ -178,15 +191,15 @@ From optimisation, best-fitting mass of 1.18 $M_\odot$. Slightly overluminous.
     \label{fig:shear}
 \end{figure*}
 
-$\pi$-mode isolation prescription of @ong_semianalytic_2020. For each degree, every draw from the posterior distribution relates the pooled rotational splittings to the underlying per-mode rotational splittings as a weighted average. Such a weighted average is in turn related to the radial dependence of the rotational frequency $\Omega$ through an effective averaging kernel, which is constructed out of the per-mode averaging kernels through a weighted average with the same coefficients. Thus, every draw from the posterior distribution yields a draw from a distribution over averaging kernels for dipole and quadrupole modes considered separately.
+For each degree, every draw from the posterior distribution relates the pooled rotational splittings to the underlying per-mode rotational splittings as a weighted average. Such a weighted average is in turn related to the radial dependence of the rotational frequency $\Omega$ through an effective averaging kernel, which is constructed out of the per-mode averaging kernels through a weighted average with the same coefficients. Thus, every draw from the posterior distribution yields a draw from a distribution over averaging kernels for dipole and quadrupole modes considered separately.
 
 \begin{figure*}[htbp]
     \centering
     \annotate{\includegraphics[width=.85\textwidth]{RLS_corner.pdf}}{
-    \node[below,left] at (1.06, .955){\includegraphics[width=.37\textwidth]{RLS.pdf}};
+    \node[below,left] at (.85, .93){\includegraphics[width=.37\textwidth]{RLS.pdf}};
     \node[below,left] at (1.06, .595){\includegraphics[width=.37\textwidth]{RLS_surf.pdf}};
     \node at (.1, .97){\textbf{(a)}};
-    \node at (1, 1.055){\textbf{(b)}};
+    \node at (.8, 1.03){\textbf{(b)}};
     \node at (1, .695){\textbf{(c)}};}
     \caption{Regularised constraints on rotational shear.}
     \label{fig:rls}

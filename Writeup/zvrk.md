@@ -117,13 +117,13 @@ The prominence of this photometric rotational signal, as well as to some extent 
 
 ## Spectroscopy
 
-Our initial selection of Zvrk was on the basis of a measurement of A(Li) = 3.36 dex --- almost meteoritic!
+Our initial selection of Zvrk was on the basis of a measurement of A(Li) = 3.36 dex --- almost meteoritic! \remark{MARC: PLEASE PROVIDE MORE DESCRIPTION OF LITHIUM MEASUREMENTS HERE}
 
 In addition to the asteroseismic measurements that we have presented above, spectroscopic measurements of e.g. the stellar metallicity and effective temperature are also necessary as inputs into stellar modelling for more precise constraints on stellar properties. Such measurements for Zvrk already exist in the APOGEE DR17 catalogue (under 2MASS ID 05592585-5911542), with an effective temperature of $\teff = 4320 \pm 80\ \mathrm{K}$, and a metallicity of $\mathrm{[M/H]} = -0.21 \pm 0.08$ dex. Using this value of the effective temperature, in conjunction with the solar-calibrated scaling relation $\numax \sim g / \teff$, gives us $\log g_\text{seis} = 1.76 \pm 0.03$, which is significantly lower than the APOGEE DR17 value of $2.11$.  In principle, as is often done in other works combining asteroseismology with spectroscopy, we may employ our asteroseismic measurement of $\log g$ as a direct constraint on the surface gravity, and iterate between fitting for the remaining quantities with it held fixed, and refining asteroseismic $\log g$, until the fitted values converge. However, this iterative procedure is typically performed with far more precise constraints on $\numax$ than we have available here. Conversely, using our asteroseismic surface gravity here does not significantly modify the fitted temperature and metallicity. We therefore adopt the nominal APOGEE values for $\teff$ and metallicity, and their uncertainties, in our subsequent analysis. With these values of $\log g$, $\teff$, and the metallicity, we may then estimate a spectroscopic rotational broadening $V \sin i$ through the differential-broadening technique also used in @tayar_spinning_2022; we obtain that $V \sin i = 10.1 \pm 0.7 \mathrm{km s^{-1}}$.
 
 Given the global asteroseismic properties $\Dnu$ and $\numax$, we apply the so-called "direct method", inverting their usual scaling relations [and including a structural correction factor $f_{\Dnu} = 0.97$ via the prescription of @sharma_stellar_2016] to obtain that $M = (1.181 \pm 0.15) M_\odot$, $R = (23.7 \pm 1.1) R_\odot$. This seismic mass estimate permits us to compare the chemical composition of Zvrk's convective envelope, and in particular its carbon-to-nitrogen enrichment $[\mathrm{C/N}]= -0.08 \pm 0.017 \text{(stat)} \pm 0.057 \text{(sys)}$ from the APOGEE DR17 catalogue, with the mass-enrichment sequence of the APOKASC3 subsample of solar-like oscillators (Pinnsonneault et al., in prep.) in the same catalogue. We show this comparison in \cref{fig:cn}, restricting this comparison to only first-ascent red giants, and to stars with with metallicities within 0.1 dex of Zvrk's. Since the sample is instrumentally and methodologically homogenous, it suffices for us to compare Zvrk against this reference population on only the basis of its statistical uncertainty. Moreover, for an apples-to-apples comparison, we use the seismic stellar mass estimated from the direct method, rather than from more detailed modelling against individual mode frequencies (which we describe below), despite the latter being more precise.
 
-$\left[\mathrm{^{12}C/^{13}C}\right]$ = $9.6 \pm 0.88$ from @hayes_bacchus_2022 --- JAMIE'S VALUE NOT IN TABLE
+\remark{$\left[\mathrm{^{12}C/^{13}C}\right]$ = $9.6 \pm 0.88$ from \cite{hayes_bacchus_2022} --- JAMIE'S VALUE NOT IN TABLE}
 
 ![APOGEE DR17 $[\mathrm{C/N}]$ of Zvrk relative to APOKASC3 observational sample, with a metallicity cut of 0.1 dex around the nominal value for Zvrk, and restricting attention to only first-ascent red giant stars as identified by Hon et al \remarkJO{(CITATION NEEDED)}. A well-defined mass-enrichment sequence can be seen. Zvrk can be seen to lie above this enrichment sequence, given its seismic mass and relative abundances. Note that while the scaling-relation mass is used here for an apples-to-apples comparison, the seismic mass from individual mode frequencies is constrained far more precisely than depicted here.\label{fig:cn}](CN.pdf)
 
@@ -139,6 +139,8 @@ Unfortunately, only one APOGEE visit to Zvrk was performed (MJD 58886 = BTJD 188
 # Analysis and Interpretation
 
 ## Stellar Properties and Structure
+
+\label{sec:opt}
 
 The uncertainties on the quantities derived from the direct method are large, both owing to the fact that $\numax$ is difficult to measure for evolved stars with comparatively few visible modes, as well as owing to the fact that the scaling relations themselves may not be reliable at advanced stages of evolution. However, these are still helpful in bounding the parameter space for further analysis.
 
@@ -180,8 +182,12 @@ $\pi$-mode isolation prescription of @ong_semianalytic_2020. For each degree, ev
 
 \begin{figure*}[htbp]
     \centering
-    \annotate{\includegraphics[width=.85\textwidth]{RLS_corner.pdf}}{\node[below,left] at (1, .85){\includegraphics[width=.45\textwidth]{RLS.pdf}};
-    \node at (.1, .97){\textbf{(a)}}; \node at (.95, .97){\textbf{(b)}};}
+    \annotate{\includegraphics[width=.85\textwidth]{RLS_corner.pdf}}{
+    \node[below,left] at (1.06, .955){\includegraphics[width=.37\textwidth]{RLS.pdf}};
+    \node[below,left] at (1.06, .595){\includegraphics[width=.37\textwidth]{RLS_surf.pdf}};
+    \node at (.1, .97){\textbf{(a)}};
+    \node at (1, 1.055){\textbf{(b)}};
+    \node at (1, .695){\textbf{(c)}};}
     \caption{Regularised constraints on rotational shear.}
     \label{fig:rls}
 \end{figure*}
@@ -196,7 +202,7 @@ Roughly speaking, the solar Rossby number is known to fluctuate between 1/2 and 
 
 ![Candidate flare identified in short-cadence PDCSAP data. \label{fig:flare}](marginal.pdf)
 
-GALEX photon events reported from this pointing
+GALEX photon events reported from this pointing, but only NUV
 
 # Discussion
 
@@ -216,7 +222,9 @@ Given present angular momentum content, lower limit of 11 MJup for eccentric orb
 
 While rapid for a red giant, Zvrk's surface rotational period remains far slower than its breakup rotational period, which we estimate to be around $T_\text{crit} = 12.5\ \mathrm{d}$ for a star of its mass and radius. However, both its rotational period and this critical rotation rate would have changed significantly over the course of its evolution up the red giant branch. In particular, if we are to interpret the apparent photometric variability as spot modulations, the same magnetic field that drives this spot activity ought also to be responsible for magnetic rotational braking. In the absence of further deviations from single-star evolution, we therefore would expect Zvrk to have been rotating more quickly earlier on the red giant branch. While the breakup rotation rate, which scales as $R^{-3/2}$, should also have been faster at earlier times,
 
-We show in \cref{fig:braking} different predictions and retrodictions for Zvrk's rotational evolution, based on different possible scenarios for such magnetic braking along the evolutionary track producing our best-fitting model from our optimisation exercise. Solutions are tuned to yield a rotational period of 100 d at the best-fitting stellar model. We show with the dashed line an unphysical, counterfactual scenario with no magnetic braking. Under this scenario, Zvrk must have been rotating at more than half the breakup rotation rate on the main sequence.
+We show in \cref{fig:braking}a different predictions and retrodictions for Zvrk's rotational evolution, based on different possible scenarios for such magnetic braking along the evolutionary track producing our best-fitting model in the optimisation exercise of \autoref{sec:opt}. Solutions are tuned to yield a rotational period of 100 d at the best-fitting stellar model, indicated with the vertical dotted line; we plot the surface rotation rate $\Omega$ as a fraction of the breakup rotation rate $\Omega_\text{crit}$. We show with the dashed curve an unphysical, counterfactual scenario with no magnetic braking. Under this scenario, Zvrk must have been rotating at more than half the breakup rotation rate on the main sequence. Such a high rotation rate would, in an actual star, almost surely induce magnetic braking. In turn, the action of any magnetic braking whatsoever would require Zvrk to initially have been rotating still faster, in order to match its present observed rotational period on the red giant branch. 
+
+In \cref{fig:braking}a, we also consider retrodictions generated using the magnetic braking prescription of @matt_magnetic_2012, where the rate of angular momentum loss, $\dot{J}$, scales with either $\Omega$ or $\Omega^3$, depending on whether or not the inverse Rossby number exceeds a saturation threshhold (with saturation achieved when $\Omega \tau_\text{cz} > \omega_\text{crit} \tau_{\text{cz},\odot}$). For this exercise, we adopt a standard value of $\omega_\text{crit} = \Omega_\odot/10$, and a normalisation constant for the angular momentum loss rate of $f_k = 9.37$, calibrated to produce the solar equatorial rotation rate of 25.4 d for our solar-calibrated MESA model with a disk rotation period of 8 d and a disk-locking timescale of 1 Myr. This setup is generally in keeping with previous uses of this angular-momentum-loss prescription.
 
 \begin{figure}[htbp]
     \annotate{\includegraphics[width=.45\textwidth]{braking.pdf}}{\node at (.22, .22){\textbf{(a)}};}

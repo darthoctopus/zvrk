@@ -1,0 +1,16 @@
+*** run_star_extras.f	2019-10-02 11:33:18.874091399 -0400
+--- run_star_extras.f.bak	2019-10-02 11:32:39.340397277 -0400
+***************
+*** 85,95 ****
+           else ! it is a restart
+              call unpack_extra_info(s)
+           end if
+- 
+-          ! This goes in extras_startup
+-          if (s% x_ctrl(1) > 0) then
+-                  s% max_age = s% star_age + s% x_ctrl(1)
+-          end if
+        end function extras_startup
+        
+  
+--- 85,90 ----

@@ -1,0 +1,73 @@
+&star_job
+      
+      kappa_file_prefix = 'gs98'
+      change_lnPgas_flag = .true.
+      new_lnPgas_flag = .true.
+      show_log_description_at_start = .false.
+      write_profile_when_terminate = .false.
+      pgstar_flag = .false.
+
+      ! relax_to_this_tau_factor = 1d-10
+      ! relax_tau_factor = .true.
+      
+/ ! end of star_job namelist
+
+
+&controls
+      
+      mixing_length_alpha = 1.6901027      
+      Zbase = 0.018
+      use_Type2_opacities = .false.
+      use_zbase_for_type1_blend = .false.
+      cubic_interpolation_in_Z = .true.
+
+      atm_option = 'T_tau'
+      atm_T_tau_relation = 'Eddington'
+
+      ! Energy conservation as of r11701
+      use_dedt_form_of_energy_eqn = .true.
+      use_gold_tolerances = .true.
+      
+      write_pulse_data_with_profile = .true.
+      pulse_data_format = 'GYRE'
+      add_atmosphere_to_pulse_data = .false.
+      add_center_point_to_pulse_data = .true.
+      keep_surface_point_for_pulse_data = .true.
+      add_double_points_to_pulse_data = .true. ! GYRE can handle this now
+      num_cells_for_smooth_brunt_B = 0
+      max_age = 13.8e9
+
+      profile_interval = -1
+      photo_interval = -1
+      max_num_profile_models = -1
+      terminal_interval = -99
+
+      ! mesh fineness
+
+      mesh_delta_coeff = 0.5d0
+      mesh_delta_coeff_for_highT = 1.5d0
+
+      use_other_diffusion_factor = .true.
+      diffusion_min_dq_at_surface = 1d-4
+
+      overshoot_mass_full_on = 1.06
+      overshoot_mass_full_off = 1.02
+
+      overshoot_scheme = 'step'
+      overshoot_zone_type = 'any'
+      overshoot_zone_loc = 'core'
+      overshoot_bdy_loc = 'top'
+
+      overshoot_f = 0.001
+      overshoot_f0 = 0.0005
+      overshoot_alpha = 1
+
+      nu_max_sun = 3090
+
+/ ! end of controls namelist
+
+
+&pgstar
+
+/ ! end of pgstar namelist
+

@@ -1,0 +1,194 @@
+*** run_star_extras.f	2019-10-02 10:48:20.757875601 -0400
+--- HR.f	2019-10-02 10:47:33.987448000 -0400
+***************
+*** 31,36 ****
+--- 31,38 ----
+        
+        ! these routines are called by the standard run_star check_model
+        contains
++ 
++       ! Custom variables for HR Diagram morphology
+        
+        subroutine extras_controls(id, ierr)
+           integer, intent(in) :: id
+***************
+*** 104,109 ****
+--- 106,116 ----
+           integer, intent(in) :: id, id_extra
+           integer :: ierr
+           type (star_info), pointer :: s
++ 
++          ! This goes in extras_check_model, for stopping at base of RGB
++          ! real(dp) :: d_log_L_dT, d_log_L_dT_cutoff, d_log_L_dT_tol
++          ! real(dp) :: log_L, log_L_old, log_Teff, log_Teff_old
++ 
+           ierr = 0
+           call star_ptr(id, s, ierr)
+           if (ierr /= 0) return
+***************
+*** 115,120 ****
+--- 122,157 ----
+              return
+           end if
+  
++          log_L = safe_log10_cr(s% L_phot)
++          log_L_old = safe_log10_cr(s% L_phot_old)
++          log_Teff = safe_log10_cr(s% Teff)
++          log_Teff_old = safe_log10_cr(s% Teff_old)
++          
++          d_log_L_dT = (log_L - log_L_old) / (log_Teff - log_Teff_old)
++          
++          d_log_L_dT_cutoff = s% x_ctrl(1)
++          
++          if (d_log_L_dT_cutoff > -1d99) then
++              d_log_L_dT_tol = s% x_ctrl(2)
++          
++              if (d_log_L_dT < d_log_L_dT_cutoff - d_log_L_dT_tol) then
++                  extras_check_model = keep_going
++                  ! write(*, *) 'd_log_L_dT too low, keep going'
++              end if
++              if (d_log_L_dT > d_log_L_dT_cutoff + d_log_L_dT_tol) then
++                  extras_check_model = retry
++                  s% dt = s% dt / 10
++                  write(*, *) 'd_log_L_dT exceeds limit, backing up'
++              end if
++              if (d_log_L_dT >= d_log_L_dT_cutoff - d_log_L_dT_tol .and. &
++                  d_log_L_dT <= d_log_L_dT_cutoff + d_log_L_dT_tol) then
++                  extras_check_model = terminate
++                  write(*, *) 'd_log_L_dT Bullseye!'
++              end if
++          end if
++          
++           d_log_L_prev = s% log_L
++           d_log_T_prev = s% log_Teff
+  
+           ! if you want to check multiple conditions, it can be useful
+           ! to set a different termination code depending on which
+***************
+*** 136,142 ****
+           ierr = 0
+           call star_ptr(id, s, ierr)
+           if (ierr /= 0) return
+!          how_many_extra_history_columns = 0
+        end function how_many_extra_history_columns
+        
+        
+--- 173,179 ----
+           ierr = 0
+           call star_ptr(id, s, ierr)
+           if (ierr /= 0) return
+!          how_many_extra_history_columns = 2
+        end function how_many_extra_history_columns
+        
+        
+***************
+*** 144,149 ****
+--- 181,190 ----
+           integer, intent(in) :: id, id_extra, n
+           character (len=maxlen_history_column_name) :: names(n)
+           real(dp) :: vals(n)
++ 
++          real(dp) :: d_log_L_dT, d_log_L_dT_cutoff, d_log_L_dT_tol
++          real(dp) :: log_L, log_L_old, log_Teff, log_Teff_old
++ 
+           integer, intent(out) :: ierr
+           type (star_info), pointer :: s
+           ierr = 0
+***************
+*** 154,159 ****
+--- 195,213 ----
+           ! the history_columns.list is only for the built-in log column options.
+           ! it must not include the new column names you are adding here.
+           
++          log_L = safe_log10_cr(s% L_phot)
++          log_L_old = safe_log10_cr(s% L_phot_old)
++          log_Teff = safe_log10_cr(s% Teff)
++          log_Teff_old = safe_log10_cr(s% Teff_old)
++ 
++          d_log_L_dT = (log_L - log_L_old) / (log_Teff - log_Teff_old)
++ 
++          names(1) = "d_log_L_dT"
++          vals(1) = d_log_L_dT
++ 
++          names(2) = "phase_of_evolution"
++          vals(2) = s% phase_of_evolution
++ 
+  
+        end subroutine data_for_extra_history_columns
+  
+***************
+*** 252,257 ****
+--- 306,314 ----
+           integer, intent(in) :: id, id_extra
+           integer :: ierr
+           type (star_info), pointer :: s
++ 
++          real(dp) :: d_log_L_dT, log_L, log_L_old, log_Teff, log_Teff_old
++ 
+           ierr = 0
+           call star_ptr(id, s, ierr)
+           if (ierr /= 0) return
+***************
+*** 263,268 ****
+--- 320,380 ----
+           ! to update the star log,
+              ! s% need_to_update_history_now = .true.
+  
++          ! This goes in extras_finish_step
++          log_L = safe_log10_cr(s% L_phot)
++          log_L_old = safe_log10_cr(s% L_phot_old)
++          log_Teff = safe_log10_cr(s% Teff)
++          log_Teff_old = safe_log10_cr(s% Teff_old)
++          
++          d_log_L_dT = (log_L - log_L_old) / (log_Teff - log_Teff_old)
++ 
++          if (s% phase_of_evolution > 0) then
++          ! leave my pre-MS alone pls
++            if (s% x_ctrl(1) > -1d99 .and. d_log_L_dT > s% x_ctrl(1) &
++                .and. log_Teff > 3.675 .and. log_Teff < 3.74 &
++                .and. s% phase_of_evolution > 2) then
++                extras_finish_step = terminate
++                write(*,*) "stopping: d_log_L_dT > x_ctrl(1)"
++            end if
++            
++            if (s% x_ctrl(3) > -1d99 .and. s% delta_Pg > 0 &
++                .and. s% delta_Pg < s% x_ctrl(3)) then
++                extras_finish_step = terminate
++                write(*,*) "stopping: delta_Pg < x_ctrl(3)"
++            end if
++            
++            if (s% x_logical_ctrl(1) .and. log_Teff > log_Teff_old) then
++                extras_finish_step = terminate
++                write(*,*) "stopping: log_Teff increased and x_logical_ctrl(1)"
++            end if
++            
++            ! set x_integer_ctrl(1) = 4 to stop when the He flash begins
++            ! set x_integer_ctrl(1) = 6 to stop when He is burning
++            if (s% x_integer_ctrl(1) > -1 .and. &
++                    s% phase_of_evolution >= s% x_integer_ctrl(1)) then
++                extras_finish_step = terminate
++                write(*,*) "stopping: phase_of_evolution >= x_integer_ctrl(1)"
++            end if
++          end if 
++ 
++          !if (s% phase_of_evolution .ge. 5 .and. modulo(s% model_number, 10) .eq. 0) then
++ 
++          !    ! Guarantee that I will get at least some HB models/
++          !    ! It seems like phase == 6 is being skipped.
++ 
++          !    s% need_to_update_history_now = .true.
++          !    s% need_to_save_profiles_now = .true.
++ 
++          !end if
++          ! phase_starting = 0
++          ! phase_early_main_seq = 1
++          ! phase_mid_main_seq = 2
++          ! phase_wait_for_he = 3
++          ! phase_he_ignition_over = 4
++          ! phase_he_igniting = 5
++          ! phase_helium_burning = 6
++          ! phase_carbon_burning = 7
++ 
+           ! see extras_check_model for information about custom termination codes
+           ! by default, indicate where (in the code) MESA terminated
+           if (extras_finish_step == terminate) s% termination_code = t_extras_finish_step

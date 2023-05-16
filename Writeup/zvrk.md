@@ -358,7 +358,7 @@ As for Zvrk itself, much remains about it to be observationally determined. Betw
 
 \begin{acknowledgements}
 
-We thank S. Basu, T. Bedding, and S. Hekker for constructive feedback on preliminary versions of this work, and C. Hayes and J. Hinkle for productive discussions.
+We thank S. Basu, T. Bedding, and S. Hekker for constructive feedback on preliminary versions of this work, and C. Hayes and J. Hinkle for productive discussions. The Jupyter notebooks and MESA inlist files used for this work, and the source of this paper itself, can be found on a GitHub repository at <link to be made public upon acceptance>.
 
 % magic incantation
 

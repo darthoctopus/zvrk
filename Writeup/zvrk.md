@@ -296,11 +296,17 @@ We can also explore alternative solutions to this issue by further regularising 
 
 Under this more restrictive scenario, the inferred conditional posterior distribution on $\Omega_\text{in}$ can now be seen to very strongly favour differential rotation in the sense of $\Omega$ increasing outwards. This can also be seen when we examine the implied conditional distribution over the rotational profiles themselves, shown in \cref{fig:rls}c, where sampled profiles which increase outwards are shown in orange, and those which do not are shown in gray: the latter can be seen to be exceedingly rare. However, we see also that the imposition of this hard prior on  $\Omega_\text{out}$ also requires $t_\text{shear}$ to be situated much farther away from the surface, as can be seen from the strong peak in its marginal distribution in \cref{fig:rls}a, at roughly $t/T \sim 0.1$ (i.e. $r/R \sim 0.3$ in our best-fitting stellar structure), as opposed to being near the surface as we originally posited. This does not, however, contraindicate the existence of such a near-surface shear layer, as we have little a priori justification for adopting such a $\delta$-function prior on $\Omega_\text{out}$ in the first place.
 
-As such, as far as radial differential rotation is concerned, we may conclude from the available data only that (1) rotational shear is most likely present in Zvrk's convective envelope, and is significant, but (2) both senses of bulk rotational shear are permitted by such constraints as we are able to produce. (3) In both cases, however, there must exist some location in Zvrk such that the local rotational gradient is in the sense of $\Omega$ increasing outwards. If the bulk shear is such that $\Omega$ decreases outwards, then a secondary, very thin, shear layer must exist near Zvrk's surface to produce consistency with the observed photometric rotation rate. If the bulk shear is such that $\Omega$ increases outwards, this shear layer must be situated close to the interior. We show a summary of our constraints on Zvrk's rotational configuration in \cref{fig:rotsummary}.
+As such, as far as radial differential rotation is concerned, we may conclude from the available data only that (1) rotational shear is most likely present in Zvrk's convective envelope, and is significant, but (2) both senses of bulk rotational shear are permitted by such constraints as we are able to produce. (3) In both cases, however, there must exist some location in Zvrk such that the local rotational gradient is in the sense of $\Omega$ increasing outwards. If the bulk shear is such that $\Omega$ decreases outwards, then a secondary, very thin, shear layer must exist near Zvrk's surface to produce consistency with the observed photometric rotation rate. If the bulk shear is such that $\Omega$ increases outwards, this shear layer must be situated close to the interior. 
+
+# Discussion
+
+## Rotation
+
+We show a summary of our consolidated constraints on Zvrk's rotational configuration in \cref{fig:rotsummary}.
 
 ![Summary of various rotational measurements. Median rotational profiles from both of our regularised exercises in \cref{fig:rls} are shown with the solid lines, and their credible regions with the filled areas. The rotation rates from the pooled localisation kernels, and their localisation widths, are indicated with the two coloured data points. Our two estimates of the surface rotation rate (from photometry, and by combining spectroscopic $V\sin i$ with asteroseismic inclination and a radius from stellar modelling) are indicated with the gray data points.\label{fig:rotsummary}](rot_summary.pdf)
 
-# Discussion
+## Engulfment Mass Constraints
 
 We identify three different classes of explanations for how Zvrk's rotational and chemical configuration came to be, which would roughly yield both a high rotation rate, and the observed enhanced lithium abundance:
 
@@ -309,8 +315,6 @@ We identify three different classes of explanations for how Zvrk's rotational an
 (III)  Finally, for the sake of argument, Zvrk could represent significant departures from the existing theory of single-star evolution. To match the chemical enhancements and fast rotation rate, its evolution would necessitate an efficiency of chemical mixing and angular momentum transport far in excess of that currently assumed of red giants.
 
 No WISE infrared excess.
-
-## Engulfment Mass Constraints
 
 Given present angular momentum content, lower limit of 11 MJup for eccentric orbit and 16 MJup for circular orbit. Absolute upper limit of 80 MJup if accreted at MS radius. Even this highly massive engulfment mass would yield an enhancement in lithium of at most 2.24 dex, which is still more than an order of magnitude less than that observed here.
 

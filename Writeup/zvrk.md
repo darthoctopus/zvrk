@@ -47,7 +47,7 @@ Among this sample, Zvrk stood out because of an unusually large surface lithium 
 \begin{figure*}[htbp]
     \centering
     \includegraphics[width=\textwidth]{echelle_comparison.pdf}
-    \caption{Comparison of power spectra between Zvrk and comparably-evolved Kepler targets. \remarkJO{Marc to write figure caption}}
+    \caption{A comparison between Zvrk's oscillation power spectra with those from Kepler red giants KIC 8816353 and KIC 4908025. The oscillation spectra of the Kepler red giants show the expected mode pattern for evolved red giants: three distinct ridges in the \'echelle diagram, with $l=2,0$ ridges centered at $\nu/\Delta\nu$ mod 1 $\sim0.6$. In contrast, the power spectrum for Zvrk contains many additional peaks that does not conform to the expected mode pattern, with what was initially identified as the $l=2,0$ ridges located far from the typical value. }
     \label{fig:echelle-comparison}
 \end{figure*}
 

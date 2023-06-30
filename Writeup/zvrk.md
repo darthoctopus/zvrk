@@ -406,7 +406,7 @@ This work has made use of data from the European Space Agency (ESA) mission {\it
 
 JMJO, MTYH, and MSF acknowledge support from NASA through the NASA Hubble Fellowship grants HST-HF2-51517.001-A, HST-HF2-51459.001-A, and HST-HF2-51493.001-A, respectively, awarded by STScI. STScI is operated by the Association of Universities for Research in Astronomy, Incorporated, under NASA contract NAS5-26555.
 APS acknowledges partial support by the Thomas Jefferson Chair Endowment for Discovery and Space Exploration, and partial support through the Ohio Eminent Scholar Endowment. MY, Z\c{C}O, and S\"O acknowledge the Scientific and Technological Research Council of Turkey (TÜBİTAK:118F352).
-SLM acknowledges funding support from the UNSW Scientia program and from the Australian Research Council through Discovery Project grant DP180101791. DS is supported by the Australian Research Council through Discovery Project grant DP190100666.
+SLM acknowledges funding support from the UNSW Scientia program and from the Australian Research Council through Discovery Project grant DP180101791. DS is supported by the Australian Research Council through Discovery Project grant DP190100666. Parts of this work were supported by the Australian Research Council Centre of Excellence for All Sky Astrophysics in 3 Dimensions (ASTRO 3D), through project number CE170100013.
 
 \software{NumPy \citep{numpy}, SciPy stack \citep{scipy}, AstroPy \citep{astropy:2013,astropy:2018}, \texttt{Comove} \citep{kraus_comove_2022}, \texttt{dynesty} \citep{dynesty}, Pandas \citep{pandas}, \mesa\ \citep{mesa_paper_1,mesa_paper_2,mesa_paper_3,mesa_paper_4,mesa_paper_5}, \gyre\ \citep{townsend_gyre_2013}, \texttt{ADIPLS} \citep{jcd_adipls_2008}}
 

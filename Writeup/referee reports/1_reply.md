@@ -1,3 +1,6 @@
+---
+geometry: margin=1in
+---
 We thank the referee for a detailed and critical report, to which points we respond in the order that they appear. Where necessary, excerpts appearing verbatim in our corrected manuscript are marked out in **bold face**.
 
 Before we respond to their specific comments, there are some overarching features of the referee's notes, and our replies to them, that we must first remark upon. A substantial majority of the referee's comments appear to ultimately derive from a single misunderstanding, owing to a plotting error on our part in the construction of the first panel of Fig. 1. Had it correctly depicted the data as shown, the referee judges, correctly, that our seismic detection would have been insecure. As we note below, many of the referee's subsequent comments --- including their dismissal of our mode identification as spurious, rejection of our statistical analysis as invalid, discounting of our reported uncertainties as unrealistic, and suggested elimination of our further astrophysical interpretation without regard for their non-seismic observational substantiation --- appear all to be coloured by this single misinterpretation. Correspondingly, we believe our rectification of this error (and also, hopefully, this misunderstanding) renders these comments substantively no longer applicable. We mark the relevant points below with an asterisk (*). Moreover, since our seismic analysis turns out not to be as invalid as the referee initially understood, we hope that the referee will now also see fit to engage materially with the substance of the non-seismic portions of our observations, analysis, and interpretation, which they appear not to have done in their first report.
@@ -12,7 +15,7 @@ We do not wish to downplay or minimise the referee's concerns, which we feel rem
 
 There was a plotting error made in the construction of this figure. The quantity shown in the two Kepler panels of Fig. 1 is the "signal-to-noise periodogram", where the power spectrum is divided by a smooth background model, so that the expectation value of the usual multicomponent red noise is normalised to 1 (as a form of prewhitening). Indeed, one can see that the background level between peaks does take on mean S/N values of 1 in the Kepler panels. However, this can be seen to take values closer to 0.2 on average in the first panel, showing our TESS target. This is because the quantity shown in that panel is actually the exact same raw (unsmoothed) Lomb-Scargle power spectrum, in the same units, as the filled-circle data points of Fig. 2 --- i.e. the background had not been divided out when making the figure. The referee may verify that several features can be seen to take identical values in both figures, e.g. the shape of the raw data underlying the dipole doublet between 7.5 and 8 $\mu$Hz.
 
-We agree that, were we to take SNR as originally shown at face value, these peaks would have been consistent with being noise. However, while the SNR of the TESS data is indeed lower than in the Kepler data, the SNR of the most prominent peaks that we have fitted is closer to 10, so these peaks really are significant. We thank the referee for catching this error --- clearly a very important one, if their reaction is any indication --- and apologise for any confusion that it may have caused.
+We agree that, were we to take SNR as originally shown at face value, these peaks would have been consistent with being noise (although one would then also question why the background was not normalised to 1). However, while the SNR of the TESS data is indeed lower than in the Kepler data, the SNR of the most prominent peaks that we have fitted is closer to 10, so these peaks really are significant. We thank the referee for catching this error --- clearly a very important one, if their reaction is any indication --- and apologise for any confusion that it may have caused.
 
 We have now rectified the figure by showing the background-divided PS in the first panel, consistently with the other two panels, and by extending the frequency range shown to match that in Fig. 2.
 
@@ -44,7 +47,7 @@ As far as we are able to determine, this statement about Kepler data is factuall
 
 We agree that our reported statistical uncertainties on $\Gamma$ will underestimate the systematic error on it. However, we do not use $\Gamma$ anywhere in our analysis; it is only fitted as a nuisance parameter.
 
-For $Z_0$ in particular, the second modelling group also obtained a 10% statistical uncertainty. This makes the two pipelines 2$\sigma$ inconsistent with each other --- i.e. the statistical error in $Z_0$ does *not* dominate systematic error, unlike mass and radius. We now note this in the main text. However, and again, we do not use $Z_0$ directly in our analysis. In general we expect the composition returned from seismology not to be representative of Zvrk's chemically anomalous nature, and have used this modelling exercise only to yield a reasonable guess for its structure, and for order-of-magnitude estimates of various timescales of its evolution up the RGB. We have tried to make our existing description of this clearer in the text.
+For $Z_0$ in particular, the second modelling group also obtained a 10% statistical uncertainty. This makes the two pipelines 2$\sigma$ inconsistent with each other --- i.e. the statistical error in $Z_0$ does *not* dominate systematic error, unlike mass and radius. We now note this in the main text. However, and again, we do not use $Z_0$ directly in our analysis. In general we expect the composition returned from seismology not to be representative of Zvrk's chemically anomalous nature, and have used this modelling exercise only to yield a reasonable guess for the near-polytropic structure of its convective envelope, and for order-of-magnitude estimates of various timescales of its evolution up the RGB. We have tried to make our existing description of this clearer in the text.
 
 > 5) Lines 329-331 illustrates a problem of analysis, where an a priori is considered as a result.
 
@@ -58,25 +61,25 @@ Easy to fix; would appreciate other suggestions.
 
 # Seismic Analysis
 
-As far as I know, seismology alone is not able to unambiguously distinguish between RGB and AGB stars. Using $\epsilon_p$ for stating that the star is first-ascent giant is incorrect. A realistic relative uncertainty of Dnu implies a large uncertainty in $\epsilon_p$ and precludes any identification.
+> As far as I know, seismology alone is not able to unambiguously distinguish between RGB and AGB stars. Using $\epsilon_p$ for stating that the star is first-ascent giant is incorrect. A realistic relative uncertainty of Dnu implies a large uncertainty in $\epsilon_p$ and precludes any identification.
 
 (*)
 
 From the same fit against radial modes that produces our estimate of $\Delta\nu$, we obtain $\delta\epsilon = 0.05$, which is sufficient for such discrimination. (FILL WITH ACTUAL VALUE)
 
-1) A simple sanity check strongly suggests that the identification/analysis of the quadrupole multiplets is an artifact. As shown in Fig 2, the quadrupole multiplets are artificially created by a confusion of l=2, m=-2 modes with dipole (l=1, m=+1) modes, and l=2, m=+2 with radial modes. From the figure, it is clear that the quality of the spectrum hampers the clear identification of quadrupole modes, and is by far not enough for deriving any information about them.
+> 1) A simple sanity check strongly suggests that the identification/analysis of the quadrupole multiplets is an artifact. As shown in Fig 2, the quadrupole multiplets are artificially created by a confusion of l=2, m=-2 modes with dipole (l=1, m=+1) modes, and l=2, m=+2 with radial modes. From the figure, it is clear that the quality of the spectrum hampers the clear identification of quadrupole modes, and is by far not enough for deriving any information about them.
 
 (*)
 
 We already note this feature of our mode identification --- i.e. that the quadrupole triplets straddle the radial and dipole modes --- in the manuscript. Our significance testing should hopefully reassure the referee that these peaks are not spurious. Moreover, as we describe below, identification of dipole modes requires these quadrupole modes also to be identified in this fashion.
 
-2) The remark above indicates that, contrary to the claim of the authors (lines 307-310), the determination of the mode widths is a crucial step in the analysis.
+> 2) The remark above indicates that, contrary to the claim of the authors (lines 307-310), the determination of the mode widths is a crucial step in the analysis.
 
 (*)
 
 Given that the SNR is sufficient to yield statistical evidence for quadrupole modes, we are not sure how the above statement is salient to our analysis.
 
-3) The absence of a clear quadrupole signal raises strong doubt about the identification of the spectrum in terms of solar=like oscillations. To assess the detection of solar-like oscillations, the authors have to justify the presence of a clear dipole signal, and the absence of a clear quadrupole signal.
+> 3) The absence of a clear quadrupole signal raises strong doubt about the identification of the spectrum in terms of solar=like oscillations. To assess the detection of solar-like oscillations, the authors have to justify the presence of a clear dipole signal, and the absence of a clear quadrupole signal.
 
 (*)
 
@@ -86,19 +89,19 @@ However, they are in effect demanding that we defend a claim that we do not make
 
 This is in any case rendered moot by our significance testing.
 
-4) Stellar inclination: because of the high noise level, the amplitudes of the l=1, m=0 components are largely unknown. This implies a large uncertainty on the inclination, which needs to be reflected in the analysis.
+> 4) Stellar inclination: because of the high noise level, the amplitudes of the l=1, m=0 components are largely unknown. This implies a large uncertainty on the inclination, which needs to be reflected in the analysis.
 
 (*)
 
 The actual SNR normalisation suggests that the amplitudes of m = 0 dipole modes are indeed low, correctly yielding a close to equator-on constraint on the inclination.
 
-5) Differential rotation: Figure 8, as presented, show that little to nothing can be derived about differential rotation, or to rule out uniform rotation. The authors have to remove the l=2 data, to provide realistic uncertainties.
+> 5) Differential rotation: Figure 8, as presented, show that little to nothing can be derived about differential rotation, or to rule out uniform rotation. The authors have to remove the l=2 data, to provide realistic uncertainties.
 
 (*)
 
 We agree that localising differential rotation from seismology is difficult, but the figure serves to explain this difficulty in the first place. Moreover, as we explain in the manuscript, other rotational constraints also suggest differential rotation, although they are not helpful in localising it.
 
-6) At most, authors may have 2 pieces of information about rotation, as provided by the dipole modes and by the rotationally modulated spot signal. The paragraph ending Section 3 shows that the authors are aware of the weakness of their claims. In such case, there is no need to develop incorrect inferences over many pages.
+> 6) At most, authors may have 2 pieces of information about rotation, as provided by the dipole modes and by the rotationally modulated spot signal. The paragraph ending Section 3 shows that the authors are aware of the weakness of their claims. In such case, there is no need to develop incorrect inferences over many pages.
 
 (*)
 
@@ -134,9 +137,9 @@ True observationally, but standard pulsation theory will always give you mixed m
 
 (*)
 
-No longer applicable
+No longer applicable.
 
-We point out that our other non-seismic analysis (TESS+ASAS-SN photometry, spectroscopic abundance analysis, RV-scatter constraints, orbital and rotational modelling) are more than half the paper, so the referee's suggestion is impossible to implement even if the asteroseismic analysis were to be eliminated entirely. We remind the referee that our overall work, as reflected in our title, combines all of this analysis. However, the referee has not identified any issues other than in the asteroseismic component. We might remove "asteroseismic" from the title instead, but we believe our seismic analysis also to be well-founded.
+The referee appears not to have identified any issues other than in our asteroseismic analysis (and even then largely owing to a misinterpretation of a single figure). However, we point out that our other non-seismic analysis (TESS+ASAS-SN photometry, spectroscopic abundance analysis, RV-scatter constraints, orbital and rotational modelling) constitutes more than half the paper, so the referee's suggestion is impossible to implement even if the asteroseismic component were to be eliminated entirely. We remind the referee that our overall work, as reflected in our title, combines all of this analysis. We might remove "asteroseismic" from the title instead, but we believe our seismic analysis also to be well-founded.
 
 # Figures
 
@@ -154,7 +157,7 @@ Please elaborate
 
 (*)
 
-No longer applies
+No longer applicable.
 
 > Figure 4: Provide a color code with more contrast; fig4c is unclear.
 

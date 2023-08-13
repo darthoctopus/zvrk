@@ -163,7 +163,7 @@ No longer applicable.
 
 > Figure 4: Provide a color code with more contrast; fig4c is unclear.
 
-We would appreciate if the referee could be more constructively specific.
+We would appreciate if the referee could be more constructively specific. Fig. 4c in particular shows three different overlapping frequency-time power plots separately using the red, green, and blue pixel channels in an 8-bit image, normalised from 0 (at 0) to 255 (at the maximum wavelet power). As such, it already uses, mathematically speaking, the maximum possible contrast that can be shown on modern computer display hardware for each of its colour channels.
 
 > Figure 8 shows clearly that constraining differential rotation is impossible.
 

@@ -1,6 +1,7 @@
 ---
 geometry: margin=1in
 ---
+
 We thank the referee for a detailed and critical report, to which points we respond in the order that they appear. Where necessary, excerpts appearing verbatim in our corrected manuscript are marked out in **bold face**.
 
 Before we respond to their specific comments, there are some overarching features of the referee's notes, and our replies to them, that we must first remark upon. A substantial majority of the referee's comments appear to ultimately derive from a single misunderstanding, owing to a plotting error on our part in the construction of the first panel of Fig. 1. Had it correctly depicted the data as shown, the referee judges, correctly, that our seismic detection would have been insecure. As we note below, many of the referee's subsequent comments --- including their dismissal of our mode identification as spurious, rejection of our statistical analysis as invalid, discounting of our reported uncertainties as unrealistic, and suggested elimination of our further astrophysical interpretation without regard for their non-seismic observational substantiation --- appear all to be coloured by this single misinterpretation. Correspondingly, we believe our rectification of this error (and also, hopefully, this misunderstanding) renders these comments substantively no longer applicable. We mark the relevant points below with an asterisk (*). Moreover, since our seismic analysis turns out not to be as invalid as the referee initially understood, we hope that the referee will now also see fit to engage materially with the substance of the non-seismic portions of our observations, analysis, and interpretation, which they appear not to have done in their first report.
@@ -15,7 +16,7 @@ We do not wish to downplay or minimise the referee's concerns, which we feel rem
 
 As the referee astutely notices, something has gone wrong: there was a plotting error made in the construction of this figure. The quantity shown in the two Kepler panels of Fig. 1 is the "signal-to-noise periodogram", where the power spectrum is divided by a smooth background model, so that the expectation value of the usual multicomponent red noise is normalised to 1 (as a form of prewhitening). Indeed, one can see that the background level between peaks does take on mean S/N values of 1 in the Kepler panels. However, this can be seen to take values closer to 0.2 on average in the first panel, showing our TESS target. This is because the quantity shown in that panel is actually the exact same raw (unsmoothed) Lomb-Scargle power spectrum, in the same units, as the filled-circle data points of Fig. 2 --- i.e. the background had, by mistake, not been divided out when making this panel. The referee may verify that several features can be seen to take identical values in both figures, e.g. the shape of the raw data underlying the dipole doublet between 7.5 and 8 $\mu$Hz.
 
-We agree that, were we to take the S/N as originally shown at face value, these peaks would have been consistent with being noise (although one would then also have to question why the background does not show an expectation value of 1 --- the referee does not do this). However, while the S/N of the TESS data is indeed lower than in the Kepler data, the S/N of the most prominent peaks that we have fitted is closer to 10, so these peaks really are significant. We thank the referee for catching this error --- clearly a very important one, if their reaction is any indication --- and apologise for any confusion that it may have caused.
+We agree that, were we to take the S/N as originally shown at face value, these peaks would have been consistent with being noise (although one would then also have to question why the background does not show an expectation value of 1 --- the referee does not do this). However, while the S/N of the TESS data is indeed lower than in the Kepler data, the S/N of the most prominent peaks that we have fitted is closer to 10 --- these peaks really are significant. We thank the referee for catching this error --- clearly a very important one, if their reaction is any indication --- and apologise for any confusion that it may have caused.
 
 We have now rectified the figure by showing the background-divided PS in the first panel, consistently with the other two panels, and by extending the frequency range shown to match that in Fig. 2. We have also rewritten the captions for both figures.
 
@@ -23,7 +24,7 @@ We have now rectified the figure by showing the background-divided PS in the fir
 
 (*)
 
-The SNR of the TESS data is indeed lower than Kepler (~10 vs. 40), but this is consistent with both rotation being known to distribute oscillation power between multiplet components (rather than concentrating it in a single peak), as well as rapid rotation being known to suppress oscillations. We should thus expect a priori that a rotating mode identification would conversely be preferred in the event of unusually low observed S/N. Since the two Kepler stars shown are not rotating, this difference of S/N further motivates our mode identification including rotation. We have added this discussion to the manuscript.
+The SNR of the TESS data is indeed lower than Kepler (~10 vs. 40), but this is consistent with both rotation being known to distribute oscillation power between multiplet components (rather than concentrating it in a single peak), as well as with rapid rotation being known to suppress oscillations. We should thus expect a priori that a rotating mode identification would conversely be preferred in the event of unusually low observed S/N. Since the two Kepler stars shown are not rotating, this difference of S/N further motivates our mode identification including rotation. We have added this discussion to the manuscript.
 
 The actual SNR range of our data does render the method of Viani+ 2019 suitable for use. However we also note that we have in any case only used it as an initial guess, as our final value of $\Delta\nu$ is constructed using the fitted radial mode frequencies.
 
@@ -59,7 +60,7 @@ We agree that this ought not to have been done, and have deleted the offending s
 
 (*)
 
-Easy to fix; would appreciate other suggestions.
+We have done so.
 
 # Seismic Analysis
 
@@ -67,7 +68,7 @@ Easy to fix; would appreciate other suggestions.
 
 (*)
 
-From the same fit against radial modes that produces our estimate of $\Delta\nu$, we obtain $\delta\epsilon = 0.05$, which is sufficient for such discrimination. (FILL WITH ACTUAL VALUE)
+From the same fit against radial modes that produces our estimate of $\Delta\nu$, we obtain $\delta\epsilon = 0.03$, which is sufficient for such discrimination.
 
 > 1) A simple sanity check strongly suggests that the identification/analysis of the quadrupole multiplets is an artifact. As shown in Fig 2, the quadrupole multiplets are artificially created by a confusion of l=2, m=-2 modes with dipole (l=1, m=+1) modes, and l=2, m=+2 with radial modes. From the figure, it is clear that the quality of the spectrum hampers the clear identification of quadrupole modes, and is by far not enough for deriving any information about them.
 
@@ -109,6 +110,8 @@ We agree that localising differential rotation from seismology is difficult, but
 
 Our rotational splittings are derived from multiple multiplets per degree, so in a strict information-theoretic sense the power spectrum permits more than 2 pieces of information about rotation to be derived from seismology alone. Our technique development for $\pi$-mode inversions directly against the power spectrum was necessary to maximise the extraction of this information from the underlying data (some of which would have been lost to peakbagging). We agree with the referee that the data have, unfortunately, not been cooperative. Nonetheless, although we conclude that the constraints on differential rotation are weak, it is still ultimately necessary to document the process by which we arrived at the conclusion that they are indeed weak in the first place.
 
+We would also appreciate if referee could be more concrete about which of our inferences they find to be specifically incorrect (as opposed to statistically weak), and provide their reasoning behind this.
+
 # Discussion
 
 > From the introduction in Section 4.1, one understands that there are multiple good reasons showing that Zvrk is not a merger remnant. Then weak reasons are provided over five pages. The Section discussion can and should be severely shortened. Interesting information is presented here, but it is only weakly connected to the paper.
@@ -117,7 +120,7 @@ The introduction to Section 4.1 explains why we believe Zvrk not to be a stellar
 
 We are not sure how the referee is able to arrive at the conclusion that our discussion section is only weakly connected to the paper. In addition to our seismic analysis (which we take that the referee assumes to be the focus of the paper given that it constitutes the majority of their feedback above), we point out that we also report several observational results aside from seismology --- in particular, a surface rotation period, and unusual lithium and carbon/nitrogen abundances; see also our comments below regarding the title of the paper. Seismology forms a minority of the observational evidence that we present, despite its analysis having been the most time-consuming! The astrophysical interpretation presented here is necessary to connect all of these various features, so as to consistently explain how all of them might be produced together, despite Zvrk not being a stellar-mass merger remnant. This being the case, our discussion section is integral to the overall cohesion of the work. Since the referee appears to disagree, we would like them to explain their reasoning.
 
-In accordance with the referee's wishes, we have shortened this section. However, we would appreciate more concrete, actionable feedback from the referee regarding specific parts of our discussion that they find weak.
+We would appreciate more concrete, actionable feedback from the referee regarding specific parts of our discussion that they find weak.
 
 # Organisation and Length
 
@@ -131,11 +134,11 @@ We are surprised that the referee should take this position, given that they hav
 
 > 2) From the possible measurements of the global seismic parameters, it is clear that the star cannot be in the red clump stage. A sentence and a reference are enough to making this clear, so that many paragraphs in Section 2.1 can be removed.
 
-OK, but we note that this discussion is there specifically to rule out identifying the double ridge as radial/quadrupole modes.
+We are not sure which paragraphs the referee is referring to for removal. We only briefly mention red clump stars in two paragraphs: one describing only the naive visual morphology of the echelle diagram (and how it leads to difficulties with automated mode identification), and another immediately eliminating the red clump as a possibility for evolutionary identification, based exactly on the considerations of global seismic parameters that the referee alludes to.
 
 > 3) It is also clear that modes, if real, can be considered as pure pressure modes. No need then to discuss what would happen if mixed modes were present.
 
-Our phrasing is insufficiently clear. We are not discussing what "would" happen if mixed modes were present, because they are always present: under standard pulsation theory, as typically used in stellar modelling, all nonradial modes in red giants (with frequencies lower than the maximum core Brunt-Vaisala frequency) *are* mixed modes. As this work consists of both measurement and interpretation, a discussion of such mode mixing, and in particular the property of such evolved giants possessing weak enough coupling between the two mode cavities that the avoided crossings between them exhibit vanishingly small zones of avoidance (rendering this mixing observationally inaccessible), is not optional. It is this property of evolved giants that justifies our use of extensions to standard pulsation theory ($\pi$-mode decomposition) in our seismic modelling, and motivates subsequent technique development in our appendix using these extensions. We have tried to make this clearer in the text.
+We are not discussing what "would" happen if mixed modes were present, because they are always present: we remind the referee that under standard pulsation theory, as typically used in stellar modelling, all nonradial modes in red giants (with frequencies lower than the maximum core Brunt-Vaisala frequency) *are* mixed modes. As this work consists of both measurement and interpretation, a discussion of such mode mixing, and in particular the property of such evolved giants possessing weak enough coupling between the two mode cavities that the avoided crossings between them exhibit vanishingly small zones of avoidance (rendering this mixing observationally inaccessible), is not optional. It is this property of evolved giants that justifies our use of extensions to standard pulsation theory ($\pi$-mode decomposition) in our seismic modelling, and motivates subsequent technique development in our appendix using these extensions. We have tried to make this clearer in the text.
 
 > 4) All these issues lower the quality and readability of the paper. I consider that the paper could easily fit in less than 10 pages. The actual content is limited (rapid surface rotation, if properly assessed) that it should be limited to 5-6 pages. From all the caveats that are mentioned above, the terms "identification" and "characterization" are insecure, so that the title should be changed.
 
@@ -163,7 +166,7 @@ No longer applicable.
 
 > Figure 4: Provide a color code with more contrast; fig4c is unclear.
 
-We would appreciate if the referee could be more constructively specific. Fig. 4c in particular shows three different overlapping frequency-time power plots separately using the red, green, and blue pixel channels in an 8-bit image, normalised from 0 (at 0) to 255 (at the maximum wavelet power). As such, it already uses, mathematically speaking, the maximum possible contrast that can be shown on modern computer display hardware for each of its colour channels.
+We would appreciate if the referee could be more constructively specific. Fig. 4c in particular shows three different overlapping frequency-time power plots separately using the red, green, and blue pixel channels in an 8-bit image, normalised from 0 (at 0) to 255 (at the maximum wavelet power). As such, it already uses, mathematically speaking, the maximum possible contrast that can be shown on modern computer display hardware for each of its colour channels. This is also the case for Fig. 2b above.
 
 > Figure 8 shows clearly that constraining differential rotation is impossible.
 

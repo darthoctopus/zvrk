@@ -56,8 +56,8 @@ def prior_transform(x):
     
     return jnp.array([i, Γ, BG1, BG2, BG3, δν1, δν2, *ν0, *A])
 
-@partial(jax.jit, static_argnums=(2,3))
-def chunk_model(ν, θ, only_l=-1, only_chunk=None):
+@partial(jax.jit, static_argnums=(2,3,4))
+def chunk_model(ν, θ, only_l=-1, only_chunk=None, without=-1):
     i0 = θ[0]
     Γ = θ[1]
     BG1 = θ[2]
@@ -76,6 +76,8 @@ def chunk_model(ν, θ, only_l=-1, only_chunk=None):
     for i in range(len(ν0)):
         l = ll_guess[i]
         if only_l>=0 and l != only_l:
+            continue
+        if without == i:
             continue
         if only_chunk is not None and chunks[i] != only_chunk:
             continue

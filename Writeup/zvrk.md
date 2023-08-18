@@ -434,7 +434,7 @@ We illustrate the posterior distributions arising from our nested-sampling proce
 \begin{equation}
     \Lambda_i = -2 \log \left[{\max_\theta \mathcal{L}(\theta) \over \max_\theta \mathcal{L}(\theta\text{ without $i$\textsuperscript{th} mode})}\right]
 \end{equation}
-where maximum likelihood estimates are found for the numerator and denominator separately. This likelihood-ratio statistic $\Lambda$ will be close to 0 or negative for situations favouring the null hypothesis (i.e. the associated regions of the power spectrum being well-explained by fitted red noise), and will be large if the alternative hypothesis (i.e. our nominal model) is favoured. Since each multiplet is governed by two parameters (frequency and amplitude), Wilks's Theorem states that the test statistic $\Lambda$ is asymptotically described by a $\chi^2$ distribution with two degrees of freedom. This permits us to evaluate the formal probability $p$ of producing an outcome favouring $H_1$ by coincidence alone given $H_0$. We report both $\Lambda$ and $p$ in \cref{tab:peakbag}. In most cases, $p$ can be seen to be below machine precision. Only one mode, at $\ell = 2, n_p = 3$, is not significant.}
+where maximum likelihood estimates are found for the numerator and denominator separately. This likelihood-ratio statistic $\Lambda$ will be close to 0 or negative for situations favouring the null hypothesis (i.e. the associated regions of the power spectrum being well-explained by fitted red noise), and will be large if the alternative hypothesis (i.e. our nominal model) is favoured. Since each multiplet is governed by two parameters (frequency and amplitude), Wilks's Theorem states that the test statistic $\Lambda$ is asymptotically described by a $\chi^2$ distribution with two degrees of freedom. This permits us to evaluate the formal probability $p$ of producing an outcome favouring $H_1$ by coincidence alone given $H_0$. We report both $\Lambda$ and $p$ in \cref{tab:peakbag}. Only one mode, at $\ell = 2, n_p = 3$, appears not to be significant.}
 
 \begin{figure*}[tb]
     \centering
@@ -447,21 +447,21 @@ where maximum likelihood estimates are found for the numerator and denominator s
 
 $\ell$ | $\nu/\mu\text{Hz}$ | $e_\nu/\mu\text{Hz}$ | $n_p$| $\Lambda$ | $p$
 ---:+:---:+:---:+:---:+:---------:+:---------
-0 | 5.81 | 0.01 | 4 |  125.630 | 0
-0 | 6.91 | 0.02 | 5 |  50.836 | 0
-0 | 8.20 | 0.02 | 6 |  78.783 | 0
-0 | 9.41 | 0.05 | 7 |  10.043 | $1.160\times10^{-33}$
-0 | 10.66 | 0.03 | 8 | 10.350 | $4.149\times10^{-39}$
-1 | 5.34 | 0.03 | 3 |  23.046 | 0
-1 | 6.40 | 0.01 | 4 |  61.604 | 0
-1 | 7.64 | 0.01 | 5 |  51.437 | 0
-1 | 8.78 | 0.02 | 6 |  61.276 | 0
-1 | 10.09 | 0.03 | 7 | 18.667 | 0
-2 | 5.63 | 0.05 | 3 |  0.509 | 0.5246
-2 | 6.70 | 0.02 | 4 |  20.520 | 0
-2 | 7.90 | 0.03 | 5 |  43.010 | 0
-2 | 9.17 | 0.02 | 6 |  73.093 | 0
-2 | 10.43 | 0.04 | 7 | 6.595 | $1.337\times10^{-6}$
+0 | 5.81 | 0.01 | 4 |  125.630 | $5.246\times10^{-28}$
+0 | 6.91 | 0.02 | 5 |  50.836 | $9.143\times10^{-12}$
+0 | 8.20 | 0.02 | 6 |  78.783 | $7.807\times10^{-18}$
+0 | 9.41 | 0.05 | 7 |  10.043 | $0.006593$
+0 | 10.66 | 0.03 | 8 | 10.350 | $0.005658$
+1 | 5.34 | 0.03 | 3 |  23.046 | $9.899\times10^{-6}$
+1 | 6.40 | 0.01 | 4 |  61.604 | $4.197\times10^{-14}$
+1 | 7.64 | 0.01 | 5 |  51.437 | $6.770\times10^{-12}$
+1 | 8.78 | 0.02 | 6 |  61.276 | $4.943\times10^{-14}$
+1 | 10.09 | 0.03 | 7 | 18.667 | $8.841\times10^{-5}$
+2 | 5.63 | 0.05 | 3 |  0.509 | $0.7751$
+2 | 6.70 | 0.02 | 4 |  20.520 | $3.501\times10^{-5}$
+2 | 7.90 | 0.03 | 5 |  43.010 | $4.576\times10^{-10}$
+2 | 9.17 | 0.02 | 6 |  73.093 | $1.343\times10^{-16}$
+2 | 10.43 | 0.04 | 7 | 6.595 | $0.03697$
 Table: Notional $m=0$ p-mode frequencies from peakbagging procedure with multiplet model; likelihood ratio statistics $\Lambda$; and $p$-values from likelihood-ratio test. \label{tab:peakbag}
 
 # Generalised Rotational Inversions

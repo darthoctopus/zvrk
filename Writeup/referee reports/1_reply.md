@@ -54,7 +54,7 @@ Regarding the inclination: see our remarks below.
 
 > 5) Lines 329-331 illustrates a problem of analysis, where an a priori is considered as a result.
 
-We agree that this ought not to have been done, and have deleted the offending sentence. We thank the referee for pointing this out mistake. We would appreciate if they could point out others.
+We agree that this ought not to have been done, and have deleted the offending sentence. We thank the referee for pointing out this mistake. We would very much appreciate if they could point out others that they might have also found, so that we can fix them.
 
 > 6) Basic information is often hidden in the paper and/or comes too late. The magnitude of the star should be provided very early, so that one understands that the poor signal in the Fourier spectrum is not related to a low luminosity. The actual frequency resolution should be given (either the value 0.007 µHz in the caption of Fig 2, or the description of the time series in Section 2, is incorrect).
 
@@ -74,13 +74,13 @@ From the same fit against radial modes that produces our estimate of $\Delta\nu$
 
 (*)
 
-We already note this feature of our mode identification --- i.e. that the quadrupole triplets straddle the radial and dipole modes --- in the manuscript. Our choice of likelihood-ratio $H_1$ test (rather than the logistically easier $H_0$ or single-peak $H_1$ tests described in Basu & Chaplin 2017) is intended specifically to address this, as these other tests only determine whether or not oscillation power in specific frequency bins or ranges can be assessed to be genuine, and do not consider the possibility of overlapping modes. By contrast, the likelihood-ratio test that we have used is capable of rejecting modes even if they lie on frequency bins genuinely exhibiting oscillation power (as is the case for our lowest-order quadrupole mode --- the only one rejected by the test). We hope that our results reassure the referee that our identification of peaks is not spurious. Moreover, as we describe below, our identification of dipole modes requires an identification of quadrupole modes also to be supplied in this fashion, from other a priori considerations.
+We already note this feature of our mode identification --- i.e. that the quadrupole triplets straddle the radial and dipole modes --- in the manuscript. Our choice of likelihood-ratio $H_1$ test (rather than e.g. the logistically easier $H_0$ or single-peak $H_1$ tests described in Basu & Chaplin 2017) is intended specifically to address this, as these other tests only determine whether or not oscillation power in specific frequency bins or ranges can be assessed to be genuine, and do not consider the possibility of overlapping modes. By contrast, the likelihood-ratio test that we have used is capable of assessing modes not to be significant even if they lie on frequency bins genuinely exhibiting oscillation power (as is the case for our lowest-order quadrupole mode --- the only one not accepted by the test). We hope that our results reassure the referee that our identification of peaks is not spurious. Moreover, as we describe below, our identification of dipole modes requires an identification of quadrupole modes also to be supplied in this fashion, from other a priori considerations.
 
 > 2) The remark above indicates that, contrary to the claim of the authors (lines 307-310), the determination of the mode widths is a crucial step in the analysis.
 
 (*)
 
-Given that the SNR is sufficient to yield statistical evidence for quadrupole modes, we are not sure how the above statement is salient to our analysis.
+Given that the SNR is sufficient to yield statistical evidence for quadrupole modes, we are not sure how the above statement follows from the previous remark. We would appreciate if the referee could share their reasoning.
 
 > 3) The absence of a clear quadrupole signal raises strong doubt about the identification of the spectrum in terms of solar=like oscillations. To assess the detection of solar-like oscillations, the authors have to justify the presence of a clear dipole signal, and the absence of a clear quadrupole signal.
 
@@ -106,7 +106,7 @@ We agree that localising differential rotation from seismology is difficult, but
 
 (*)
 
-Our rotational splittings are derived from multiple multiplets per degree, so in a strict information-theoretic sense the power spectrum permits more than 2 pieces of information about rotation to be derived from seismology alone. Our technique development for $\pi$-mode inversions directly against the power spectrum was necessary to maximise the extraction of this information from the underlying data (some of which would have been lost to peakbagging). We agree with the referee that the data have, unfortunately, not been cooperative. Nonetheless, although we conclude that the seismic constraints on differential rotation are weak, it is still ultimately necessary to document the process by which we arrived at the conclusion that they are indeed weak in the first place.
+Our rotational splittings are derived from multiple multiplets per degree, so in a strict information-theoretic sense the power spectrum permits more than 2 pieces of information about rotation to be derived from seismology alone. Our technique development in the appendix, for $\pi$-mode inversions directly against the power spectrum, was necessary to maximise the extraction of this information from the underlying data (some of which would have been lost to peakbagging). We agree with the referee that the data have, unfortunately, not been cooperative. Nonetheless, although we eventually conclude that the seismic constraints on differential rotation are weak, it is still ultimately necessary to document the process by which we arrived at the conclusion that they are indeed weak in the first place.
 
 The paragraph ending Section 3 concerns mixed-mode oscillators (i.e. red giants which are either less evolved than Zvrk, or in the core helium burning phase), where the recovery of the pure p-mode rotational splittings given a set of mixed modes remains an open problem. We have adjusted the text to better reflect this.
 
@@ -118,7 +118,7 @@ We would also appreciate if referee could be more concrete about which of our in
 
 The introduction to Section 4.1 explains why we believe Zvrk not to be a stellar-mass merger remnant in particular. The rest of this section concerns explaining how its unusual properties came to be in that case, taking for granted that it is *not* a stellar-mass merger remnant --- of the hypotheses we consider, we find that a planet-engulfment scenario is preferred to tidal spin-up or mass transfer, for example. As the referee appears to have missed this, this indicates that the clarity of presentation here can likely be improved. We have therefore tried to rephrase parts of this section.
 
-We are not sure how the referee is able to arrive at the conclusion that our discussion section is only weakly connected to the paper. In addition to our seismic analysis (to which the referee's feedback is almost exclusively confined), we point out that we also report several observational results aside from seismology --- in particular, a surface rotation period, and unusual lithium and carbon/nitrogen abundances; see also our comments below regarding the title of the paper. Seismology forms only a minority of the observational evidence that we present. The astrophysical interpretation provided here is necessary to connect all of these various features, so as to consistently explain how all of them might be produced together, despite Zvrk not being a stellar-mass merger remnant. This being the case, our discussion section is integral to the overall cohesion of the work. Since the referee appears to disagree, we would like them to at least explain their reasoning.
+We are not sure how the referee is able to arrive at the conclusion that our discussion section is only weakly connected to the paper. In addition to our seismic analysis (to which the referee's feedback is almost exclusively confined), we point out that we also report several observational results aside from seismology --- in particular, a surface rotation period, and unusual lithium and carbon/nitrogen abundances; see also our comments below regarding the title of the paper. Seismology forms only a minority of the observational evidence that we present. The astrophysical interpretation provided in the discussion section is necessary to connect all of these various features, so as to consistently explain how all of them might be produced together, despite Zvrk not being a stellar-mass merger remnant. This being the case, our discussion section is integral to the overall cohesion of the work. Since the referee appears to disagree, we would like them to at least explain their reasoning.
 
 We would appreciate more concrete, actionable feedback from the referee regarding specific parts of our discussion that they find weak.
 
@@ -144,7 +144,7 @@ We are not discussing what "would" happen if mixed modes were present, because t
 
 (*)
 
-The referee appears not to have identified any issues other than in our asteroseismic analysis (and even then largely owing to a misinterpretation of a single figure). However, we point out that our other non-seismic analysis (TESS+ASAS-SN photometry, spectroscopic abundance analysis, RV-scatter constraints, orbital and rotational modelling) constitutes more than half the paper, so the referee's suggestion is impossible to implement even if the asteroseismic component were to be eliminated entirely. We remind the referee that our overall work, as reflected in our title, combines all of this: we present an asteroseismic identification, and detailed characterisation, of an engulfment candidate. We might remove "asteroseismic" from the title instead, but we believe our seismic analysis also to be well-founded, as we have explained above.
+The referee appears not to have identified any issues other than in our asteroseismic analysis (and even then largely owing to a misinterpretation of a single figure). However, we point out that our other non-seismic analysis (TESS+ASAS-SN photometry, spectroscopic abundance analysis, RV-scatter constraints, orbital and rotational modelling) constitutes more than half the paper, so the referee's suggestion is impossible to implement even if the asteroseismic component were to be eliminated entirely, unless we were to write a different paper altogether. We remind the referee that the scope of our overall work, as reflected in our title, combines all of this: we present an asteroseismic identification, and detailed characterisation, of an engulfment candidate. We might remove "asteroseismic" from the title instead, but we believe our seismic analysis also to be well-founded, as we have explained above.
 
 # Figures
 
@@ -174,6 +174,6 @@ We are unsure what the referee is asking us to do here, and would appreciate cla
 
 # Other notes
 
-- We have modified our discussion of the spectroscopic constraints and the interpretation of abundances, to incorporate input from some coauthors that was only received after submission. We apologise for the late changes.
+- We have modified our discussion of the spectroscopic constraints and the interpretation of abundances, to incorporate additional input from some coauthors that was only received after submission. We apologise for the late changes.
 
 - Some other bolded changes to the text are a result of our responses to comments from the data editor.

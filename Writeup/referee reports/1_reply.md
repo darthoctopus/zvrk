@@ -4,10 +4,7 @@ geometry: margin=1in
 
 We thank the referee for a detailed and critical report, to which points we respond in the order that they appear. Where necessary, excerpts appearing verbatim in our corrected manuscript are marked out in **bold face**.
 
-Before we respond to their specific comments, there are some overarching features of the referee's notes, and our replies to them, that we must first remark upon. A substantial majority of the referee's comments appear to ultimately derive from a single misunderstanding, owing to a plotting error on our part in the construction of the first panel of Fig. 1. Had it correctly depicted the data as shown, the referee judges, correctly, that our seismic detection would have been insecure.
-<!--As we note below, many of the referee's subsequent comments --- including their dismissal of our mode identification as spurious, rejection of our statistical analysis as invalid, discounting of our reported uncertainties as unrealistic, and suggested elimination of our further astrophysical interpretation without regard for their non-seismic observational substantiation --- appear all to be coloured by this single misinterpretation. 
--->
-Correspondingly, we believe our rectification of this error (and also, hopefully, this misunderstanding) renders these comments substantively no longer applicable. We mark the relevant points below with an asterisk (*). Moreover, since our seismic analysis turns out not to be as invalid as the referee initially understood, we hope that the referee will now also see fit to engage materially with the substance of the non-seismic portions of our observations, analysis, and interpretation, which they appear not to have done in their first report.
+Before we respond to their specific comments, we must point out that a substantial majority of the referee's comments appear to ultimately derive from a single misunderstanding, owing to a plotting error on our part in the construction of the first panel of Fig. 1. Had it correctly depicted the data as shown, the referee judges, correctly, that our seismic detection would have been insecure. Correspondingly, we believe our rectification of this error (and also, hopefully, this misunderstanding) renders these comments substantively no longer applicable. We mark the relevant points below with an asterisk (*).
 
 We do not wish to downplay or minimise the referee's concerns, which we feel remain justifiable from a perspective of principled skepticism. Where applicable, we have supplemented our existing analysis with additional statistical tests, to more quantitatively assess and compare the strengths of the various claims that we have made. In addition, we have tried our best to address the referee's other concerns, pertaining to the overall structure and organisation of the work. It is our hope that the referee agrees that this has improved the clarity and readability of the revised work.
 
@@ -77,7 +74,7 @@ From the same fit against radial modes that produces our estimate of $\Delta\nu$
 
 (*)
 
-We already note this feature of our mode identification --- i.e. that the quadrupole triplets straddle the radial and dipole modes --- in the manuscript. Our choice of likelihood-ratio H1 test (rather than the logistically easier H0 or single-peak H1 tests described in Basu & Chaplin 2017) is intended specifically to address overlapping modes in our proposed model power spectrum. We hope that our results reassure the referee that this identification of peaks is not spurious. Moreover, as we describe below, our identification of dipole modes requires an identification of quadrupole modes also to be supplied in this fashion.
+We already note this feature of our mode identification --- i.e. that the quadrupole triplets straddle the radial and dipole modes --- in the manuscript. Our choice of likelihood-ratio $H_1$ test (rather than the logistically easier $H_0$ or single-peak $H_1$ tests described in Basu & Chaplin 2017) is intended specifically to address overlapping modes in our proposed model power spectrum. We hope that our results reassure the referee that this identification of peaks is not spurious. Moreover, as we describe below, our identification of dipole modes requires an identification of quadrupole modes also to be supplied in this fashion.
 
 > 2) The remark above indicates that, contrary to the claim of the authors (lines 307-310), the determination of the mode widths is a crucial step in the analysis.
 
@@ -91,7 +88,7 @@ Given that the SNR is sufficient to yield statistical evidence for quadrupole mo
 
 The referee seems to agree with us that dipole modes are usually suppressed before quadrupole modes by the action of magnetic fields or rotation. Based on this they assert, having first rejected our identification of quadrupole modes, that the burden is on us to explain how p-modes would be observed with only their quadrupole and not dipole modes suppressed.
 
-However, they are in effect demanding that we defend a claim which we do not make, as this is the reverse of our line of reasoning. We argue instead that, since dipole modes are preferentially suppressed, a clear dipole-mode signal requires that we assign identifications as quadrupole modes to other peaks for consistency with the known properties of solar-like oscillations. The amount of suppression here is unclear, and in the absence of suppression, quadrupole modes are both less visible, and also have their power distributed across more multiplet components, and so individual peaks in such a rotating configuration will be of lower prominence. We have added this discussion to the text.
+However, they are in effect demanding that we defend a claim which we do not make, as this is the reverse of our line of reasoning. We argue instead that, since dipole modes are preferentially suppressed, a clear dipole-mode signal requires that we assign identifications as quadrupole modes to other peaks for consistency with the known properties of solar-like oscillations. The amount of suppression here is unclear. In the absence of suppression, quadrupole modes are both less visible, and also have their power distributed across more multiplet components, and so individual peaks in such a rotating configuration will be of lower prominence. We have added this discussion to the text.
 
 > 4) Stellar inclination: because of the high noise level, the amplitudes of the l=1, m=0 components are largely unknown. This implies a large uncertainty on the inclination, which needs to be reflected in the analysis.
 
@@ -131,7 +128,7 @@ We have tried to make our phrasing more compact in many places. We would appreci
 
 > 1) Section 2.1 supposes that the star is a first ascent giant. Then, section 2.4 presenting the discussion about T Tauri stars is irrelevant and should be eliminated. If the star is an evolved RGB, it cannot be a T Tauri so the degree of relevance is too remote.
 
-We are surprised that the referee should take this position, given that they have dismissed our detection of p-mode oscillations as spurious, since our identification of the star as a red giant is based on p-mode asteroseismology. Our discussion of the T Tauri hypothesis *directly addresses* the possibility that this p-mode detection was spurious. If we were to ignore our putative detection of p-modes, the combination of fast rotation and a high lithium abundance in this temperature and magnitude range would immediately suggest identification of the object as being a T Tauri star (as indeed had accidentally been done with V501 Aur previously). This being the case, this section is highly relevant, as it directly connects our other, non-seismic, observational constraints on Zvrk, with the referee's own concerns that our p-mode oscillations are spurious. We have made this connection clearer in the main text.
+We are surprised that the referee should take this position, given that they have dismissed our detection of p-mode oscillations as spurious, since our identification of the star as a red giant is based on p-mode asteroseismology. Our discussion of the T Tauri hypothesis *directly addresses* the possibility that this p-mode detection was spurious. If we were to ignore our putative detection of p-modes, the combination of fast rotation and a high lithium abundance in this temperature and magnitude range would immediately suggest identification of the object as being a T Tauri star (which, as we note in the manuscript, had indeed accidentally been done with V501 Aur previously). This being the case, this section is highly relevant, as it directly connects our other, non-seismic, observational constraints on Zvrk, with the referee's own concerns that our p-mode oscillations are spurious. We have made this connection clearer in the main text.
 
 > 2) From the possible measurements of the global seismic parameters, it is clear that the star cannot be in the red clump stage. A sentence and a reference are enough to making this clear, so that many paragraphs in Section 2.1 can be removed.
 
@@ -153,7 +150,7 @@ The referee appears not to have identified any issues other than in our asterose
 
 (*)
 
-We now show the power spectrum in Fig. 1 over the same frequency range as in Fig. 2, and provide a description of the background-divided periodograms in the figure caption.
+We now show the background-divided power spectrum in Fig. 1 over the same frequency range as in Fig. 2, and provide a description of the background-divided periodograms in the figure caption.
 
 > Figure 2: Provide clearer figures, especially Fig 2b
 
@@ -172,3 +169,7 @@ We would appreciate if the referee could be more constructively specific. Fig. 4
 > Figure 8 shows clearly that constraining differential rotation is impossible.
 
 We are unsure what the referee is asking us to do here, and would appreciate clarification. As we discuss in the manuscript, combining the seismic rotation rate (interpreted as a solid-body average) with the surface rotational period already suggests rotational shear. We agree that localising this differential rotation from seismology alone is difficult given the data in hand (even at SNR of 10). However, as we also already discuss in the manuscript, and above, the objective of figure 8 is to summarise these difficulties. Since this is basically also the referee's point, we're not sure if this comment leads to anything actionable.
+
+# Other notes
+
+We have modified our discussion of the spectroscopic constraints and the interpretation of abundances, to incorporate input from some coauthors that was only received after submission. We apologise for the late changes.

@@ -16,7 +16,7 @@ biblio-style: aasjournal
 
 \vspace*{-17.3ex}
 \shorttitle{Gasing Pangkah I: Zvrk}
-\title{GP1: Asteroseismic Identification and Characterisation of a Rapidly-Rotating Engulfment Candidate}
+\title{The \textit{Gasing Pangkah} Collaboration: I. Asteroseismic Identification \\ and Characterisation of a Rapidly-Rotating Engulfment Candidate}
 \input{preamble}
 \begin{abstract}
 We report the discovery and characterisation of TIC\ 350842552 (``Zvrk''), an apparently isolated, rapidly-rotating ($P_\text{rot} \sim 99\ \mathrm{d}$) red giant observed by TESS in its Southern Continuous Viewing Zone. The star's fast surface rotation is independently verified by the use of p-mode asteroseismology, strong periodicity in TESS and ASAS-SN photometry, and measurements of spectroscopic rotational broadening. A two-component fit to APOGEE spectra indicates a coverage fraction of its surface features consistent with the amplitude of the photometric rotational signal. Variations in the amplitude of its photometric modulations over time suggest the evolution of its surface morphology, and therefore enhanced magnetic activity. We further develop and deploy new asteroseismic techniques to characterise radial differential rotation, and find weak evidence for rotational shear within Zvrk's convective envelope. This feature, in combination with such a high surface rotation rate, is incompatible with even the most physically permissive models of angular-momentum transport in single-star evolution. Spectroscopic abundance estimates also indicate a high lithium abundance, among other chemical anomalies. Taken together, all of these suggest a planet-ingestion scenario for the formation of this rotational configuration, various models for which we examine in detail.

@@ -1,6 +1,6 @@
 The majority of the referee's comments --- including their dismissal of our mode identification as spurious, rejection of our statistical analysis as invalid, discounting of our reported uncertainties as unrealistic, and suggested elimination of our further astrophysical interpretation without regard for their non-seismic observational substantiation --- appear all to be coloured by a single misinterpretation of a misplotted figure, now fixed. Since our seismic analysis turns out not to be as invalid as the referee initially understood, we hope that the referee will now also see fit to engage materially with the substance of the non-seismic portions of our observations, analysis, and interpretation, which they appear not to have done in their first report.
 
-We now respond to the points raised by the Data Editor.
+As instructed, we now also respond to the points raised by the Data Editor.
 
 >  1) We now stream videos as animated figures in the HTML version of final articles. The authors' animations do not comply with the recommendations in the AAS Journals' Graphics Guide (https://journals.aas.org/graphics-guide/#animations). The authors should review these recommendations, make appropriate changes, and detail these changes to the manuscript, or request assistance from the Data Editors. In particular captions for animated figures should include text describing the animation (including durations and annotations), the role of the animation relative to the inline figure, and/or provide a narrative context for readers that can't view the animation.
 

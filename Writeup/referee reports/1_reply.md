@@ -8,7 +8,7 @@ It is important that we address the fact that a substantial majority of the refe
 
 We do not wish to downplay or minimise the referee's concerns, which we feel remain justifiable from a perspective of principled skepticism. To directly address the referee’s primary concern regarding statistical credibility, we supplement our existing analysis with additional statistical tests. These tests quantitatively assess the strength of our seismic detection. 
 
-Lastly, we have taken steps to address the referee’s concerns pertaining to the overall structure and organization of our work. We thank the reviewer for their recommendation to revise the text for improved clarity and readability. 
+Lastly, we have taken steps to address the referee’s concerns pertaining to the overall structure and organization of our work. We thank them for their recommendation to revise the text for improved clarity and readability. 
 
 # Data Analysis
 
@@ -28,7 +28,7 @@ We have now rectified the figure by showing the background-divided PS in the fir
 
 (*)
 
-The SNR of the TESS data is indeed lower than Kepler (~10 vs. ~40), but this is consistent with both rotation being known to distribute oscillation power between multiplet components (rather than concentrating it in a single peak), as well as with rapid rotation being known to suppress oscillations. A rotating mode identification would thus, conversely, be preferred a priori in the event of unusually low observed S/N. Since the two Kepler stars shown are not rotating, this difference of S/N further motivates our mode identification including rotation. We have added this discussion to the manuscript.
+The SNR of the TESS data is indeed lower than Kepler (~10 vs. ~40), but this is consistent with both rotation being known to distribute oscillation power between multiplet components (rather than concentrating it in a single peak), as well as with rapid rotation being known to suppress oscillations. In both cases, the "noise" by which the periodogram has been divided is primarily astrophysical (granulation) rather than instrumental (white/shot noise), and so this difference in S/N is likewise astrophysical. A rotating mode identification would thus, conversely, be preferred a priori in the event of unusually low observed S/N. Since the two Kepler stars shown are not rotating, this difference of S/N further motivates our mode identification including rotation. We have added this discussion to the manuscript.
 
 The actual SNR range of our data does render the method of Viani+ 2019 suitable for use. However, we also note that we have in any case only used it as an initial guess, as our final value of $\Delta\nu$ is constructed using the fitted radial mode frequencies.
 
@@ -38,19 +38,19 @@ The actual SNR range of our data does render the method of Viani+ 2019 suitable 
 
 Our choice of relatively narrow priors on the mode frequencies compared to $\Delta\nu$ is consistent with existing practice in fitting p-modes from red giants (e.g., as used in DIAMONDS, FAMED, pbjam, TACO). The usual interpretation of this is to treat the resulting posterior distributions as being in fact conditional distributions (i.e. conditioned on the mode identification). The size of the prior intervals that we have chosen can be seen in the inset of Fig. A1 to more than adequately span the range of the resulting conditional posterior distribution. It is also standard practice to omit the qualifier "conditional" when describing these distributions, as we have done.
 
-We agree that our identified quadrupole modes are lower in amplitude than the others in our identification (as a result of both mode visibility, and the distribution of power across more multiplet components). We now report results from a H1 likelihood-ratio test in the appendix for all modes, as statistical justification for their not being spurious.
+We agree that our identified quadrupole modes are lower in amplitude than the others in our identification (as a result of both mode visibility, and the distribution of power across more multiplet components). We now report results from a $H_1$ likelihood-ratio test in the appendix for all modes, as statistical justification for their not being spurious.
 
 > 4) The entire analysis is based on unrealistic uncertainties. The authors claim a precision of 10 nHz for Dnu (Table 1) and for individual frequencies (Table A1), which corresponds to the frequency resolution of the data (inverse of ~3 yr). Such a precision level is not reached for longer, higher-quality data observed by Kepler.
 
 (*)
 
-We respectfully disagree with the referee's statement about Kepler data, as it appears to be factually incorrect. For example, the peakbagging code DIAMONDS reports frequency uncertainties of less than 5 nHz for p-modes of red giants --- see e.g. Tables B3, B5, B8, B11 etc. of Corsaro et al. 2015, A&A, 579, A83 --- which are significantly less evolved (and therefore exhibit both lower intrinsic relative photometric amplitudes, and far shorter mode lifetimes), but have similar apparent magnitudes, compared to Zvrk. DIAMONDS uses nested sampling, as we also do, so methodologically this is also a comparison of like with like.
+We must respectfully disagree with the referee's statement about Kepler data, as it appears to contradict the published literature. For example, the peakbagging code DIAMONDS --- which uses nested sampling, as we also do, so methodologically this is a comparison of like with like --- routinely reports frequency uncertainties of less than 5 nHz for p-modes of red giants --- see e.g. Tables B3, B5, B8, B11 etc. of Corsaro et al. 2015, A&A, 579, A83 --- which are significantly less evolved (and therefore exhibit both lower intrinsic relative photometric amplitudes, and far shorter mode lifetimes), but have similar apparent magnitudes, compared to Zvrk. 
 
 > In general, the treatment of uncertainties is systematically unrealistic (e.g.: Z0 in Table 2, Gamma at line 344). The uncertainty on the inclination is also significantly underestimated (line 342)
 
 (*)
 
-We agree that our reported statistical uncertainties on $\Gamma$ will be much smaller than if it were fitted per mode, since pooling between modes effectively reduces it by $\sqrt{N_\text{modes}}$. The referee may consider such precision unrealistic, and we agree that this reported uncertainty ought not to be taken at face value. However, we do not use $\Gamma$ anywhere in our analysis; it is only fitted as a nuisance parameter.
+Our reported statistical uncertainties on $\Gamma$ are indeed much smaller than if it had been fitted per-mode, since pooling between modes effectively reduces the uncertainty by $\sqrt{N_\text{modes}}$. The referee may consider such precision unrealistic, and we agree that this reported uncertainty ought not to be taken at this face value. However, we do not use $\Gamma$ anywhere in our analysis; it is only fitted as a nuisance parameter.
 
 For $Z_0$ in particular, the second modelling exercise also returned a 10% statistical uncertainty, but with a reported value of $Z_0 = 0.008$. This makes the two pipelines that we have examined 2$\sigma$-inconsistent with each other --- i.e. the statistical error in $Z_0$ does *not* dominate systematic error, unlike the cases for the mass and radius. We now make this explicit in the main text. Again, we do not use $Z_0$ directly in our analysis. In general we expect the composition returned from seismology not to be representative of Zvrk's chemically anomalous nature, and we would also expect single-star evolution not to be descriptive of Zvrk's actual history. We therefore have used this modelling exercise only to yield a reasonable guess for the near-polytropic structure of its convective envelope, and for order-of-magnitude estimates of various timescales of the evolution of such a near-polytrope up the RGB, rather than for estimating composition- and physics-dependent quantities like the absolute stellar age. We have further clarified these points in the text.
 
@@ -72,13 +72,13 @@ We thank the referee for pointing out the rounding error in our description of t
 
 (*)
 
-From the same fit against radial modes that produces our estimate of $\Delta\nu$, we obtain $\epsilon = 0.79 \pm 0.03$, whose uncertainty is much smaller than the scatter in the Kepler subsample of Yu+ 2020, and thus sufficient for such discrimination. The decision boundary of Kallinger+ 2012 between first-ascent and AGB stars lies below the first-ascent population, and the value implied by the identified peaks lies above the population mean of first-ascent RGs, so this identification is at least statistically well motivated.
+From the same fit against radial modes that produces our estimate of $\Delta\nu$, we obtain $\epsilon = 0.79 \pm 0.03$, whose uncertainty is much smaller than the scatter in the Kepler subsample of Yu+ 2020, and thus sufficient for such discrimination. The decision boundary of Kallinger+ 2012 between first-ascent and AGB stars lies below the first-ascent population, and the value implied by the identified peaks lies above the population mean of first-ascent RGs, so this evolutionary identification is at least statistically well motivated.
 
 > 1) A simple sanity check strongly suggests that the identification/analysis of the quadrupole multiplets is an artifact. As shown in Fig 2, the quadrupole multiplets are artificially created by a confusion of l=2, m=-2 modes with dipole (l=1, m=+1) modes, and l=2, m=+2 with radial modes. From the figure, it is clear that the quality of the spectrum hampers the clear identification of quadrupole modes, and is by far not enough for deriving any information about them.
 
 (*)
 
-We already note this feature of our mode identification --- i.e. that the quadrupole triplets straddle the radial and dipole modes --- in the manuscript. Our choice of likelihood-ratio $H_1$ test (rather than e.g. the logistically easier $H_0$ or single-peak $H_1$ tests described in Basu & Chaplin 2017) is intended specifically to address this, as these other tests only determine whether or not oscillation power in specific frequency bins or ranges can be assessed to be genuine, and do not consider the possibility of overlapping modes. By contrast, the likelihood-ratio test that we have used is capable of assessing modes not to be significant even if they lie on frequency bins genuinely exhibiting oscillation power (as is the case for our lowest-order quadrupole mode --- the only one not accepted by the test). We hope that our results reassure the referee that our identification of peaks is not spurious. Moreover, as we describe below, our identification of dipole modes requires an identification of quadrupole modes also to be supplied in this fashion, from other a priori considerations.
+We already note this feature of our mode identification --- i.e. that the quadrupole triplets straddle the radial and dipole modes --- in the manuscript. Our choice of likelihood-ratio $H_1$ test (rather than e.g. the logistically easier $H_0$ or single-peak $H_1$ tests described in Basu & Chaplin 2017) is intended specifically to address this, as these other tests only determine whether or not oscillation power in specific frequency bins or ranges can be assessed to be genuine, and do not consider the possibility of overlapping modes. By contrast, the likelihood-ratio test that we have used is capable of assessing modes not to be significant even if they lie on frequency bins genuinely exhibiting oscillation power (as is the case for our lowest-order quadrupole mode --- the only one not accepted by the test). We hope that our results reassure the referee that our identification of the remaining peaks is not spurious. Moreover, as we describe below, our identification of dipole modes requires an identification of quadrupole modes also to be supplied in this fashion, from other a priori considerations.
 
 > 2) The remark above indicates that, contrary to the claim of the authors (lines 307-310), the determination of the mode widths is a crucial step in the analysis.
 
@@ -118,7 +118,7 @@ The paragraph ending Section 3 concerns mixed-mode oscillators (i.e. red giants 
 
 > From the introduction in Section 4.1, one understands that there are multiple good reasons showing that Zvrk is not a merger remnant. Then weak reasons are provided over five pages. The Section discussion can and should be severely shortened. Interesting information is presented here, but it is only weakly connected to the paper.
 
-The introduction to Section 4.1 explains why we believe Zvrk not to be a stellar-mass merger remnant in particular. The rest of this section concerns explaining how its unusual properties came to be in that case, taking for granted that it is *not* a stellar-mass merger remnant --- of the hypotheses we consider, we find that a planet-engulfment scenario is preferred to tidal spin-up or mass transfer, for example. This misunderstanding indicates that the clarity of presentation here can likely be improved. We have therefore tried to rephrase parts of this section.
+The introduction to Section 4.1 explains why we believe Zvrk not to be a stellar-mass merger remnant in particular. The rest of this section concerns understanding how its unusual properties came to be in that case, taking for granted that it is *not* a stellar-mass merger remnant --- of the hypotheses we consider, we find that a planet-engulfment scenario is preferred to tidal spin-up or mass transfer, for example. This misunderstanding indicates that the clarity of presentation here can likely be improved. We have therefore tried to rephrase parts of this section.
 
 We are not sure how the referee is able to arrive at the conclusion that our discussion section is only weakly connected to the paper. In addition to our seismic analysis (to which the referee's feedback is almost exclusively confined), we point out that we also report several observational results aside from seismology --- in particular, a surface rotation period, and unusual lithium and carbon/nitrogen abundances; see also our comments below regarding the title of the paper. Seismology forms only a minority of the observational evidence that we present. The astrophysical interpretation provided in the discussion section is necessary to connect all of these various features, so as to consistently explain how all of them might be produced together, despite Zvrk not being a stellar-mass merger remnant. This being the case, our discussion section is integral to the overall cohesion of the work.
 
@@ -126,7 +126,7 @@ We are not sure how the referee is able to arrive at the conclusion that our dis
 
 > The layout of the paper is unclear and misleading, with too many wordy sections.
 
-We have tried to make our phrasing more compact in many places. We would appreciate more specific feedback from the referee as to how, or which parts of the paper, they believe to be misleading.
+We have tried to make our phrasing more compact in many places.
 
 > 1) Section 2.1 supposes that the star is a first ascent giant. Then, section 2.4 presenting the discussion about T Tauri stars is irrelevant and should be eliminated. If the star is an evolved RGB, it cannot be a T Tauri so the degree of relevance is too remote.
 
@@ -138,13 +138,13 @@ We only briefly mention red clump stars in two paragraphs: one describing only t
 
 > 3) It is also clear that modes, if real, can be considered as pure pressure modes. No need then to discuss what would happen if mixed modes were present.
 
-Under standard pulsation theory, as typically used in stellar modelling, all nonradial modes in red giants (with frequencies lower than the maximum core Brunt-Vaisala frequency) *are* mixed modes. As this work consists of both measurement and interpretation, a discussion of such mode mixing, and in particular the property of such evolved giants possessing weak enough coupling between the two mode cavities that the avoided crossings between them exhibit vanishingly small zones of avoidance (rendering this mixing observationally inaccessible), is not optional. It is this property of evolved giants that permits our mode identification using only $n_p$, justifies our use of extensions to standard pulsation theory ($\pi$-mode decomposition) in our seismic modelling, and motivates subsequent technique development in our appendix using these extensions. We have tried to make this clearer in the text.
+Under standard pulsation theory, as typically used in stellar modelling, all nonradial modes in red giants (with frequencies lower than the maximum core Brunt-Vaisala frequency) *are* mixed modes. As this work consists of both measurement and interpretation, a discussion of such mode mixing, and in particular the property of such evolved giants possessing weak enough coupling between the two mode cavities that the avoided crossings between them exhibit vanishingly small zones of avoidance (rendering this mixing observationally inaccessible), would be necessary at some point, even despite this mixing being observationally inaccessible. It is this property of evolved giants that permits our mode identification using only $n_p$, justifies our use of extensions to standard pulsation theory ($\pi$-mode decomposition) in our seismic modelling, and motivates subsequent technique development in our appendix using these extensions. We have tried to make this clearer in the text.
 
 > 4) All these issues lower the quality and readability of the paper. I consider that the paper could easily fit in less than 10 pages. The actual content is limited (rapid surface rotation, if properly assessed) that it should be limited to 5-6 pages. From all the caveats that are mentioned above, the terms "identification" and "characterization" are insecure, so that the title should be changed.
 
 (*)
 
-The referee appears not to have identified any issues other than in our asteroseismic analysis (largely owing to a misinterpretation of one figure). However, we point out that our other non-seismic analysis (TESS+ASAS-SN photometry, spectroscopic abundance analysis, RV-scatter constraints, orbital and rotational modelling) constitutes more than half the paper, so the referee's suggestion is impossible to implement even if the asteroseismic component were to be eliminated entirely, unless we were to write a different paper altogether. We remind the referee that the scope of our overall work, as reflected in our title, combines all of this: we present an asteroseismic identification, and detailed characterisation, of an engulfment candidate. We might remove "asteroseismic" from the title instead, but we believe our seismic analysis also to be well-founded, as we have explained above.
+The referee appears not to have identified any issues other than in our asteroseismic analysis (largely owing to our error in the construction of Fig. 1). However, we point out that our other non-seismic analysis (TESS+ASAS-SN photometry, spectroscopic abundance analysis, RV-scatter constraints, orbital and rotational modelling) constitutes more than half the paper, so the referee's suggestion is impossible to implement even if the asteroseismic component were to be eliminated entirely, unless we were to write a different paper altogether. We remind the referee that the scope of our overall work, as reflected in our title, combines all of this: we present an asteroseismic identification, and detailed characterisation, of an engulfment candidate. We might remove "asteroseismic" from the title instead, but we believe our seismic analysis also to be well-founded, as we have explained above.
 
 # Figures
 
@@ -156,7 +156,7 @@ We now show the background-divided power spectrum in Fig. 1 over the same freque
 
 > Figure 2: Provide clearer figures, especially Fig 2b
 
-We would appreciate if the referee could be more constructively specific.
+We are unsure what the referee is asking us to do here, and would appreciate clarification.
 
 > Figure 3 is unneeded, since the determination of dnurot_2 is spurious.
 
@@ -166,7 +166,9 @@ No longer applicable.
 
 > Figure 4: Provide a color code with more contrast; fig4c is unclear.
 
-We would appreciate if the referee could be more constructively specific. Fig. 4c in particular shows three different overlapping frequency-time power plots separately using the red, green, and blue pixel channels in an 8-bit image, normalised from 0 (at 0) to 255 (at the maximum wavelet power). As such, it already uses, mathematically speaking, the maximum possible contrast that can be shown on modern computer display hardware for each of its colour channels. It is true that the ability to fully interpret the figure requires the reader not to be colourblind, but we already provide a colourblind-friendly animation in the event.
+We are unsure what the referee is asking us to do here, and would appreciate clarification. Fig. 4c in particular shows three different overlapping frequency-time power plots separately using the red, green, and blue pixel channels in an 8-bit image, normalised from 0 (at 0) to 255 (at the maximum wavelet power). As such, it already uses, mathematically speaking, the maximum possible contrast (i.e. difference between highest and lowest values) that can be shown on modern computer display hardware for each of its colour channels. At the referee's suggestion, we have experimented with variations on nonlinear response curves for intermediate values in producing such a colour-channel diagram, but have not been able to find any that proved obviously superior to a linear response curve.
+
+In any case, in recognition of the fact that such an information-dense representation might not be accessible to all readers, we already provide a colourblind-friendly animation, splitting each off each data set into independent axes where they are depicted with standard uniform-response colourmaps, for accessibility purposes. 
 
 > Figure 8 shows clearly that constraining differential rotation is impossible.
 
@@ -174,6 +176,6 @@ We are unsure what the referee is asking us to do here, and would appreciate cla
 
 # Other notes
 
-- We have modified our discussion of the spectroscopic constraints and the interpretation of abundances, to incorporate additional input from some coauthors that was only received after submission. We apologise for the late changes.
+- We have modified our discussion of the spectroscopic constraints and the interpretation of abundances, to incorporate additional input from some coauthors that was only received after submission. In particular, we have fixed textual errors in our description of how A(Li) was derived, and a sign error in our reporting of APOGEE [Fe/H]. We now also provide descriptions of the APOGEE and GALAH DR4 data quality flags in footnotes. We apologise for the late changes.
 
 - Some other bolded changes to the text are a result of our responses to comments from the data editor.

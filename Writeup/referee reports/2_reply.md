@@ -2,7 +2,7 @@
 geometry: margin=1in
 ---
 
-We thank the referee for another critical report, to which points we respond in the order that they appear (with some minor rearrangement to assist with overall organisation). Since the referee claims to wish to engage constructively, with the stated goal of improving the quality of the paper, we will give them the benefit of the doubt, and assume that they have simply forgotten to actually provide actionable feedback of this kind in the many places where we request clarification. We must note with disappointment, however, that the referee has chosen not to engage with similar requests for clarification in our last reply. Despite the referee's stated wishes to be constructive, we also find in multiple instances that the referee first materially misrepresents what we have written, and then finds fault with our discussion based primarily on these misrepresentations. In others, their suggested actions would, if taken, actively devalue our work. On top of this, we are dismayed that the referee impugns our motivations and character by accusing us of inappropriate conduct, with no substantiation. If the referee genuinely wishes to be constructive, as they assert, we ask that they restrict themselves to comments which are actually salient to the scientific merit of what we have presented.
+We thank the referee for another critical report, to which points we respond in the order that they appear (with some minor rearrangement to assist with overall organisation). Since the referee claims to wish to engage constructively, with the stated goal of improving the quality of the paper, we will give them the benefit of the doubt, and assume that they have simply forgotten to actually provide actionable feedback of this kind in the many places where we request clarification. We must note with disappointment, however, that the referee has chosen not to engage with similar requests for clarification in our last reply. Despite the referee's stated wishes to be constructive, we also find in multiple instances that the referee first materially misrepresents what we have written, and then finds fault with our discussion based primarily on these misrepresentations. In multiple others, their suggested actions would, if taken, proactively devalue our work. On top of this, we are dismayed that the referee impugns our motivations and character by accusing us of inappropriate conduct, with no substantiation. If the referee genuinely wishes to be constructive, as they assert, we ask that they restrict themselves to comments which are actually salient to the scientific merit of what we have presented.
 
 # Comments that were not, or not properly, taken into account
 
@@ -120,19 +120,19 @@ Our negative result in the appendix is precisely why we report the evidence for 
 
 > The name of the Section, Discussion, seems to indicate that results obtained in the previous Sections will be discussed. But new concepts are introduced and developed over 5 pages, in an unclear way. They all address different aspects of the rotation of Zvrk.
 
-We have renamed the section, and the one after it. We would appreciate if the referee could specify concretely what exactly they find unclear in it, so that we can clarify those points.
+We have renamed the section, and the one after it. We would appreciate if the referee could specify concretely what exactly we have been unclear about, so that we can clarify those points.
 
 > - The flow of Section 4 is as confusing as the layout of the whole papers: the order of presentation is often illogical, most often incomplete, and therefore unclear.
 
-We would appreciate the referee substantiating this by being actionably specific as to how and (more importantly) where we have been unclear, incomplete, or illogical, so that we can remedy these apparent faults.
+We would appreciate the referee substantiating this by being actionably specific as to how and (more importantly) where we have been unclear, incomplete, or illogical, so that we can remedy these faults.
 
 > Again, the organization of the paper is faulty, with arguments of Section 4.3 already used in Section 4.1 (line 988). 
 
-As above, the position of this section is constrained by logical dependencies. The bulk of Section 4.3 concerns magnetorotational braking in an engulfment scenario, and so must come after Section 4.1 (introducing and justifying consideration of such a scenario) and Section 4.2 (justifying the consideration of magnetorotational braking in this red giant). Thus, Section 4.3 can appear no earlier in the paper. It is also the final subsection before the conclusion, and so can appear no later. The nonbraking scenario is only very briefly considered in Section 4.3 as necessary to substantiate a claim made in Section 4.1 regarding why scenario (I) alone is not tenable, and also as a counterfactual introduction to the rest of the section concerning magnetic braking. If the referee finds any of this faulty, they should explain why, and provide constructive alternatives.
+This materially misrepresents the content of Section 4.3. Moreover, as above, the organisation of this section is constrained by logical dependencies. Section 4.3 concerns magnetorotational braking in an engulfment scenario, and so must come after Section 4.1 (introducing and justifying consideration of such a scenario) and Section 4.2 (justifying the consideration of magnetorotational braking in this red giant). Thus, Section 4.3 can appear no earlier in the paper. It is also the final subsection before the conclusion, and so can appear no later. The nonbraking scenario, which is also alluded to in Section 4.1, is only very briefly considered in Section 4.3 as a counterfactual introduction to the rest of the section concerning magnetic braking. If the referee finds any of this faulty, they should at least explain why, or better still, provide constructive alternatives.
 
 > - Concepts are not properly introduced, with many omissions and shortcuts. The reader is often lost, for instance when concepts are discussed without any precise definition, or even without any contextual elements.
 
-Again, we would appreciate if the referee could substantiate this criticism by pointing out specific omissions or elisions, concepts lacking introduction, or which definitions/what context they feel we should add to the section, so that we can actually add them.
+Again, we would appreciate if the referee could substantiate this criticism by pointing out specific omissions or elisions, concepts lacking introduction, or which definitions/what context we should add to the section, so that we can actually add them.
 
 > The introduction of four scenarios does not help clarify anything: the discussion of scenario I is rapidly mixed with scenario III. The discussion of scenario II introduces elements of scenario IV: this disorder underlines the lack of logic of the layout. The readers need a clear discussion, in a systematic way, instead of complex speculations.
 
@@ -140,19 +140,23 @@ We believe that the referee misrepresents the organisation of our argument. We h
 
 The next few paragraphs develop why any astrophysical configuration which can explain Zvrk's rotation in scenario (II) in isolation, while remaining consistent with Gaia radial velocities, must unavoidably lead to an engulfment (scenario II implies IV also). Finally, the remainder of the section examines scenario (IV) in isolation, and in particular the properties that a companion in such an engulfment must have, and conclude that companion masses compatible with Zvrk's rotational constraints cannot produce the observed lithium abundance, which is likely explained by tidally induced rotational mixing during inspiral (scenario IV suggests II also).
 
-Thus, we conclude not only that none of the four scenarios in isolation is adequate, but specifically that two of them are not tenable, and the other two must happen together, for full consistency with all observational constraints. We believe that the manner in which this discussion was laid out has been well-defined, compartmentalised, and sequential.
+Thus, we conclude not only that none of the four scenarios in isolation is adequate, but specifically that two of them are not tenable, and the other two must happen together, for full consistency with all observational constraints. We believe that the manner in which this discussion was laid out has been indeed been systematic and methodical.
 
 We think that this organisation could be made clearer with the introduction of subsubsection headings, which we have now added. Otherwise, should the referee still find this layout unclear or illogical (misrepresentations aside), we would appreciate if they would provide clear, concrete, and constructive suggestions for improvement, rather than simply dismissing it as they have done.
 
 > - Section 4.1: the large amount of lithium should be used to reach more direct results. If the engulfment of a single planet cannot work for obvious quantitative reasons, then there is no need to consider this hypothesis in isolation. More recent references should be used. In their answer, the authors 'find that a planet-engulfment scenario is preferred to tidal spin-up or mass transfer, for example.' At lines 1143-1145, we read 'Zvrk would have had to ingest the lithium supply of ~ 10^3 gas giants to generate this chemical signature from engulfment alone.' Then the process that provides the equivalent of 999 engulfments should be preferred?
 
-The referee's response misrepresents us by taking a single sentence out of context. It also illustrates well why it was important to systematically investigate the astrophysical implications of each of the scenarios that we have denumerated, in the specific order that we have done.
+The referee's response not only misrepresents us by taking a single sentence of the paper out of context, but also is not logically justifiable.
 
-By the time this sentence appears, we have already shown that tidal spin-up of the kind required to produce Zvrk's rotational configuration, in an orbital configuration that evades detection by Gaia, will quickly lead to engulfment of the perturber owing to dissipative tidal instability. Moreover, a companion massive enough to spin Zvrk up to its current rotation rate by tidal effects alone before merging will yield a merger product spectroscopically and photometrically consistent with existing samples of stellar-mass merger remnants, which Zvrk is not, as we discuss at the start of the section. Thus, the referee's proposed solution is not consistent with observations. While a planetary-mass engulfment scenario is the preferred explanation for Zvrk's rotation, this sentence serves to advance the argument that this alone cannot be all that happened to Zvrk, given its lithium abundance.
+By the time this sentence appears, we have already shown that tidal spin-up of the kind required to produce Zvrk's rotational configuration, in an orbital configuration that evades detection by Gaia, will quickly lead to engulfment of the perturber owing to dissipative tidal instability. Thus, we have established that an engulfment scenario is the preferred explanation for Zvrk's rotation.
+
+However, it is at this point not yet possible to rule out an engulfment scenario as also being the source of Zvrk's lithium abundance. First, we needed to derive bounds on possible engulfment masses that would produce the observed rotational configuration, through tidal-dissipation calculations including stellar spin-up during inspiral. The result of this calculation gives us a *planet*-mass engulfment scenario to explain Zvrk's rotation specifically. It is only in this context that this sentence then appears, to advance the argument that engulfment alone cannot be all that happened to Zvrk, given its lithium abundance.
+
+The referee's request that we skip the above steps and simply not consider scenario (IV) in isolation would thus break the chain of logic required to justify that (IV) cannot happen independently of (II) in the first place. Were we to do so, we would thereby introduce a circular argument into the paper, to its detriment. Doing so would also directly contradict the referee's immediately preceding demand that we systematically investigate the astrophysical implications of each of the scenarios that we have denumerated.
 
 > None of the four scenarios in isolation is adequate.
 
-The referee is correct. As above, this is a conclusion that we arrived at by systematically considering the implications of each.
+The referee's observation is correct. As above, this is a conclusion that we arrived at by systematically considering the implications of each.
 
 > Nothing is said about possible interactions.
 
@@ -160,7 +164,7 @@ As above, this misrepresents our analysis, which in fact finds that some interac
  
 > The mention of the Cameron-Fowler process is not put into context (by the way, more recent work on Li should be cited, at least for examining surface abundance variations as a function of stellar evolution, as for instance Lagarde et al. (2015, A&A 580, A141)
 
-We have added the requested citation. We would appreciate if the referee could specify what other context they think ought to be provided here regarding this physical mechanism, beyond the reference to the work in which it is developed, which we have already given.
+We have added the requested citation. We would appreciate if the referee could specify what other context ought to be provided here regarding this physical mechanism, beyond the reference to the work in which it is developed (which we have already given).
 
 > - Section 4.2 is also unclear: the first sentence introduces magnetic activity in *dwarves*, and no link with magnetic activity in red giants is given.
 
@@ -172,11 +176,11 @@ We have added definitions where appropriate.
 
 > - Section 4.3 is missing important information. Fig 12 is totally unclear: the reader lacks basic information needed to understand Fig 12.
 
-As far as we can determine, all quantities appearing in these figures are defined and explained in both the figure caption and the main text. If the referee finds any missing, we would appreciate they point them out to us, so that we can add them. Otherwise, we would also appreciate if the referee could explain why they find Fig. 12 unclear (as it is just a plot of the results of our numerical integration of magnetorotational braking) or what basic information they find lacking, which we should add.
+As far as we can determine, all quantities appearing in these figures are defined and explained in both the figure caption and the main text. If the referee finds any missing, we would appreciate they point them out to us, so that we can add them. Otherwise, we would also appreciate if the referee could explain why Fig. 12 is unclear (as it just directly plots the results of our numerical integration of magnetorotational braking) or what basic information they find lacking, which we should add.
 
 > Moreover, terms are not defined, as vSP13.
 
-This is provided in the figure caption as a reference to van Saders and Pinsonneault 2013. We have made this clearer.
+This is already provided in the figure caption as a reference to van Saders and Pinsonneault 2013. We have made this clearer.
 
 > Unscientific terminology are introduced: what are more aggressive/pessimistic scenarios?
 
@@ -186,9 +190,9 @@ We now use alternative adjectives to denote stronger/weaker braking.
 
 > As written above, this Section can and should be removed from the paper.
 
-We point out that the interpretation of observational results is a fundamental part of science, and up to this section, all of the presented analysis has so far been the taking of raw observations, and their distillation into increasingly sparse sets of derived quantities, with little astrophysical interpretation. Such interpretation is, by design, deferred to this section. By recommending its removal, the referee is in effect asking that we write a different paper, of severely diminished astrophysical (as opposed to observational) interest. Likewise, the arguments presented in this section rely on many parts of Sections 2 and 3. Were it to be separated out into a different paper, that paper would be essentially unreadable without either significant repetition of the contents of the preceding sections, or forcing the reader to consult this one side-by-side. Thus, following the referee's suggestion to remove this section would be of very significant detriment to the scientific value of our work (whether in one paper or two), contrary to the referee's advertised goal of improving its quality. 
+We point out that the interpretation of observational results is a fundamental part of science, and up to this section, all of the presented analysis has so far been the taking of raw observations, and their distillation into increasingly sparse sets of derived quantities, with little astrophysical interpretation. Such interpretation is, by design, deferred to this section. By recommending its removal, the referee is in effect asking that we write a different paper, of severely diminished astrophysical (as opposed to observational) interest. Likewise, the arguments presented in this section rely on many parts of Sections 2 and 3. Were it to be separated out into a different paper, that paper would have no intrinsic evidentiary basis, and thus would be essentially unreadable without either significant repetition of the contents of our preceding sections, or forcing the reader to consult this one side-by-side. Thus, following the referee's suggestion to remove this section would be of very significant detriment to the scientific value of our work (whether in one paper or two), contrary to the referee's advertised goal of improving its quality. 
 
-This being the case, we would appreciate if the referee would justify this request. We observe that none of their comments specifically concern making a case for removing this section; the referee's only engagements with its substance (rather than its presentation) are built on misrepresentations of its content.
+This being the case, we would appreciate if the referee would justify this request. We observe that none of their comments about this section specifically concern making a case for removing it, nor splitting it off into a new paper; the referee's only engagements with its substance (rather than its presentation) are built on misrepresentations of its content.
 
 > Pay attention to avoid imprecise sentences as  
 > - 'Since we have only measured Zvrk's present state' (line 950)  

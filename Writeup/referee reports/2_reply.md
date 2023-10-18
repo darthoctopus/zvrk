@@ -14,7 +14,9 @@ We thank the referee for their actionable feedback. We have added a statement th
 
 While we agree that this is a valuable point to raise, we must state our objection that it is unfair to characterise us as not having properly addressed this, as we note that this was not in the referee's original report.
 
-Also: No. (plot of window function)
+![Window function of the full time series in the time (left panel) and frequency (right panel) domains.](window.png)
+
+We plot in fig. 1 the window function of the full timeseries. The left panel shows it in the time domain, while the right panel, which we will focus on, shows it in the frequency domain. In addition to the nominal central peak, we see also sidelobes, the most prominent of which recur at frequencies close to the nominal recurring downlink frequency of once every 13 days (i.e. $0.89\ \mu$Hz). However, the low prominence of these sidelobes compared to the main peak is such that they cannot explain the multiple peaks of similar relative height that are visible in the power spectrum. Moreover, these sidelobes are also widely separated enough that they cannot have been misidentified as producing either the small separation between modes of alternating even degree (around $0.35\ \mu$Hz), nor our putative identified rotational splittings (around $0.1\ \mu$Hz). Other families of sidelobes and their aliases can be seen to be of far lower prominence, and are not of observational concern. As such, we believe our proposed mode identification is not the result of misinterpreting aliases in the observational window function. We have added the above discussion to the manuscript, along with a simplified version of the figure, in the form of a new Appendix A.
 
 > The power spectrum density should be shown in a broad frequency range (broader than current figures 1 and 2).
 
@@ -46,7 +48,7 @@ We now use $B$ for the background in eq. 2 in deference to the referee's wishes.
 
 > - Dividing physical quantities by their units is very bad practice (e.g. nu/muHz, Fig. 1). The x- and y-axes of Figures 5, 10, 11 are correctly presented, but all other figures and tables suffer from this inconsistent shortcut, which must be corrected.
 
-Regarding dividing out units in our axis labels and table headings: we note that doing so is no mere ``shortcut", but is rather a very well-established convention both within and outside of astronomy. We refer the referee to e.g. §5.4.1 of the BIPM SI Brochure (9th ed., 2019); §7.1 of the corresponding NIST Guide to the SI (NIST Special Publication 811, 2020); as well as §2.1, para. 2 of the IAU Style Manual (G.A. Wilkins, Comm. 5, in IAU Transactions XXB, 1989). In all cases, the convention that we have used (i.e. writing "quantity / unit" rather than "quantity [unit]" or variations thereof) is recommended precisely on the grounds of reducing ambiguity, as all depicted quantities are then understood to be formally dimensionless. If this statement is intended to improve the paper, and if the referee wishes to insist on this change, we would appreciate if they could, constructively, justify its relevance to the scientific merit of the work that we have presented, rather than simply saying that this convention is "very bad".
+Regarding dividing out units in our axis labels and table headings: we note that doing so is no mere ``shortcut", but is rather a very well-established convention both within and outside of astronomy. We refer the referee to e.g. §5.4.1 of the BIPM SI Brochure (9th ed., 2019); §7.1 of the corresponding NIST Guide to the SI (NIST Special Publication 811, 2020); as well as §2.1, para. 2 of the IAU Style Manual (G.A. Wilkins, Comm. 5, in IAU Transactions XXB, 1989). In all cases, the convention that we have used (i.e. writing "quantity / unit" rather than "quantity [unit]" or variations thereof) is recommended precisely on the grounds of reducing ambiguity, as all depicted quantities are then understood to be formally dimensionless. If this statement is intended to improve the paper, and if the referee wishes to insist on this change, we would appreciate if they could, constructively, justify its relevance to the scientific merit of the work that we have presented, rather than simply saying that this convention is "very bad" with no further explanation.
 
 # Quadrupole modes
 
@@ -58,7 +60,7 @@ We have already stated clearly how we have arrived at this mode identification: 
 
 The physical interpretation of linewidths is as damping rates/mode lifetimes. Nowhere in our subsequent analysis do we discuss the physics underlying the excitation or damping of modes; neither do we use the linewidths as a constraint on Zvrk's physical properties. Thus, this statement as we have written it is correct, contrary to the referee's misrepresentation. If the referee disagrees, we ask them to point out any instances of our use of linewidths in the paper for physical interpretation, which we will be happy to remove.
 
-It is true we found that permitting the mode-wise linewidths to vary freely interfered with the fitting procedure. However, this only indicates that the fitted linewidths may not be relied upon for physical interpretation, and, as described, we have made no attempt to do so. If this statement is intended to improve the paper, we will appreciate if the referee would explicitly explain the contradiction they see in this, as we do not.
+It is true we found that permitting the mode-wise linewidths to vary freely interfered with the fitting procedure. However, this only indicates that the fitted linewidths may not be relied upon for physical interpretation, and, as described, we have made no attempt to do so. If this statement is intended to improve the paper, we will appreciate if the referee would explicitly explain the contradiction they see in this, as we see none.
 
 We point out that, even in high-quality Kepler data of main-sequence p-mode oscillators, where one would imagine the fitting procedure to be ideally robust, the lowest-amplitude modes will still return unphysically large linewidths when these are left to vary freely in the fit. It is for this reason that the linewidths are often instead constrained to vary slowly as a function of frequency, rather than permitted to each vary freely (e.g. Appourchaux et al. 2016, A&A, 595C, 2; Kuszlewicz et al. 2019, MNRAS, 488, 572; Hall et al. 2021, NatAs, 5, 707). While we agree that having a single pooled linewidth across all modes will return unreliable estimates of the linewidth, doing so is closer to this well-established observational practice than having an independent linewidth per mode. Since we are not using the linewidths physically, more sophisticated techniques are not needed. Conversely, systematic biases in the mode heights and rotational widths are reported by Kamiaka et al. 2018, who do permit the linewidths to each vary freely, when peaks are close to overlapping. Using a constant linewidth thus also avoids these induced systematics in the specific case of overlapping peaks. We have added this discussion to the main text.
 
@@ -76,7 +78,7 @@ As pointed out in the our last reply, we have chosen a methodology for our stati
 
 > - The crucial role of the linewidths is evident from the fact that, for 10 quadrupole modes with a claimed identification, 6 overlaps with other dipole or radial modes in total confusion, 3 overlap with a frequency difference below the mean linewidth, 1 overlap with a frequency difference of about 2 x linewidth.
 
-This observation is noted. We are not sure what the referee wants us to do with this information, and would appreciate clarification. As above, the referee also neglects to mention that the three zonal quadrupole modes nearest to $\nu_\mathrm{max}$ can be seen to unambiguously exhibit power in fig. 2, and do not overlap modes of any other degree.
+See above for our response to a substantively identical point.
 
 > - Quadrupole heights in a given multiplet seem to be defined as a function of a mean height modulated by the inclination and the azimuthal order. If I am right, then the fit relies on the assumption that |m|= 2 modes in a given multiplet have the same height. This must be clearly stated.
 
@@ -90,7 +92,7 @@ We point out that symmetric-height models have been extensively used in the lite
 
 > The authors claim the detection of a weak radial differential rotation. As shown above, the degeneracy of the oscillation spectrum must be considered before deriving any conclusion.
 
-As we have discussed above, we have made methodological decisions explicitly to avoid the systematic pitfalls that would be encountered when fitting mode linewidths individually when peaks overlap, as well as specifically to ensure that the statistical significance of overlapping modes is not overstated. The referee has not offered any explicit guidance as to what exactly about this methodology they deem to be inadequate or why (having only stated repeatedly that they find it thus), nor as to any specific and meaningful changes they wish to be made to remedy this. If this statement is intended to improve the paper, we would appreciate if they could do so.
+As we have discussed above, we have made methodological decisions explicitly to avoid the systematic pitfalls that would be encountered when fitting mode linewidths individually when peaks overlap, as well as specifically to ensure that the statistical significance of overlapping modes is not overstated. The referee has not offered any explicit guidance as to what exactly about this methodology they deem to be inadequate or why (having only stated repeatedly that they find it thus), nor as to any specific and meaningful changes they feel ought to be made to remedy this. If this statement is intended to improve the paper, we would appreciate if they could do so.
 
 We also note that we have claimed a weak detection of differential rotation, rather than detection of weak differential rotation. The referee's following criticism seems to address us claiming the latter despite weak evidence, while we do only the former. This is particularly surprising to us given that the referee appears to have read the relevant sections in great detail.
 
@@ -100,7 +102,7 @@ We remind the referee that oscillation mode frequencies are generally constraine
 
 > Did the authors test any possible pollution via the window effect?
 
-See our reply above regarding the window function.
+See our reply above regarding the window function. In the main text, we have also added an a reference to this new appendix in our discussion of quadrupole modes specifically.
 
 > Moreover, the analysis in Appendix B demonstrates the irrelevance of testing differential rotation.
 
@@ -122,7 +124,7 @@ Our negative result in the appendix is precisely why we report the evidence for 
 
 We point out that these two are not mutually exclusive. One may discuss observational results obtained in previous sections by considering their astrophysical implications, and using concepts, outside of the primary observational context. Indeed, this is done often. We are not sure why the referee thinks this is not permissible.
 
-In any case, we have renamed the section, and the one after it. If this statement is intended to improve the paper, we would appreciate if the referee could specify concretely what exactly we have been unclear about, so that we can clarify those points.
+Since the referee appears to principally object to the name of the section, we will be happy to rename it if they could provide constructive alternatives. If this statement is intended to improve the paper, we would also appreciate if the referee could specify concretely what exactly we have been unclear about, so that we can clarify those points.
 
 > - The flow of Section 4 is as confusing as the layout of the whole papers: the order of presentation is often illogical, most often incomplete, and therefore unclear.
 
@@ -144,7 +146,7 @@ The next few paragraphs develop why any astrophysical configuration which can ex
 
 Thus, we conclude not only that none of the four scenarios in isolation is adequate, but specifically that two of them are not tenable, and the other two must happen together, for full consistency with all observational constraints. We believe that the manner in which this discussion was laid out has been indeed been systematic and methodical.
 
-We think that this organisation could be made clearer with the introduction of subsubsection headings, which we have now added. Otherwise, should the referee still find this layout unclear or illogical (misrepresentations aside), we would appreciate if they would provide clear, concrete, and constructive suggestions for improvement, rather than simply dismissing it as they have done.
+We think that this organisation could be made clearer with the introduction of subsubsection headings, which we have now added. We have also renumbered the scenarios in keeping with the order in which they are presented (so that (II) is now (III) and vice versa), again in the interests of clarity. Otherwise, should the referee still find this layout unclear or illogical (misrepresentations aside), we would appreciate if they would provide clear, concrete, and constructive suggestions for improvement, rather than simply dismissing it as they have done.
 
 > - Section 4.1: the large amount of lithium should be used to reach more direct results. If the engulfment of a single planet cannot work for obvious quantitative reasons, then there is no need to consider this hypothesis in isolation. More recent references should be used. In their answer, the authors 'find that a planet-engulfment scenario is preferred to tidal spin-up or mass transfer, for example.' At lines 1143-1145, we read 'Zvrk would have had to ingest the lithium supply of ~ 10^3 gas giants to generate this chemical signature from engulfment alone.' Then the process that provides the equivalent of 999 engulfments should be preferred?
 
@@ -170,7 +172,7 @@ We have added the requested citation. If this statement is intended to improve t
 
 > - Section 4.2 is also unclear: the first sentence introduces magnetic activity in *dwarves*, and no link with magnetic activity in red giants is given.
 
-We thank the referee for pointing out this missing sentence. We have added a reference linking this to magnetic activity in red giants.
+We thank the referee for pointing out this missing sentence. We have added one linking this to magnetic activity in red giants.
 
 > None of the terms of Eq (9) are defined.
 

@@ -220,12 +220,12 @@ We agree. However, we have only introduced this method insofar as it was necessa
 
 > *- Lines 1651-1656: The sentence should be reworded or skipped.*
 
-We are not sure what about the sentence the referee wishes us to reword or remove, and would appreciate clarification.
+We have reworded by including a reference to a paper describing how mixed-mode kernels respond nonlinearly to small structural perturbations --- a defect not shared by these pure p-mode kernels.
 
 > *- Figure B1: the y-caption of Fig B1a is incorrect; it should be different from Fig B1c*
 
 It is already different. Note that $K$ is labelled, and shown, as a function of $r$ in fig. B1a, but of $t$ in B1c and B1d, through the reparameterisation that we describe in the text.
 
-> *- Figure B3 shows whye the analysis is not satisfying, with exploded posterior distributions. This figure shows the weakness of the conclusion in terms of 'differential rotation', as indicated by the authors in lines 1861-1863. Why persist in announcing a weak detection of differential rotation?*
+> *- Figure B3 shows why the analysis is not satisfying, with exploded posterior distributions. This figure shows the weakness of the conclusion in terms of 'differential rotation', as indicated by the authors in lines 1861-1863. Why persist in announcing a weak detection of differential rotation?*
 
 See above for our response to identical points.

@@ -1,0 +1,55 @@
+I thank the authors for the long answer to my previous report. In the
+following places, the changes in the paper do not really help clarify
+some of the issues raised in the earlier report(s).
+
+1) Linewidths, degeneracy, and uncertainties of the fit
+
+The authors persist in claiming that 'linewidths are not physically
+relevant for the following discussion,' despite the fact that linewidths
+are crucial for deriving a relevant fit. This is clear from lines
+312-316, which show that no fit can be derived with linewidths fitted on
+a per-mode basis. The authors have also shown that the fit does not
+converge when individual heights are left free. This means that authors
+had to significantly reduce the number of degrees of freedom, so that
+the fitting process could (artificially) divide single peaks in two
+modes: a quadrupolar component and a radial or dipolar component.
+
+This illustrates the difficulty of obtaining a reliable result when all
+the peaks are degenerate. Thus the method chosen by the authors provides
+a solution which is uncertain. As a result, uncertainties, as currently
+presented, are significnatly underestimated. This strongly strains the
+identification of quadrupole modes: these modes are certainly present,
+but with much larger uncertainties than claimed by the authors.
+Uncertainties on dipole modes are also affected.
+
+So, on this point, the authors need to properly account for the effect
+of degeneracy, and explicitly alert readers that their identification of
+the oscillation spectrum is possible, but uncertain. They also have to
+revise the uncertainties.
+
+2) No evidence for differential rotation
+The authors persist in claiming a 'weak evidence for rotational shear.'
+All the rotation rates agree within 1-sigma (Figure 8), so that deriving
+any evidence of differential rotation, even weak, is not at all a
+significant finding. A 1-sigma difference (and certainty less than 1
+sigma, since sigma is underestimated) cannot support a detection. Nearly
+flat rotation (which is an interesting result) is as probable as
+differential rotation.
+
+Before publication, the authors need to remove claims of a weak
+detection of differential rotation or rotational shear.
+
+3) Section 4 'Discussion'
+
+The authors should move Section 2.4 toward the beginning of a (new)
+section "Discussion," for the sake of clarity.
+The limited changes in the current Section 4 did not improve clarity:
+- In Section 4.3, Equation 10 remains cryptic, with undefined terms.
+- Figure 12 is not analyzed in a clear way (not to mention inconsistent
+presentation: at line 1241, the vertical line indicates a notional
+rotation period of 100 d, but the caption indicates that this line
+corresponds to nu_max.
+
+I reiterate my recommendation to split the paper in two parts, to allow
+for a clearer presentation of all elements introduced in Section 4. If
+not split off, a short paragraph introducing Section 4 should be added.

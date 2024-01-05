@@ -568,12 +568,14 @@ We examine these kernels in more detail in \cref{fig:shear}b, where we plot with
 \begin{figure*}[htbp]
     \centering
     \annotate{\includegraphics[width=.85\textwidth]{RLS_corner.pdf}}{
-    \node[below,left] at (.85, .93){\includegraphics[width=.36\textwidth]{RLS.pdf}};
-    \node[below,left] at (1.06, .595){\includegraphics[width=.36\textwidth]{RLS_surf.pdf}};
+    \node[below,left] at (.65, .95){\includegraphics[width=.33\textwidth]{RLS.pdf}};
+    \node[below,left] at (1.03, .95){\includegraphics[width=.33\textwidth]{RLS_surf.pdf}};
+    \node[below,left] at (1.03, .62){\includegraphics[width=.33\textwidth]{RLS_solid.pdf}};
     \node at (.1, .97){\textbf{(a)}};
-    \node at (.8, 1.03){\textbf{(b)}};
-    \node at (1, .695){\textbf{(c)}};}
-    \caption{Regularised asteroseismic constraints on rotational shear. \textbf{(a)} Joint posterior distributions for the stellar inclination, inner and outer rotation rates, location, and thickness of the rotational shear layer, which parameterise our regularised two-zone description of the rotational profile, \cref{eq:shear}. We show in blue the posterior distributions obtained from the power spectrum with the flat priors described in the main text, and with orange a conditional distribution obtained by demanding that the outer rotation rate matches the value provided by photometry. \textbf{(b)} Samples from the posterior distribution over rotational profiles from the main exercise are shown with the thin faint lines. These are coloured blue if they are consistent with differential rotation in the sense of the rotation rate decreasing towards the surface, and red for the converse sense. The median rotational profile is shown with the thick black curve, and the $\pm 1\sigma$ posterior credible region around it is demarcated with the dashed curves. \textbf{(c)} The same as (b), but for our restricted scenario where the outer rotation rate is matched to the photometric value. Draws from the posterior distribution with the rotation rate increasing outwards are shown in orange, while those with the converse sense of differential rotation are shown in gray.}
+    \node at (.6, 1.04){\textbf{(b)}};
+    \node at (.98, 1.04){\textbf{(c)}};
+    \node at (.99, .74){\textbf{(d)}};}
+    \caption{Regularised asteroseismic constraints on rotational shear. \textbf{(a)} Joint posterior distributions for the stellar inclination, inner and outer rotation rates, location, and thickness of the rotational shear layer, which parameterise our regularised two-zone description of the rotational profile, \cref{eq:shear}. We show in blue the posterior distributions obtained from the power spectrum with the flat priors described in the main text, and with orange a conditional distribution obtained by demanding that the outer rotation rate matches the value provided by photometry. Finally, we show in gray a reference scenario where solid-body rotation is enforced. \textbf{(b)} Samples from the posterior distribution over rotational profiles from the main exercise are shown with the thin faint lines. These are coloured blue if they are consistent with differential rotation in the sense of the rotation rate decreasing towards the surface, and red for the converse sense. The median rotational profile is shown with the thick black curve, and the $\pm 1\sigma$ posterior credible region around it is demarcated with the dashed curves. \textbf{(c)} The same as (b), but for our restricted scenario where the outer rotation rate is matched to the photometric value. Draws from the posterior distribution with the rotation rate increasing outwards are shown in orange, while those with the converse sense of differential rotation are shown in gray. \edit3{\textbf{(d)} A closer look at the conditional posterior distribution for a solid-body rotation rate.}}
     \label{fig:rls}
 \end{figure*}
 

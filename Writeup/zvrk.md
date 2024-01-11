@@ -597,4 +597,9 @@ Under this more restrictive scenario, the inferred conditional posterior distrib
 
 We compare these rotational constraints against those from photometry and spectroscopy in  \cref{fig:rotsummary}. While both of our direct measurements for the surface rotation rate sit slightly higher than our unconstrained regularised predictions for the surface rotation rate from asteroseismology (blue shaded region), we note that the discrepancy between the two direct measurements is greater than between either of the two, and our asteroseismic prediction. As we discuss above, an ad-hoc combination of anti-solar latitudinal differential rotation and high-latitude spotting could bring the equatorial surface rotation rate implied by photometry into agreement with our asteroseismic measurements of the bulk rotation rate in the envelope. Conversely, in the more likely scenario of low-latitude features and solar-like latitudinal differential rotation, our photometric value would be more representative of an equatorial rotation rate than the value produced by Doppler line-broadening, which is integrated over the visible disk.
 
+Likelihood ratio test statistics:
+
+Full RLS: 3.83203125, 3dof, p=0.28018227853714966
+Regularised RLS: 3.21337890625, 2dof, p=0.2005504479572179
+
 <!--\bibliography{biblio.bib}-->

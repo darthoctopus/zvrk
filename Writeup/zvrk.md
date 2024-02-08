@@ -426,7 +426,7 @@ Finally, as for Zvrk itself, much remains about it to be observationally determi
 \begin{acknowledgements}
 
 We thank S. Basu, T. Bedding, and S. Hekker for constructive feedback on preliminary versions of this work, and C. Hayes, J. Hinkle, A. Boesgaard, and C. Kochanek for productive discussions. MTYH and MSF thank the Aspen Center for Physics for their hospitality during the completion of parts
-of this work. The Jupyter notebooks and MESA inlist files used for this work, and the source of this paper itself, can be found on a GitHub repository at \url{http://github.com/darthoctopus/zvrk}; the repository will be made public upon acceptance. \edit1{The \mesa\ \texttt{inlist} files used in our analysis have been placed in a Zenodo repository: \dataset{\doi{10.5281/zenodo.8267322}}.}
+of this work. The Jupyter notebooks and MESA inlist files used for this work, and the source of this paper itself, can be found on a GitHub repository at \url{http://github.com/darthoctopus/zvrk}; the repository will be made public upon acceptance. \edit1{The \mesa\ \texttt{inlist} files used in our analysis have been placed in a Zenodo repository at \dataset[doi:10.5281/zenodo.8267322]{\doi{10.5281/zenodo.8267322}}.}
 
 % magic incantation
 

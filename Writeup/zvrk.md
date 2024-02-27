@@ -2,9 +2,8 @@
 header-includes:
     - \input{macros.tex}
     - \usepackage{mathptmx,txfonts,tikz,bm}
-date: \today
 documentclass: aastex631
-classoption: astrosymb, twocolumn, twocolappendix, tighten, linenumbers
+classoption: astrosymb, twocolumn, twocolappendix, tighten
 mathspec: false
 colorlinks: true
 citecolor: xlinkcolor # don't override AASTeX default
@@ -423,25 +422,22 @@ Over broader horizons, Zvrk also serves as a demonstration of both the limitatio
 
 Finally, as for Zvrk itself, much remains about it to be observationally determined. Should it actually be flaring, Zvrk would make a compelling target for future space-based UV photometry missions. Moreover, although Zvrk's Gaia RUWE and RV scatter are not consistent with a binary companion with orbital periods close to the Gaia baseline, it cannot definitively rule out the presence of a very widely separated orbital companion, which may have caused a high-eccentricity engulfment scenario [e.g. @knutson_friends_2014], or any potential undetected close-in companions undergoing tidal decay. Zvrk's southerly location renders it amenable to contemporaneous follow-up radial-velocity observations for this purpose using cutting-edge instruments, such as ESPRESSO (for now) and G-CLEF (in the near future). Other kinds of follow-up observations, such as speckle imaging, may also prove fruitful. All of these paths lead far beyond the scope of this paper, but there is clearly much more work to be done.
 
-\begin{acknowledgements}
+# Acknowledgements {-}
 
 We thank S. Basu, T. Bedding, and S. Hekker for constructive feedback on preliminary versions of this work, and C. Hayes, J. Hinkle, A. Boesgaard, and C. Kochanek for productive discussions. MTYH and MSF thank the Aspen Center for Physics for their hospitality during the completion of parts
 of this work. The Jupyter notebooks and MESA inlist files used for this work, and the source of this paper itself, can be found on a GitHub repository at \url{http://github.com/darthoctopus/zvrk}; the repository will be made public upon acceptance. \edit1{The \mesa\ \texttt{inlist} files used in our analysis have been placed in a Zenodo repository at \dataset[doi:10.5281/zenodo.8267322]{\doi{10.5281/zenodo.8267322}}.}
 
-% magic incantation
-
 This paper includes data collected by the TESS mission. Funding for the TESS mission is provided by the NASA's Science Mission Directorate.
 
-This work has made use of data from the European Space Agency (ESA) mission {\it Gaia} (\url{https://www.cosmos.esa.int/gaia}), processed by the {\it Gaia} Data Processing and Analysis Consortium (DPAC, \url{https://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the {\it Gaia} Multilateral Agreement.
+This work has made use of data from the European Space Agency (ESA) mission *Gaia* (\url{https://www.cosmos.esa.int/gaia}), processed by the *Gaia* Data Processing and Analysis Consortium (DPAC, \url{https://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the *Gaia* Multilateral Agreement.
 
 JMJO, MTYH, and MSF acknowledge support from NASA through the NASA Hubble Fellowship grants HST-HF2-51517.001-A, HST-HF2-51459.001-A, and HST-HF2-51493.001-A, respectively, awarded by STScI. STScI is operated by the Association of Universities for Research in Astronomy, Incorporated, under NASA contract NAS5-26555.
-APS acknowledges partial support by the Thomas Jefferson Chair Endowment for Discovery and Space Exploration, and partial support through the Ohio Eminent Scholar Endowment. MY, Z\c{C}O, and S\"O acknowledge the Scientific and Technological Research Council of Turkey (TÜBİTAK:118F352).
+APS acknowledges partial support by the Thomas Jefferson Chair Endowment for Discovery and Space Exploration, and partial support through the Ohio Eminent Scholar Endowment. MY, ZÇO, and SÖ acknowledge the Scientific and Technological Research Council of Turkey (TÜBİTAK: 118F352).
 SLM acknowledges funding support from the UNSW Scientia program and from the Australian Research Council through Discovery Project grant DP180101791. DS is supported by the Australian Research Council through Discovery Project grant DP190100666. Parts of this work were supported by the Australian Research Council Centre of Excellence for All Sky Astrophysics in 3 Dimensions (ASTRO 3D), through project number CE170100013.
 
 \software{NumPy \citep{numpy}, SciPy stack \citep{scipy}, AstroPy \citep{astropy:2013,astropy:2018}, \texttt{lightkurve} \citep{lightkurve}, \texttt{Comove} \citep{kraus_comove_2022}, \texttt{dynesty} \citep{dynesty}, Pandas \citep{pandas}, \mesa\ \citep{mesa_paper_1,mesa_paper_2,mesa_paper_3,mesa_paper_4,mesa_paper_5}, \gyre\ \citep{townsend_gyre_2013}, \texttt{ADIPLS} \citep{jcd_adipls_2008}}
 
 \facilities{TESS, ASAS-SN, APOGEE, GALAH, WISE, GALEX}
-\end{acknowledgements}
 
 \appendix
 \setcounter{table}{0}
